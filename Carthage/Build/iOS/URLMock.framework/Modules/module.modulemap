@@ -1,0 +1,6 @@
+framework module URLMock {
+  umbrella header "URLMock.h"
+
+  export *
+  module * { export * }
+}

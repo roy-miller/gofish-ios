@@ -1,0 +1,43 @@
+{
+    "deck_card_count": 42,
+    "match_id": 92,
+    "messages": [
+        "Click a card and a player to ask for cards when it's your turn",
+        "It's user1's turn"
+    ],
+    "opponents": [
+        {
+            "book_count": 0,
+            "card_count": 5,
+            "id": 195,
+            "name": "user2"
+        }
+    ],
+    "player": {
+        "book_count": 0,
+        "cards": [
+            {
+                "rank": "Q",
+                "suit": "S"
+            },
+            {
+                "rank": "10",
+                "suit": "D"
+            },
+            {
+                "rank": "Q",
+                "suit": "D"
+            },
+            {
+                "rank": "A",
+                "suit": "S"
+            },
+            {
+                "rank": "6",
+                "suit": "C"
+            }
+        ],
+        "name": "user1"
+    },
+    "status": "started"
+}

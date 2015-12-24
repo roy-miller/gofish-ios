@@ -1,0 +1,812 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D31F58911C1F5DAF00A3E3B9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D31F58901C1F5DAF00A3E3B9 /* main.m */; };
+		D31F58941C1F5DAF00A3E3B9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D31F58931C1F5DAF00A3E3B9 /* AppDelegate.m */; };
+		D31F589A1C1F5DAF00A3E3B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D31F58981C1F5DAF00A3E3B9 /* Main.storyboard */; };
+		D31F589C1C1F5DAF00A3E3B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D31F589B1C1F5DAF00A3E3B9 /* Assets.xcassets */; };
+		D31F589F1C1F5DAF00A3E3B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D31F589D1C1F5DAF00A3E3B9 /* LaunchScreen.storyboard */; };
+		D31F58AA1C1F5DAF00A3E3B9 /* GoFishTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D31F58A91C1F5DAF00A3E3B9 /* GoFishTests.m */; };
+		D31F58B51C1F5DAF00A3E3B9 /* GoFishUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D31F58B41C1F5DAF00A3E3B9 /* GoFishUITests.m */; };
+		D31F58C81C1F5E8C00A3E3B9 /* PlayingCard.m in Sources */ = {isa = PBXBuildFile; fileRef = D31F58C71C1F5E8C00A3E3B9 /* PlayingCard.m */; };
+		D31F58CA1C1F5EA100A3E3B9 /* PlayingCardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D31F58C91C1F5EA100A3E3B9 /* PlayingCardTests.m */; };
+		D31F58CF1C1F5F9500A3E3B9 /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D31F58CE1C1F5F9500A3E3B9 /* AFNetworking.framework */; };
+		D31F58D21C1F62BC00A3E3B9 /* GFHDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = D31F58D11C1F62BC00A3E3B9 /* GFHDatabase.m */; };
+		D31F58D41C1F631900A3E3B9 /* RespositoryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D31F58D31C1F631900A3E3B9 /* RespositoryTests.m */; };
+		D31F58D51C1F639300A3E3B9 /* GFHRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = D31F58CC1C1F5EDC00A3E3B9 /* GFHRepository.m */; };
+		D31F58D61C1F639700A3E3B9 /* GFHRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = D31F58CC1C1F5EDC00A3E3B9 /* GFHRepository.m */; };
+		D31F58D71C1F644400A3E3B9 /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D31F58CE1C1F5F9500A3E3B9 /* AFNetworking.framework */; };
+		D31F58DA1C1F6C5900A3E3B9 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = D31F58D91C1F6C5900A3E3B9 /* Player.m */; };
+		D31F58DC1C1F6E9800A3E3B9 /* PlayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D31F58DB1C1F6E9800A3E3B9 /* PlayerTests.m */; };
+		D31F58E21C2048DD00A3E3B9 /* MatchPerspective.m in Sources */ = {isa = PBXBuildFile; fileRef = D31F58E11C2048DD00A3E3B9 /* MatchPerspective.m */; };
+		D31F58E41C20764500A3E3B9 /* MatchPerspectiveTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D31F58E31C20764500A3E3B9 /* MatchPerspectiveTests.m */; };
+		D31F58E91C21CF0C00A3E3B9 /* match_json_fixture.json in Resources */ = {isa = PBXBuildFile; fileRef = D31F58E81C21CF0C00A3E3B9 /* match_json_fixture.json */; };
+		D31F58EB1C21D5E100A3E3B9 /* libPusher-combined.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D31F58EA1C21D5E100A3E3B9 /* libPusher-combined.a */; };
+		D31F58FD1C21D78500A3E3B9 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D31F58FC1C21D78500A3E3B9 /* libicucore.tbd */; };
+		D31F58FF1C21D78E00A3E3B9 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D31F58FE1C21D78E00A3E3B9 /* SystemConfiguration.framework */; };
+		D31F59011C21D79B00A3E3B9 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D31F59001C21D79B00A3E3B9 /* Security.framework */; };
+		D31F59031C21D7A200A3E3B9 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D31F59021C21D7A200A3E3B9 /* CFNetwork.framework */; };
+		D31F59051C21D8F500A3E3B9 /* SocketRocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D31F59041C21D8F500A3E3B9 /* SocketRocket.framework */; };
+		D31F590B1C21DA2A00A3E3B9 /* GFHMatchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D31F590A1C21DA2A00A3E3B9 /* GFHMatchViewController.m */; };
+		D31F590E1C21ED1700A3E3B9 /* GFHPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D31F590D1C21ED1700A3E3B9 /* GFHPlayerViewController.m */; };
+		D31F59111C21FD3D00A3E3B9 /* GFHPlayingCardCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D31F59101C21FD3D00A3E3B9 /* GFHPlayingCardCollectionCell.m */; };
+		D31F59141C22375400A3E3B9 /* GFHOpponentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D31F59131C22375400A3E3B9 /* GFHOpponentsViewController.m */; };
+		D31F59171C223EEC00A3E3B9 /* GFHOpponentCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D31F59161C223EEC00A3E3B9 /* GFHOpponentCollectionCell.m */; };
+		D34510231C25947500B90650 /* GFHMatchSetupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D34510221C25947500B90650 /* GFHMatchSetupViewController.m */; };
+		D34510261C2595E900B90650 /* GFHLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D34510251C2595E900B90650 /* GFHLoginViewController.m */; };
+		D345102D1C28A07900B90650 /* OHHTTPStubs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D345102C1C28A07900B90650 /* OHHTTPStubs.framework */; };
+		D38E8EBC1C23970C0049AC2F /* GFHMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D38E8EBB1C23970C0049AC2F /* GFHMessageViewController.m */; };
+		D38E8EBF1C241C960049AC2F /* GFHMessageLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = D38E8EBE1C241C960049AC2F /* GFHMessageLabel.m */; };
+		D38E8EC21C24985E0049AC2F /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = D38E8EC11C24985E0049AC2F /* User.m */; };
+		D38E8EC41C2498C60049AC2F /* UserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D38E8EC31C2498C60049AC2F /* UserTests.m */; };
+		D38E8EC61C249D600049AC2F /* user_login_valid_json_fixture.json in Resources */ = {isa = PBXBuildFile; fileRef = D38E8EC51C249D600049AC2F /* user_login_valid_json_fixture.json */; };
+		D38E8EC81C249D800049AC2F /* user_login_invalid_json_fixture.json in Resources */ = {isa = PBXBuildFile; fileRef = D38E8EC71C249D800049AC2F /* user_login_invalid_json_fixture.json */; };
+		D38E8ECA1C24BED50049AC2F /* URLMock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D38E8EC91C24BED50049AC2F /* URLMock.framework */; };
+		D38E8ECD1C24BFA30049AC2F /* GFHMockServer.m in Sources */ = {isa = PBXBuildFile; fileRef = D38E8ECC1C24BFA30049AC2F /* GFHMockServer.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D31F58A61C1F5DAF00A3E3B9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D31F58841C1F5DAF00A3E3B9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D31F588B1C1F5DAF00A3E3B9;
+			remoteInfo = GoFish;
+		};
+		D31F58B11C1F5DAF00A3E3B9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D31F58841C1F5DAF00A3E3B9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D31F588B1C1F5DAF00A3E3B9;
+			remoteInfo = GoFish;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D31F588C1C1F5DAF00A3E3B9 /* GoFish.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoFish.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D31F58901C1F5DAF00A3E3B9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D31F58921C1F5DAF00A3E3B9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D31F58931C1F5DAF00A3E3B9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D31F58991C1F5DAF00A3E3B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D31F589B1C1F5DAF00A3E3B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D31F589E1C1F5DAF00A3E3B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D31F58A01C1F5DAF00A3E3B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D31F58A51C1F5DAF00A3E3B9 /* GoFishTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoFishTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D31F58A91C1F5DAF00A3E3B9 /* GoFishTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GoFishTests.m; sourceTree = "<group>"; };
+		D31F58AB1C1F5DAF00A3E3B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D31F58B01C1F5DAF00A3E3B9 /* GoFishUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoFishUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D31F58B41C1F5DAF00A3E3B9 /* GoFishUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GoFishUITests.m; sourceTree = "<group>"; };
+		D31F58B61C1F5DAF00A3E3B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D31F58C61C1F5E8C00A3E3B9 /* PlayingCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlayingCard.h; path = ../../../../Desktop/Cards/Cards/PlayingCard.h; sourceTree = "<group>"; };
+		D31F58C71C1F5E8C00A3E3B9 /* PlayingCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlayingCard.m; path = ../../../../Desktop/Cards/Cards/PlayingCard.m; sourceTree = "<group>"; };
+		D31F58C91C1F5EA100A3E3B9 /* PlayingCardTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlayingCardTests.m; path = ../../../../Desktop/Cards/CardsTests/PlayingCardTests.m; sourceTree = "<group>"; };
+		D31F58CB1C1F5EDC00A3E3B9 /* GFHRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFHRepository.h; sourceTree = "<group>"; };
+		D31F58CC1C1F5EDC00A3E3B9 /* GFHRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFHRepository.m; sourceTree = "<group>"; };
+		D31F58CE1C1F5F9500A3E3B9 /* AFNetworking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AFNetworking.framework; path = Carthage/Build/iOS/AFNetworking.framework; sourceTree = SOURCE_ROOT; };
+		D31F58D01C1F62BC00A3E3B9 /* GFHDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFHDatabase.h; sourceTree = "<group>"; };
+		D31F58D11C1F62BC00A3E3B9 /* GFHDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFHDatabase.m; sourceTree = "<group>"; };
+		D31F58D31C1F631900A3E3B9 /* RespositoryTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RespositoryTests.m; sourceTree = "<group>"; };
+		D31F58D81C1F6C5900A3E3B9 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		D31F58D91C1F6C5900A3E3B9 /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
+		D31F58DB1C1F6E9800A3E3B9 /* PlayerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerTests.m; sourceTree = "<group>"; };
+		D31F58E01C2048CA00A3E3B9 /* MatchPerspective.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MatchPerspective.h; sourceTree = "<group>"; };
+		D31F58E11C2048DD00A3E3B9 /* MatchPerspective.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MatchPerspective.m; sourceTree = "<group>"; };
+		D31F58E31C20764500A3E3B9 /* MatchPerspectiveTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MatchPerspectiveTests.m; sourceTree = "<group>"; };
+		D31F58E81C21CF0C00A3E3B9 /* match_json_fixture.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = match_json_fixture.json; sourceTree = "<group>"; };
+		D31F58EA1C21D5E100A3E3B9 /* libPusher-combined.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libPusher-combined.a"; sourceTree = "<group>"; };
+		D31F58ED1C21D6AB00A3E3B9 /* PTEventListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTEventListener.h; sourceTree = "<group>"; };
+		D31F58EE1C21D6AB00A3E3B9 /* PTPusher+Testing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PTPusher+Testing.h"; sourceTree = "<group>"; };
+		D31F58EF1C21D6AB00A3E3B9 /* PTPusher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTPusher.h; sourceTree = "<group>"; };
+		D31F58F01C21D6AB00A3E3B9 /* PTPusherAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTPusherAPI.h; sourceTree = "<group>"; };
+		D31F58F11C21D6AB00A3E3B9 /* PTPusherChannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTPusherChannel.h; sourceTree = "<group>"; };
+		D31F58F21C21D6AB00A3E3B9 /* PTPusherConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTPusherConnection.h; sourceTree = "<group>"; };
+		D31F58F31C21D6AB00A3E3B9 /* PTPusherDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTPusherDelegate.h; sourceTree = "<group>"; };
+		D31F58F41C21D6AB00A3E3B9 /* PTPusherErrors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTPusherErrors.h; sourceTree = "<group>"; };
+		D31F58F51C21D6AB00A3E3B9 /* PTPusherEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTPusherEvent.h; sourceTree = "<group>"; };
+		D31F58F61C21D6AB00A3E3B9 /* PTPusherEventDispatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTPusherEventDispatcher.h; sourceTree = "<group>"; };
+		D31F58F71C21D6AB00A3E3B9 /* PTPusherEventPublisher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTPusherEventPublisher.h; sourceTree = "<group>"; };
+		D31F58F81C21D6AB00A3E3B9 /* PTPusherMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTPusherMacros.h; sourceTree = "<group>"; };
+		D31F58F91C21D6AB00A3E3B9 /* PTPusherMockConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTPusherMockConnection.h; sourceTree = "<group>"; };
+		D31F58FA1C21D6AB00A3E3B9 /* PTPusherPresenceChannelDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTPusherPresenceChannelDelegate.h; sourceTree = "<group>"; };
+		D31F58FB1C21D6AB00A3E3B9 /* Pusher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pusher.h; sourceTree = "<group>"; };
+		D31F58FC1C21D78500A3E3B9 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
+		D31F58FE1C21D78E00A3E3B9 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		D31F59001C21D79B00A3E3B9 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		D31F59021C21D7A200A3E3B9 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		D31F59041C21D8F500A3E3B9 /* SocketRocket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SocketRocket.framework; path = Carthage/Build/iOS/SocketRocket.framework; sourceTree = SOURCE_ROOT; };
+		D31F59091C21DA2A00A3E3B9 /* GFHMatchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFHMatchViewController.h; sourceTree = "<group>"; };
+		D31F590A1C21DA2A00A3E3B9 /* GFHMatchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFHMatchViewController.m; sourceTree = "<group>"; };
+		D31F590C1C21ED1700A3E3B9 /* GFHPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFHPlayerViewController.h; sourceTree = "<group>"; };
+		D31F590D1C21ED1700A3E3B9 /* GFHPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFHPlayerViewController.m; sourceTree = "<group>"; };
+		D31F590F1C21FD3D00A3E3B9 /* GFHPlayingCardCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFHPlayingCardCollectionCell.h; sourceTree = "<group>"; };
+		D31F59101C21FD3D00A3E3B9 /* GFHPlayingCardCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFHPlayingCardCollectionCell.m; sourceTree = "<group>"; };
+		D31F59121C22375400A3E3B9 /* GFHOpponentsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFHOpponentsViewController.h; sourceTree = "<group>"; };
+		D31F59131C22375400A3E3B9 /* GFHOpponentsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFHOpponentsViewController.m; sourceTree = "<group>"; };
+		D31F59151C223EEC00A3E3B9 /* GFHOpponentCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFHOpponentCollectionCell.h; sourceTree = "<group>"; };
+		D31F59161C223EEC00A3E3B9 /* GFHOpponentCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFHOpponentCollectionCell.m; sourceTree = "<group>"; };
+		D34510211C25947500B90650 /* GFHMatchSetupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFHMatchSetupViewController.h; sourceTree = "<group>"; };
+		D34510221C25947500B90650 /* GFHMatchSetupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFHMatchSetupViewController.m; sourceTree = "<group>"; };
+		D34510241C2595E900B90650 /* GFHLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFHLoginViewController.h; sourceTree = "<group>"; };
+		D34510251C2595E900B90650 /* GFHLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFHLoginViewController.m; sourceTree = "<group>"; };
+		D345102C1C28A07900B90650 /* OHHTTPStubs.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OHHTTPStubs.framework; path = Carthage/Build/iOS/OHHTTPStubs.framework; sourceTree = SOURCE_ROOT; };
+		D38E8EBA1C23970C0049AC2F /* GFHMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFHMessageViewController.h; sourceTree = "<group>"; };
+		D38E8EBB1C23970C0049AC2F /* GFHMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFHMessageViewController.m; sourceTree = "<group>"; };
+		D38E8EBD1C241C960049AC2F /* GFHMessageLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFHMessageLabel.h; sourceTree = "<group>"; };
+		D38E8EBE1C241C960049AC2F /* GFHMessageLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFHMessageLabel.m; sourceTree = "<group>"; };
+		D38E8EC01C24985E0049AC2F /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		D38E8EC11C24985E0049AC2F /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		D38E8EC31C2498C60049AC2F /* UserTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserTests.m; sourceTree = "<group>"; };
+		D38E8EC51C249D600049AC2F /* user_login_valid_json_fixture.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = user_login_valid_json_fixture.json; sourceTree = "<group>"; };
+		D38E8EC71C249D800049AC2F /* user_login_invalid_json_fixture.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = user_login_invalid_json_fixture.json; sourceTree = "<group>"; };
+		D38E8EC91C24BED50049AC2F /* URLMock.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = URLMock.framework; path = Carthage/Build/iOS/URLMock.framework; sourceTree = SOURCE_ROOT; };
+		D38E8ECB1C24BFA30049AC2F /* GFHMockServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFHMockServer.h; sourceTree = "<group>"; };
+		D38E8ECC1C24BFA30049AC2F /* GFHMockServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFHMockServer.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D31F58891C1F5DAF00A3E3B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D31F59031C21D7A200A3E3B9 /* CFNetwork.framework in Frameworks */,
+				D31F59011C21D79B00A3E3B9 /* Security.framework in Frameworks */,
+				D38E8ECA1C24BED50049AC2F /* URLMock.framework in Frameworks */,
+				D31F59051C21D8F500A3E3B9 /* SocketRocket.framework in Frameworks */,
+				D31F58FF1C21D78E00A3E3B9 /* SystemConfiguration.framework in Frameworks */,
+				D31F58FD1C21D78500A3E3B9 /* libicucore.tbd in Frameworks */,
+				D31F58CF1C1F5F9500A3E3B9 /* AFNetworking.framework in Frameworks */,
+				D31F58EB1C21D5E100A3E3B9 /* libPusher-combined.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D31F58A21C1F5DAF00A3E3B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D31F58D71C1F644400A3E3B9 /* AFNetworking.framework in Frameworks */,
+				D345102D1C28A07900B90650 /* OHHTTPStubs.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D31F58AD1C1F5DAF00A3E3B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D31F58831C1F5DAF00A3E3B9 = {
+			isa = PBXGroup;
+			children = (
+				D31F588E1C1F5DAF00A3E3B9 /* GoFish */,
+				D31F58A81C1F5DAF00A3E3B9 /* GoFishTests */,
+				D31F58B31C1F5DAF00A3E3B9 /* GoFishUITests */,
+				D31F588D1C1F5DAF00A3E3B9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D31F588D1C1F5DAF00A3E3B9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D31F588C1C1F5DAF00A3E3B9 /* GoFish.app */,
+				D31F58A51C1F5DAF00A3E3B9 /* GoFishTests.xctest */,
+				D31F58B01C1F5DAF00A3E3B9 /* GoFishUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D31F588E1C1F5DAF00A3E3B9 /* GoFish */ = {
+			isa = PBXGroup;
+			children = (
+				D31F58C51C1F5E7200A3E3B9 /* Controllers */,
+				D31F58C41C1F5E6C00A3E3B9 /* Models */,
+				D31F58C31C1F5E6300A3E3B9 /* Views */,
+				D31F58921C1F5DAF00A3E3B9 /* AppDelegate.h */,
+				D31F58931C1F5DAF00A3E3B9 /* AppDelegate.m */,
+				D31F58981C1F5DAF00A3E3B9 /* Main.storyboard */,
+				D31F589B1C1F5DAF00A3E3B9 /* Assets.xcassets */,
+				D31F589D1C1F5DAF00A3E3B9 /* LaunchScreen.storyboard */,
+				D31F58A01C1F5DAF00A3E3B9 /* Info.plist */,
+				D31F588F1C1F5DAF00A3E3B9 /* Supporting Files */,
+				D31F58CB1C1F5EDC00A3E3B9 /* GFHRepository.h */,
+				D31F58CC1C1F5EDC00A3E3B9 /* GFHRepository.m */,
+			);
+			path = GoFish;
+			sourceTree = "<group>";
+		};
+		D31F588F1C1F5DAF00A3E3B9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D345102C1C28A07900B90650 /* OHHTTPStubs.framework */,
+				D38E8EC91C24BED50049AC2F /* URLMock.framework */,
+				D31F59041C21D8F500A3E3B9 /* SocketRocket.framework */,
+				D31F58FC1C21D78500A3E3B9 /* libicucore.tbd */,
+				D31F59021C21D7A200A3E3B9 /* CFNetwork.framework */,
+				D31F59001C21D79B00A3E3B9 /* Security.framework */,
+				D31F58FE1C21D78E00A3E3B9 /* SystemConfiguration.framework */,
+				D31F58EC1C21D6AB00A3E3B9 /* headers */,
+				D31F58EA1C21D5E100A3E3B9 /* libPusher-combined.a */,
+				D31F58CE1C1F5F9500A3E3B9 /* AFNetworking.framework */,
+				D31F58901C1F5DAF00A3E3B9 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D31F58A81C1F5DAF00A3E3B9 /* GoFishTests */ = {
+			isa = PBXGroup;
+			children = (
+				D31F58C91C1F5EA100A3E3B9 /* PlayingCardTests.m */,
+				D31F58A91C1F5DAF00A3E3B9 /* GoFishTests.m */,
+				D31F58AB1C1F5DAF00A3E3B9 /* Info.plist */,
+				D31F58D31C1F631900A3E3B9 /* RespositoryTests.m */,
+				D31F58DB1C1F6E9800A3E3B9 /* PlayerTests.m */,
+				D31F58E31C20764500A3E3B9 /* MatchPerspectiveTests.m */,
+				D31F58E81C21CF0C00A3E3B9 /* match_json_fixture.json */,
+				D38E8EC31C2498C60049AC2F /* UserTests.m */,
+				D38E8EC51C249D600049AC2F /* user_login_valid_json_fixture.json */,
+				D38E8EC71C249D800049AC2F /* user_login_invalid_json_fixture.json */,
+				D38E8ECB1C24BFA30049AC2F /* GFHMockServer.h */,
+				D38E8ECC1C24BFA30049AC2F /* GFHMockServer.m */,
+			);
+			path = GoFishTests;
+			sourceTree = "<group>";
+		};
+		D31F58B31C1F5DAF00A3E3B9 /* GoFishUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D31F58B41C1F5DAF00A3E3B9 /* GoFishUITests.m */,
+				D31F58B61C1F5DAF00A3E3B9 /* Info.plist */,
+			);
+			path = GoFishUITests;
+			sourceTree = "<group>";
+		};
+		D31F58C31C1F5E6300A3E3B9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D31F590F1C21FD3D00A3E3B9 /* GFHPlayingCardCollectionCell.h */,
+				D31F59101C21FD3D00A3E3B9 /* GFHPlayingCardCollectionCell.m */,
+				D31F59151C223EEC00A3E3B9 /* GFHOpponentCollectionCell.h */,
+				D31F59161C223EEC00A3E3B9 /* GFHOpponentCollectionCell.m */,
+				D38E8EBD1C241C960049AC2F /* GFHMessageLabel.h */,
+				D38E8EBE1C241C960049AC2F /* GFHMessageLabel.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		D31F58C41C1F5E6C00A3E3B9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D31F58C61C1F5E8C00A3E3B9 /* PlayingCard.h */,
+				D31F58C71C1F5E8C00A3E3B9 /* PlayingCard.m */,
+				D31F58D01C1F62BC00A3E3B9 /* GFHDatabase.h */,
+				D31F58D11C1F62BC00A3E3B9 /* GFHDatabase.m */,
+				D31F58D81C1F6C5900A3E3B9 /* Player.h */,
+				D31F58D91C1F6C5900A3E3B9 /* Player.m */,
+				D31F58E01C2048CA00A3E3B9 /* MatchPerspective.h */,
+				D31F58E11C2048DD00A3E3B9 /* MatchPerspective.m */,
+				D38E8EC01C24985E0049AC2F /* User.h */,
+				D38E8EC11C24985E0049AC2F /* User.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		D31F58C51C1F5E7200A3E3B9 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D31F59091C21DA2A00A3E3B9 /* GFHMatchViewController.h */,
+				D31F590A1C21DA2A00A3E3B9 /* GFHMatchViewController.m */,
+				D31F590C1C21ED1700A3E3B9 /* GFHPlayerViewController.h */,
+				D31F590D1C21ED1700A3E3B9 /* GFHPlayerViewController.m */,
+				D31F59121C22375400A3E3B9 /* GFHOpponentsViewController.h */,
+				D31F59131C22375400A3E3B9 /* GFHOpponentsViewController.m */,
+				D38E8EBA1C23970C0049AC2F /* GFHMessageViewController.h */,
+				D38E8EBB1C23970C0049AC2F /* GFHMessageViewController.m */,
+				D34510211C25947500B90650 /* GFHMatchSetupViewController.h */,
+				D34510221C25947500B90650 /* GFHMatchSetupViewController.m */,
+				D34510241C2595E900B90650 /* GFHLoginViewController.h */,
+				D34510251C2595E900B90650 /* GFHLoginViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		D31F58EC1C21D6AB00A3E3B9 /* headers */ = {
+			isa = PBXGroup;
+			children = (
+				D31F58ED1C21D6AB00A3E3B9 /* PTEventListener.h */,
+				D31F58EE1C21D6AB00A3E3B9 /* PTPusher+Testing.h */,
+				D31F58EF1C21D6AB00A3E3B9 /* PTPusher.h */,
+				D31F58F01C21D6AB00A3E3B9 /* PTPusherAPI.h */,
+				D31F58F11C21D6AB00A3E3B9 /* PTPusherChannel.h */,
+				D31F58F21C21D6AB00A3E3B9 /* PTPusherConnection.h */,
+				D31F58F31C21D6AB00A3E3B9 /* PTPusherDelegate.h */,
+				D31F58F41C21D6AB00A3E3B9 /* PTPusherErrors.h */,
+				D31F58F51C21D6AB00A3E3B9 /* PTPusherEvent.h */,
+				D31F58F61C21D6AB00A3E3B9 /* PTPusherEventDispatcher.h */,
+				D31F58F71C21D6AB00A3E3B9 /* PTPusherEventPublisher.h */,
+				D31F58F81C21D6AB00A3E3B9 /* PTPusherMacros.h */,
+				D31F58F91C21D6AB00A3E3B9 /* PTPusherMockConnection.h */,
+				D31F58FA1C21D6AB00A3E3B9 /* PTPusherPresenceChannelDelegate.h */,
+				D31F58FB1C21D6AB00A3E3B9 /* Pusher.h */,
+			);
+			path = headers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D31F588B1C1F5DAF00A3E3B9 /* GoFish */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D31F58B91C1F5DAF00A3E3B9 /* Build configuration list for PBXNativeTarget "GoFish" */;
+			buildPhases = (
+				D31F58881C1F5DAF00A3E3B9 /* Sources */,
+				D31F58891C1F5DAF00A3E3B9 /* Frameworks */,
+				D31F588A1C1F5DAF00A3E3B9 /* Resources */,
+				D31F58C21C1F5DBC00A3E3B9 /* Carthage:Build */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GoFish;
+			productName = GoFish;
+			productReference = D31F588C1C1F5DAF00A3E3B9 /* GoFish.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D31F58A41C1F5DAF00A3E3B9 /* GoFishTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D31F58BC1C1F5DAF00A3E3B9 /* Build configuration list for PBXNativeTarget "GoFishTests" */;
+			buildPhases = (
+				D31F58A11C1F5DAF00A3E3B9 /* Sources */,
+				D31F58A21C1F5DAF00A3E3B9 /* Frameworks */,
+				D31F58A31C1F5DAF00A3E3B9 /* Resources */,
+				D345102E1C28A09500B90650 /* Carthage:Build */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D31F58A71C1F5DAF00A3E3B9 /* PBXTargetDependency */,
+			);
+			name = GoFishTests;
+			productName = GoFishTests;
+			productReference = D31F58A51C1F5DAF00A3E3B9 /* GoFishTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D31F58AF1C1F5DAF00A3E3B9 /* GoFishUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D31F58BF1C1F5DAF00A3E3B9 /* Build configuration list for PBXNativeTarget "GoFishUITests" */;
+			buildPhases = (
+				D31F58AC1C1F5DAF00A3E3B9 /* Sources */,
+				D31F58AD1C1F5DAF00A3E3B9 /* Frameworks */,
+				D31F58AE1C1F5DAF00A3E3B9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D31F58B21C1F5DAF00A3E3B9 /* PBXTargetDependency */,
+			);
+			name = GoFishUITests;
+			productName = GoFishUITests;
+			productReference = D31F58B01C1F5DAF00A3E3B9 /* GoFishUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D31F58841C1F5DAF00A3E3B9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "RoleModel Software";
+				TargetAttributes = {
+					D31F588B1C1F5DAF00A3E3B9 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					D31F58A41C1F5DAF00A3E3B9 = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = D31F588B1C1F5DAF00A3E3B9;
+					};
+					D31F58AF1C1F5DAF00A3E3B9 = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = D31F588B1C1F5DAF00A3E3B9;
+					};
+				};
+			};
+			buildConfigurationList = D31F58871C1F5DAF00A3E3B9 /* Build configuration list for PBXProject "GoFish" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D31F58831C1F5DAF00A3E3B9;
+			productRefGroup = D31F588D1C1F5DAF00A3E3B9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D31F588B1C1F5DAF00A3E3B9 /* GoFish */,
+				D31F58A41C1F5DAF00A3E3B9 /* GoFishTests */,
+				D31F58AF1C1F5DAF00A3E3B9 /* GoFishUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D31F588A1C1F5DAF00A3E3B9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D31F589F1C1F5DAF00A3E3B9 /* LaunchScreen.storyboard in Resources */,
+				D31F589C1C1F5DAF00A3E3B9 /* Assets.xcassets in Resources */,
+				D31F589A1C1F5DAF00A3E3B9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D31F58A31C1F5DAF00A3E3B9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D31F58E91C21CF0C00A3E3B9 /* match_json_fixture.json in Resources */,
+				D38E8EC61C249D600049AC2F /* user_login_valid_json_fixture.json in Resources */,
+				D38E8EC81C249D800049AC2F /* user_login_invalid_json_fixture.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D31F58AE1C1F5DAF00A3E3B9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D31F58C21C1F5DBC00A3E3B9 /* Carthage:Build */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/AFNetworking.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SocketRocket.framework",
+			);
+			name = "Carthage:Build";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = "/usr/local/bin/carthage copy-frameworks";
+			shellScript = "";
+		};
+		D345102E1C28A09500B90650 /* Carthage:Build */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/OHHTTPStubs.framework",
+			);
+			name = "Carthage:Build";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = "/usr/local/bin/carthage copy-frameworks";
+			shellScript = "";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D31F58881C1F5DAF00A3E3B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D31F59141C22375400A3E3B9 /* GFHOpponentsViewController.m in Sources */,
+				D34510261C2595E900B90650 /* GFHLoginViewController.m in Sources */,
+				D31F590B1C21DA2A00A3E3B9 /* GFHMatchViewController.m in Sources */,
+				D31F59171C223EEC00A3E3B9 /* GFHOpponentCollectionCell.m in Sources */,
+				D31F58941C1F5DAF00A3E3B9 /* AppDelegate.m in Sources */,
+				D31F59111C21FD3D00A3E3B9 /* GFHPlayingCardCollectionCell.m in Sources */,
+				D38E8EC21C24985E0049AC2F /* User.m in Sources */,
+				D31F590E1C21ED1700A3E3B9 /* GFHPlayerViewController.m in Sources */,
+				D38E8EBF1C241C960049AC2F /* GFHMessageLabel.m in Sources */,
+				D38E8EBC1C23970C0049AC2F /* GFHMessageViewController.m in Sources */,
+				D31F58C81C1F5E8C00A3E3B9 /* PlayingCard.m in Sources */,
+				D34510231C25947500B90650 /* GFHMatchSetupViewController.m in Sources */,
+				D31F58D21C1F62BC00A3E3B9 /* GFHDatabase.m in Sources */,
+				D31F58911C1F5DAF00A3E3B9 /* main.m in Sources */,
+				D31F58E21C2048DD00A3E3B9 /* MatchPerspective.m in Sources */,
+				D31F58DA1C1F6C5900A3E3B9 /* Player.m in Sources */,
+				D31F58D61C1F639700A3E3B9 /* GFHRepository.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D31F58A11C1F5DAF00A3E3B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D31F58E41C20764500A3E3B9 /* MatchPerspectiveTests.m in Sources */,
+				D31F58D41C1F631900A3E3B9 /* RespositoryTests.m in Sources */,
+				D31F58CA1C1F5EA100A3E3B9 /* PlayingCardTests.m in Sources */,
+				D31F58DC1C1F6E9800A3E3B9 /* PlayerTests.m in Sources */,
+				D38E8EC41C2498C60049AC2F /* UserTests.m in Sources */,
+				D38E8ECD1C24BFA30049AC2F /* GFHMockServer.m in Sources */,
+				D31F58AA1C1F5DAF00A3E3B9 /* GoFishTests.m in Sources */,
+				D31F58D51C1F639300A3E3B9 /* GFHRepository.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D31F58AC1C1F5DAF00A3E3B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D31F58B51C1F5DAF00A3E3B9 /* GoFishUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D31F58A71C1F5DAF00A3E3B9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D31F588B1C1F5DAF00A3E3B9 /* GoFish */;
+			targetProxy = D31F58A61C1F5DAF00A3E3B9 /* PBXContainerItemProxy */;
+		};
+		D31F58B21C1F5DAF00A3E3B9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D31F588B1C1F5DAF00A3E3B9 /* GoFish */;
+			targetProxy = D31F58B11C1F5DAF00A3E3B9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D31F58981C1F5DAF00A3E3B9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D31F58991C1F5DAF00A3E3B9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D31F589D1C1F5DAF00A3E3B9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D31F589E1C1F5DAF00A3E3B9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D31F58B71C1F5DAF00A3E3B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		D31F58B81C1F5DAF00A3E3B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D31F58BA1C1F5DAF00A3E3B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = GoFish/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GoFish",
+				);
+				OTHER_LDFLAGS = "-all_load";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rolemodelsoftware.com.GoFish;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D31F58BB1C1F5DAF00A3E3B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = GoFish/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GoFish",
+				);
+				OTHER_LDFLAGS = "-all_load";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rolemodelsoftware.com.GoFish;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D31F58BD1C1F5DAF00A3E3B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = GoFishTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rolemodelsoftware.com.GoFishTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GoFish.app/GoFish";
+			};
+			name = Debug;
+		};
+		D31F58BE1C1F5DAF00A3E3B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = GoFishTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rolemodelsoftware.com.GoFishTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GoFish.app/GoFish";
+			};
+			name = Release;
+		};
+		D31F58C01C1F5DAF00A3E3B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = GoFishUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rolemodelsoftware.com.GoFishUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = GoFish;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		D31F58C11C1F5DAF00A3E3B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = GoFishUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rolemodelsoftware.com.GoFishUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = GoFish;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D31F58871C1F5DAF00A3E3B9 /* Build configuration list for PBXProject "GoFish" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D31F58B71C1F5DAF00A3E3B9 /* Debug */,
+				D31F58B81C1F5DAF00A3E3B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D31F58B91C1F5DAF00A3E3B9 /* Build configuration list for PBXNativeTarget "GoFish" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D31F58BA1C1F5DAF00A3E3B9 /* Debug */,
+				D31F58BB1C1F5DAF00A3E3B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D31F58BC1C1F5DAF00A3E3B9 /* Build configuration list for PBXNativeTarget "GoFishTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D31F58BD1C1F5DAF00A3E3B9 /* Debug */,
+				D31F58BE1C1F5DAF00A3E3B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D31F58BF1C1F5DAF00A3E3B9 /* Build configuration list for PBXNativeTarget "GoFishUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D31F58C01C1F5DAF00A3E3B9 /* Debug */,
+				D31F58C11C1F5DAF00A3E3B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D31F58841C1F5DAF00A3E3B9 /* Project object */;
+}

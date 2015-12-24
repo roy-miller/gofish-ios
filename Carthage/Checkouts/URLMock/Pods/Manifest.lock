@@ -1,0 +1,13 @@
+PODS:
+  - OCMock (2.2.4)
+  - SOCKit (1.1)
+
+DEPENDENCIES:
+  - OCMock (~> 2.0)
+  - SOCKit (~> 1.1)
+
+SPEC CHECKSUMS:
+  OCMock: a6a7dc0e3997fb9f35d99f72528698ebf60d64f2
+  SOCKit: c7376ac262bea9115b8f749358f762522a47d392
+
+COCOAPODS: 0.39.0

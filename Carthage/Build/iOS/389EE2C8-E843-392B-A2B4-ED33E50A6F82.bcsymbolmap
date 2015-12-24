@@ -1,0 +1,1727 @@
+BCSymbolMap Version: 1.0
++[UMKMockURLProtocol(UMKHTTPConvenienceMethods) expectMockHTTPRequestWithMethod:URL:requestJSON:responseError:]
++[UMKMockURLProtocol(UMKHTTPConvenienceMethods) expectMockHTTPGetRequestWithURL:responseError:]
++[UMKMockURLProtocol(UMKHTTPConvenienceMethods) expectMockHTTPPatchRequestWithURL:requestJSON:responseError:]
++[UMKMockURLProtocol(UMKHTTPConvenienceMethods) expectMockHTTPPostRequestWithURL:requestJSON:responseError:]
++[UMKMockURLProtocol(UMKHTTPConvenienceMethods) expectMockHTTPPutRequestWithURL:requestJSON:responseError:]
++[UMKMockURLProtocol(UMKHTTPConvenienceMethods) expectMockHTTPRequestWithMethod:URL:requestJSON:responseStatusCode:responseJSON:]
++[UMKMockURLProtocol(UMKHTTPConvenienceMethods) expectMockHTTPGetRequestWithURL:responseStatusCode:responseJSON:]
++[UMKMockURLProtocol(UMKHTTPConvenienceMethods) expectMockHTTPPatchRequestWithURL:requestJSON:responseStatusCode:responseJSON:]
++[UMKMockURLProtocol(UMKHTTPConvenienceMethods) expectMockHTTPPostRequestWithURL:requestJSON:responseStatusCode:responseJSON:]
++[UMKMockURLProtocol(UMKHTTPConvenienceMethods) expectMockHTTPPutRequestWithURL:requestJSON:responseStatusCode:responseJSON:]
+OBJC_CLASSLIST_REFERENCES_$_
+OBJC_METH_VAR_NAME_
+OBJC_SELECTOR_REFERENCES_
+OBJC_METH_VAR_NAME_1
+OBJC_SELECTOR_REFERENCES_2
+OBJC_METH_VAR_NAME_3
+OBJC_SELECTOR_REFERENCES_4
+OBJC_CLASSLIST_REFERENCES_$_5
+OBJC_METH_VAR_NAME_6
+OBJC_SELECTOR_REFERENCES_7
+OBJC_METH_VAR_NAME_8
+OBJC_SELECTOR_REFERENCES_9
+OBJC_METH_VAR_NAME_10
+OBJC_SELECTOR_REFERENCES_11
+OBJC_METH_VAR_NAME_12
+OBJC_SELECTOR_REFERENCES_13
+OBJC_METH_VAR_NAME_14
+OBJC_SELECTOR_REFERENCES_15
+OBJC_METH_VAR_NAME_16
+OBJC_SELECTOR_REFERENCES_17
+OBJC_CLASS_NAME_
+OBJC_METH_VAR_TYPE_
+OBJC_METH_VAR_NAME_18
+OBJC_METH_VAR_TYPE_19
+OBJC_METH_VAR_NAME_20
+OBJC_METH_VAR_TYPE_21
+OBJC_METH_VAR_NAME_22
+OBJC_METH_VAR_NAME_23
+OBJC_METH_VAR_TYPE_24
+OBJC_METH_VAR_NAME_25
+OBJC_METH_VAR_TYPE_26
+OBJC_METH_VAR_NAME_27
+OBJC_METH_VAR_TYPE_28
+OBJC_METH_VAR_NAME_29
+OBJC_METH_VAR_NAME_30
+l_OBJC_$_CATEGORY_CLASS_METHODS_UMKMockURLProtocol_$_UMKHTTPConvenienceMethods
+l_OBJC_$_CATEGORY_UMKMockURLProtocol_$_UMKHTTPConvenienceMethods
+OBJC_LABEL_CATEGORY_$
+Apple LLVM version 7.0.2 (clang-700.1.81)
+/Users/roymiller/Library/Developer/Xcode/DerivedData/ModuleCache/3TSYY2SSX2CUD/ObjectiveC-2CD0WTQVXITO7.pcm
+ObjectiveC
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.2.sdk/usr/include/objc
+/Users/roymiller/Library/Developer/Xcode/DerivedData/ModuleCache/3TSYY2SSX2CUD/Foundation-A3SOD99KJ0S9.pcm
+Foundation
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.2.sdk/System/Library/Frameworks/Foundation.framework
++[UMKMockURLProtocol(UMKHTTPConvenienceMethods) expectMockHTTPPutRequestWithURL:requestJSON:responseStatusCode:responseJSON:]
+/Users/roymiller/Workspaces/gofish-ios/GoFish/Carthage/Checkouts/URLMock/URLMock/Mock URL Protocol/UMKMockURLProtocol+UMKHTTPConvenienceMethods.m
+/Users/roymiller/Workspaces/gofish-ios/GoFish/Carthage/Checkouts/URLMock
++[UMKMockURLProtocol(UMKHTTPConvenienceMethods) expectMockHTTPPostRequestWithURL:requestJSON:responseStatusCode:responseJSON:]
++[UMKMockURLProtocol(UMKHTTPConvenienceMethods) expectMockHTTPPatchRequestWithURL:requestJSON:responseStatusCode:responseJSON:]
++[UMKMockURLProtocol(UMKHTTPConvenienceMethods) expectMockHTTPGetRequestWithURL:responseStatusCode:responseJSON:]
++[UMKMockURLProtocol(UMKHTTPConvenienceMethods) expectMockHTTPRequestWithMethod:URL:requestJSON:responseStatusCode:responseJSON:]
++[UMKMockURLProtocol(UMKHTTPConvenienceMethods) expectMockHTTPPutRequestWithURL:requestJSON:responseError:]
++[UMKMockURLProtocol(UMKHTTPConvenienceMethods) expectMockHTTPPostRequestWithURL:requestJSON:responseError:]
++[UMKMockURLProtocol(UMKHTTPConvenienceMethods) expectMockHTTPPatchRequestWithURL:requestJSON:responseError:]
++[UMKMockURLProtocol(UMKHTTPConvenienceMethods) expectMockHTTPGetRequestWithURL:responseError:]
++[UMKMockURLProtocol(UMKHTTPConvenienceMethods) expectMockHTTPRequestWithMethod:URL:requestJSON:responseError:]
+-[UMKMockHTTPMessage init]
+UMKCaseInsensitiveStringHashFunction
+UMKCaseInsensitiveStringIsEqualFunction
+-[UMKMockHTTPMessage headers]
+-[UMKMockHTTPMessage setHeaders:]
+__33-[UMKMockHTTPMessage setHeaders:]_block_invoke
+__copy_helper_block_
+__destroy_helper_block_
+-[UMKMockHTTPMessage valueForHeaderField:]
+-[UMKMockHTTPMessage setValue:forHeaderField:]
+-[UMKMockHTTPMessage removeValueForHeaderField:]
+-[UMKMockHTTPMessage headersAreEqualToHeadersOfRequest:]
+-[UMKMockHTTPMessage JSONObjectFromBody]
+-[UMKMockHTTPMessage setBodyWithJSONObject:]
+-[UMKMockHTTPMessage parametersFromURLEncodedBody]
+-[UMKMockHTTPMessage setBodyByURLEncodingParameters:]
+-[UMKMockHTTPMessage stringFromBody]
+-[UMKMockHTTPMessage setBodyWithString:]
+-[UMKMockHTTPMessage stringFromBodyWithEncoding:]
+-[UMKMockHTTPMessage setBodyWithString:encoding:]
+-[UMKMockHTTPMessage body]
+-[UMKMockHTTPMessage setBody:]
+-[UMKMockHTTPMessage .cxx_destruct]
+.str
+_unnamed_cfstring_
+.str1
+_unnamed_cfstring_2
+.str3
+_unnamed_cfstring_4
+.str5
+_unnamed_cfstring_6
+.str7
+_unnamed_cfstring_8
+.str9
+_unnamed_cfstring_10
+.str11
+_unnamed_cfstring_12
+.str13
+_unnamed_cfstring_14
+OBJC_CLASSLIST_SUP_REFS_$_
+OBJC_METH_VAR_NAME_15
+OBJC_SELECTOR_REFERENCES_16
+OBJC_METH_VAR_NAME_17
+OBJC_SELECTOR_REFERENCES_18
+OBJC_METH_VAR_NAME_19
+OBJC_SELECTOR_REFERENCES_20
+OBJC_CLASSLIST_REFERENCES_$_21
+OBJC_SELECTOR_REFERENCES_23
+OBJC_METH_VAR_NAME_24
+OBJC_SELECTOR_REFERENCES_25
+OBJC_METH_VAR_NAME_26
+OBJC_SELECTOR_REFERENCES_27
+OBJC_METH_VAR_NAME_28
+OBJC_SELECTOR_REFERENCES_29
+OBJC_SELECTOR_REFERENCES_31
+.str32
+__block_descriptor_tmp
+OBJC_METH_VAR_NAME_33
+OBJC_SELECTOR_REFERENCES_34
+OBJC_METH_VAR_NAME_35
+OBJC_SELECTOR_REFERENCES_36
+OBJC_CLASSLIST_REFERENCES_$_37
+.str38
+_unnamed_cfstring_39
+OBJC_METH_VAR_NAME_40
+OBJC_SELECTOR_REFERENCES_41
+.str42
+_unnamed_cfstring_43
+OBJC_METH_VAR_NAME_44
+OBJC_SELECTOR_REFERENCES_45
+OBJC_METH_VAR_NAME_46
+OBJC_SELECTOR_REFERENCES_47
+OBJC_METH_VAR_NAME_48
+OBJC_SELECTOR_REFERENCES_49
+OBJC_METH_VAR_NAME_50
+OBJC_SELECTOR_REFERENCES_51
+OBJC_METH_VAR_NAME_52
+OBJC_SELECTOR_REFERENCES_53
+OBJC_CLASSLIST_REFERENCES_$_54
+OBJC_METH_VAR_NAME_55
+OBJC_SELECTOR_REFERENCES_56
+OBJC_METH_VAR_NAME_57
+OBJC_SELECTOR_REFERENCES_58
+.str59
+_unnamed_cfstring_60
+OBJC_METH_VAR_NAME_61
+OBJC_SELECTOR_REFERENCES_62
+OBJC_METH_VAR_NAME_63
+OBJC_SELECTOR_REFERENCES_64
+OBJC_CLASSLIST_REFERENCES_$_65
+OBJC_METH_VAR_NAME_66
+OBJC_SELECTOR_REFERENCES_67
+OBJC_METH_VAR_NAME_68
+OBJC_SELECTOR_REFERENCES_69
+OBJC_METH_VAR_NAME_70
+OBJC_SELECTOR_REFERENCES_71
+OBJC_METH_VAR_NAME_72
+OBJC_SELECTOR_REFERENCES_73
+OBJC_METH_VAR_NAME_74
+OBJC_SELECTOR_REFERENCES_75
+OBJC_METH_VAR_NAME_76
+OBJC_SELECTOR_REFERENCES_77
+OBJC_CLASSLIST_REFERENCES_$_78
+OBJC_METH_VAR_NAME_79
+OBJC_SELECTOR_REFERENCES_80
+OBJC_METH_VAR_NAME_81
+OBJC_SELECTOR_REFERENCES_82
+OBJC_IVAR_$_UMKMockHTTPMessage._body
+l_OBJC_METACLASS_RO_$_UMKMockHTTPMessage
+OBJC_CLASS_NAME_83
+OBJC_METH_VAR_NAME_84
+OBJC_METH_VAR_TYPE_85
+OBJC_METH_VAR_TYPE_86
+OBJC_METH_VAR_TYPE_87
+OBJC_METH_VAR_NAME_88
+OBJC_METH_VAR_NAME_89
+OBJC_METH_VAR_TYPE_90
+OBJC_METH_VAR_NAME_91
+OBJC_METH_VAR_NAME_92
+OBJC_METH_VAR_NAME_93
+OBJC_METH_VAR_NAME_94
+OBJC_METH_VAR_TYPE_95
+OBJC_METH_VAR_TYPE_96
+OBJC_METH_VAR_NAME_97
+OBJC_METH_VAR_TYPE_98
+l_OBJC_$_INSTANCE_METHODS_UMKMockHTTPMessage
+OBJC_METH_VAR_NAME_99
+OBJC_METH_VAR_TYPE_100
+OBJC_METH_VAR_NAME_101
+OBJC_METH_VAR_TYPE_102
+l_OBJC_$_INSTANCE_VARIABLES_UMKMockHTTPMessage
+OBJC_PROP_NAME_ATTR_
+OBJC_PROP_NAME_ATTR_103
+OBJC_PROP_NAME_ATTR_104
+OBJC_PROP_NAME_ATTR_105
+l_OBJC_$_PROP_LIST_UMKMockHTTPMessage
+l_OBJC_CLASS_RO_$_UMKMockHTTPMessage
+OBJC_METH_VAR_NAME_106
+OBJC_SELECTOR_REFERENCES_107
+OBJC_METH_VAR_NAME_108
+OBJC_SELECTOR_REFERENCES_109
+OBJC_METH_VAR_NAME_110
+OBJC_SELECTOR_REFERENCES_111
+OBJC_LABEL_CLASS_$
+/Users/roymiller/Workspaces/gofish-ios/GoFish/Carthage/Checkouts/URLMock/URLMock/Mock Messages/UMKMockHTTPMessage.m
+-[UMKMockHTTPMessage .cxx_destruct]
+-[UMKMockHTTPMessage setBody:]
+/Users/roymiller/Workspaces/gofish-ios/GoFish/Carthage/Checkouts/URLMock/URLMock/Mock Messages/UMKMockHTTPMessage.h
+-[UMKMockHTTPMessage body]
+-[UMKMockHTTPMessage setBodyWithString:encoding:]
+-[UMKMockHTTPMessage stringFromBodyWithEncoding:]
+-[UMKMockHTTPMessage setBodyWithString:]
+-[UMKMockHTTPMessage stringFromBody]
+-[UMKMockHTTPMessage setBodyByURLEncodingParameters:]
+-[UMKMockHTTPMessage parametersFromURLEncodedBody]
+-[UMKMockHTTPMessage setBodyWithJSONObject:]
+-[UMKMockHTTPMessage JSONObjectFromBody]
+-[UMKMockHTTPMessage headersAreEqualToHeadersOfRequest:]
+-[UMKMockHTTPMessage removeValueForHeaderField:]
+-[UMKMockHTTPMessage setValue:forHeaderField:]
+-[UMKMockHTTPMessage valueForHeaderField:]
+-[UMKMockHTTPMessage setHeaders:]
+-[UMKMockHTTPMessage headers]
+-[UMKMockHTTPMessage init]
+-[UMKMockHTTPRequestSettings defaultHeaders]
+-[UMKMockHTTPRequestSettings setDefaultHeaders:]
+-[UMKMockHTTPRequestSettings .cxx_destruct]
+-[UMKMockHTTPRequest init]
+-[UMKMockHTTPRequest initWithHTTPMethod:URL:]
+-[UMKMockHTTPRequest initWithHTTPMethod:URL:checksHeadersWhenMatching:]
+-[UMKMockHTTPRequest initWithHTTPMethod:URL:checksHeadersWhenMatching:checksBodyWhenMatching:]
++[UMKMockHTTPRequest mockHTTPDeleteRequestWithURL:]
++[UMKMockHTTPRequest mockHTTPGetRequestWithURL:]
++[UMKMockHTTPRequest mockHTTPHeadRequestWithURL:]
++[UMKMockHTTPRequest mockHTTPPatchRequestWithURL:]
++[UMKMockHTTPRequest mockHTTPPostRequestWithURL:]
++[UMKMockHTTPRequest mockHTTPPutRequestWithURL:]
+-[UMKMockHTTPRequest description]
++[UMKMockHTTPRequest settings]
+__30+[UMKMockHTTPRequest settings]_block_invoke
++[UMKMockHTTPRequest defaultHeaders]
++[UMKMockHTTPRequest setDefaultHeaders:]
+-[UMKMockHTTPRequest matchesURLRequest:]
+-[UMKMockHTTPRequest responderForURLRequest:]
+-[UMKMockHTTPRequest bodyMatchesBodyOfURLRequest:]
+-[UMKMockHTTPRequest HTTPMethod]
+-[UMKMockHTTPRequest URL]
+-[UMKMockHTTPRequest responder]
+-[UMKMockHTTPRequest setResponder:]
+-[UMKMockHTTPRequest checksHeadersWhenMatching]
+-[UMKMockHTTPRequest setChecksHeadersWhenMatching:]
+-[UMKMockHTTPRequest checksBodyWhenMatching]
+-[UMKMockHTTPRequest setChecksBodyWhenMatching:]
+-[UMKMockHTTPRequest canonicalURL]
+-[UMKMockHTTPRequest .cxx_destruct]
+OBJC_IVAR_$_UMKMockHTTPRequestSettings._defaultHeaders
+l_OBJC_METACLASS_RO_$_UMKMockHTTPRequestSettings
+OBJC_CLASS_NAME_11
+OBJC_METH_VAR_TYPE_13
+OBJC_METH_VAR_TYPE_15
+l_OBJC_$_INSTANCE_METHODS_UMKMockHTTPRequestSettings
+OBJC_METH_VAR_TYPE_17
+l_OBJC_$_INSTANCE_VARIABLES_UMKMockHTTPRequestSettings
+OBJC_PROP_NAME_ATTR_18
+l_OBJC_$_PROP_LIST_UMKMockHTTPRequestSettings
+l_OBJC_CLASS_RO_$_UMKMockHTTPRequestSettings
+OBJC_SELECTOR_REFERENCES_21
+OBJC_IVAR_$_UMKMockHTTPRequest._HTTPMethod
+OBJC_IVAR_$_UMKMockHTTPRequest._URL
+OBJC_IVAR_$_UMKMockHTTPRequest._canonicalURL
+OBJC_IVAR_$_UMKMockHTTPRequest._checksHeadersWhenMatching
+OBJC_IVAR_$_UMKMockHTTPRequest._checksBodyWhenMatching
+OBJC_SELECTOR_REFERENCES_32
+OBJC_METH_VAR_NAME_42
+OBJC_SELECTOR_REFERENCES_43
+.str46
+_unnamed_cfstring_47
+.str48
+_unnamed_cfstring_49
+OBJC_METH_VAR_NAME_54
+OBJC_SELECTOR_REFERENCES_55
+OBJC_METH_VAR_NAME_56
+OBJC_SELECTOR_REFERENCES_57
+OBJC_METH_VAR_NAME_58
+OBJC_SELECTOR_REFERENCES_59
+settings.settings
+settings.onceToken
+OBJC_CLASSLIST_REFERENCES_$_60
+.str61
+__block_literal_global
+OBJC_METH_VAR_NAME_62
+OBJC_SELECTOR_REFERENCES_63
+OBJC_METH_VAR_NAME_65
+OBJC_SELECTOR_REFERENCES_66
+OBJC_METH_VAR_NAME_67
+OBJC_SELECTOR_REFERENCES_68
+OBJC_METH_VAR_NAME_69
+OBJC_SELECTOR_REFERENCES_70
+OBJC_METH_VAR_NAME_71
+OBJC_SELECTOR_REFERENCES_72
+OBJC_METH_VAR_NAME_73
+OBJC_SELECTOR_REFERENCES_74
+OBJC_METH_VAR_NAME_75
+OBJC_SELECTOR_REFERENCES_76
+OBJC_METH_VAR_NAME_77
+OBJC_SELECTOR_REFERENCES_78
+OBJC_CLASSLIST_REFERENCES_$_83
+OBJC_SELECTOR_REFERENCES_85
+OBJC_METH_VAR_NAME_86
+OBJC_SELECTOR_REFERENCES_87
+OBJC_CLASSLIST_REFERENCES_$_88
+OBJC_SELECTOR_REFERENCES_90
+OBJC_SELECTOR_REFERENCES_92
+OBJC_SELECTOR_REFERENCES_94
+OBJC_METH_VAR_NAME_95
+OBJC_SELECTOR_REFERENCES_96
+OBJC_IVAR_$_UMKMockHTTPRequest._responder
+OBJC_CLASS_NAME_97
+OBJC_METH_VAR_NAME_98
+OBJC_METH_VAR_TYPE_99
+OBJC_METH_VAR_NAME_100
+OBJC_METH_VAR_NAME_102
+OBJC_METH_VAR_NAME_103
+OBJC_METH_VAR_NAME_104
+l_OBJC_$_CLASS_METHODS_UMKMockHTTPRequest
+OBJC_METH_VAR_NAME_105
+OBJC_METH_VAR_TYPE_106
+OBJC_METH_VAR_TYPE_107
+OBJC_METH_VAR_TYPE_109
+OBJC_CLASS_NAME_111
+OBJC_METH_VAR_TYPE_112
+OBJC_METH_VAR_NAME_113
+OBJC_METH_VAR_NAME_114
+OBJC_METH_VAR_TYPE_115
+OBJC_METH_VAR_NAME_116
+OBJC_METH_VAR_TYPE_117
+OBJC_METH_VAR_NAME_118
+OBJC_METH_VAR_TYPE_119
+OBJC_METH_VAR_NAME_120
+OBJC_METH_VAR_TYPE_121
+OBJC_METH_VAR_NAME_122
+OBJC_METH_VAR_TYPE_123
+OBJC_METH_VAR_NAME_124
+OBJC_METH_VAR_NAME_125
+OBJC_METH_VAR_TYPE_126
+OBJC_METH_VAR_NAME_127
+OBJC_METH_VAR_TYPE_128
+OBJC_METH_VAR_NAME_129
+OBJC_METH_VAR_NAME_130
+OBJC_METH_VAR_TYPE_131
+OBJC_METH_VAR_NAME_132
+OBJC_METH_VAR_NAME_133
+OBJC_METH_VAR_TYPE_134
+OBJC_METH_VAR_NAME_135
+OBJC_METH_VAR_TYPE_136
+OBJC_METH_VAR_NAME_137
+OBJC_METH_VAR_NAME_138
+OBJC_METH_VAR_NAME_139
+OBJC_METH_VAR_TYPE_140
+OBJC_METH_VAR_NAME_141
+OBJC_CLASS_NAME_142
+l_OBJC_$_PROTOCOL_INSTANCE_METHODS_NSObject
+l_OBJC_$_PROTOCOL_INSTANCE_METHODS_OPT_NSObject
+OBJC_PROP_NAME_ATTR_143
+OBJC_PROP_NAME_ATTR_144
+OBJC_PROP_NAME_ATTR_145
+OBJC_PROP_NAME_ATTR_146
+OBJC_PROP_NAME_ATTR_147
+OBJC_PROP_NAME_ATTR_148
+OBJC_PROP_NAME_ATTR_149
+l_OBJC_$_PROP_LIST_NSObject
+l_OBJC_$_PROTOCOL_METHOD_TYPES_NSObject
+l_OBJC_PROTOCOL_$_NSObject
+l_OBJC_LABEL_PROTOCOL_$_NSObject
+l_OBJC_$_PROTOCOL_REFS_UMKMockURLRequest
+l_OBJC_$_PROTOCOL_INSTANCE_METHODS_UMKMockURLRequest
+l_OBJC_$_PROTOCOL_INSTANCE_METHODS_OPT_UMKMockURLRequest
+l_OBJC_$_PROTOCOL_METHOD_TYPES_UMKMockURLRequest
+l_OBJC_PROTOCOL_$_UMKMockURLRequest
+l_OBJC_LABEL_PROTOCOL_$_UMKMockURLRequest
+l_OBJC_CLASS_PROTOCOLS_$_UMKMockHTTPRequest
+l_OBJC_METACLASS_RO_$_UMKMockHTTPRequest
+OBJC_CLASS_NAME_150
+OBJC_METH_VAR_TYPE_151
+OBJC_METH_VAR_TYPE_152
+OBJC_METH_VAR_TYPE_153
+OBJC_METH_VAR_NAME_154
+OBJC_METH_VAR_NAME_155
+OBJC_METH_VAR_TYPE_156
+OBJC_METH_VAR_NAME_157
+l_OBJC_$_INSTANCE_METHODS_UMKMockHTTPRequest
+OBJC_METH_VAR_NAME_158
+OBJC_METH_VAR_TYPE_159
+OBJC_METH_VAR_NAME_160
+OBJC_METH_VAR_NAME_161
+OBJC_METH_VAR_TYPE_162
+OBJC_METH_VAR_NAME_163
+OBJC_METH_VAR_TYPE_164
+OBJC_METH_VAR_NAME_165
+OBJC_METH_VAR_TYPE_166
+OBJC_METH_VAR_NAME_167
+l_OBJC_$_INSTANCE_VARIABLES_UMKMockHTTPRequest
+OBJC_PROP_NAME_ATTR_168
+OBJC_PROP_NAME_ATTR_169
+OBJC_PROP_NAME_ATTR_170
+OBJC_PROP_NAME_ATTR_171
+OBJC_PROP_NAME_ATTR_172
+OBJC_PROP_NAME_ATTR_173
+OBJC_PROP_NAME_ATTR_174
+OBJC_PROP_NAME_ATTR_175
+OBJC_PROP_NAME_ATTR_176
+OBJC_PROP_NAME_ATTR_177
+OBJC_PROP_NAME_ATTR_178
+OBJC_PROP_NAME_ATTR_179
+l_OBJC_$_PROP_LIST_UMKMockHTTPRequest
+l_OBJC_CLASS_RO_$_UMKMockHTTPRequest
+_dispatch_once
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.2.sdk/usr/include/dispatch/once.h
+-[UMKMockHTTPRequest .cxx_destruct]
+/Users/roymiller/Workspaces/gofish-ios/GoFish/Carthage/Checkouts/URLMock/URLMock/Mock Messages/UMKMockHTTPRequest.m
+-[UMKMockHTTPRequest canonicalURL]
+-[UMKMockHTTPRequest setChecksBodyWhenMatching:]
+/Users/roymiller/Workspaces/gofish-ios/GoFish/Carthage/Checkouts/URLMock/URLMock/Mock Messages/UMKMockHTTPRequest.h
+-[UMKMockHTTPRequest checksBodyWhenMatching]
+-[UMKMockHTTPRequest setChecksHeadersWhenMatching:]
+-[UMKMockHTTPRequest checksHeadersWhenMatching]
+-[UMKMockHTTPRequest setResponder:]
+-[UMKMockHTTPRequest responder]
+-[UMKMockHTTPRequest URL]
+-[UMKMockHTTPRequest HTTPMethod]
+-[UMKMockHTTPRequest bodyMatchesBodyOfURLRequest:]
+-[UMKMockHTTPRequest responderForURLRequest:]
+-[UMKMockHTTPRequest matchesURLRequest:]
++[UMKMockHTTPRequest setDefaultHeaders:]
++[UMKMockHTTPRequest defaultHeaders]
++[UMKMockHTTPRequest settings]
+-[UMKMockHTTPRequest description]
++[UMKMockHTTPRequest mockHTTPPutRequestWithURL:]
++[UMKMockHTTPRequest mockHTTPPostRequestWithURL:]
++[UMKMockHTTPRequest mockHTTPPatchRequestWithURL:]
++[UMKMockHTTPRequest mockHTTPHeadRequestWithURL:]
++[UMKMockHTTPRequest mockHTTPGetRequestWithURL:]
++[UMKMockHTTPRequest mockHTTPDeleteRequestWithURL:]
+-[UMKMockHTTPRequest initWithHTTPMethod:URL:checksHeadersWhenMatching:checksBodyWhenMatching:]
+-[UMKMockHTTPRequest initWithHTTPMethod:URL:checksHeadersWhenMatching:]
+-[UMKMockHTTPRequest initWithHTTPMethod:URL:]
+-[UMKMockHTTPRequest init]
+-[UMKMockHTTPRequestSettings .cxx_destruct]
+-[UMKMockHTTPRequestSettings setDefaultHeaders:]
+-[UMKMockHTTPRequestSettings defaultHeaders]
++[UMKMockHTTPResponder mockHTTPResponderWithError:]
++[UMKMockHTTPResponder mockHTTPResponderWithStatusCode:]
++[UMKMockHTTPResponder mockHTTPResponderWithStatusCode:headers:]
++[UMKMockHTTPResponder mockHTTPResponderWithStatusCode:body:]
++[UMKMockHTTPResponder mockHTTPResponderWithStatusCode:headers:body:]
++[UMKMockHTTPResponder mockHTTPResponderWithStatusCode:headers:body:chunkCountHint:delayBetweenChunks:]
+-[UMKMockHTTPResponder respondToMockRequest:client:protocol:]
+-[UMKMockHTTPResponder cancelResponse]
+-[UMKMockHTTPResponder isResponding]
+-[UMKMockHTTPResponder setResponding:]
+-[UMKMockHTTPErrorResponder initWithError:]
+-[UMKMockHTTPErrorResponder respondToMockRequest:client:protocol:]
+-[UMKMockHTTPErrorResponder description]
+-[UMKMockHTTPErrorResponder error]
+-[UMKMockHTTPErrorResponder .cxx_destruct]
+-[UMKMockHTTPResponseResponder initWithStatusCode:headers:body:chunkCountHint:delayBetweenChunks:]
+-[UMKMockHTTPResponseResponder respondToMockRequest:client:protocol:]
+-[UMKMockHTTPResponseResponder description]
+-[UMKMockHTTPResponseResponder statusCode]
+-[UMKMockHTTPResponseResponder chunkCountHint]
+-[UMKMockHTTPResponseResponder delayBetweenChunks]
+OBJC_CLASSLIST_REFERENCES_$_8
+OBJC_METH_VAR_NAME_9
+OBJC_SELECTOR_REFERENCES_10
+OBJC_METH_VAR_NAME_11
+OBJC_SELECTOR_REFERENCES_12
+OBJC_IVAR_$_UMKMockHTTPResponder._responding
+OBJC_METH_VAR_NAME_13
+OBJC_METH_VAR_TYPE_20
+l_OBJC_$_CLASS_METHODS_UMKMockHTTPResponder
+OBJC_METH_VAR_TYPE_23
+OBJC_CLASS_NAME_27
+OBJC_METH_VAR_TYPE_29
+OBJC_METH_VAR_TYPE_31
+OBJC_METH_VAR_NAME_32
+OBJC_METH_VAR_TYPE_33
+OBJC_METH_VAR_NAME_34
+OBJC_METH_VAR_TYPE_35
+OBJC_METH_VAR_NAME_36
+OBJC_METH_VAR_TYPE_37
+OBJC_METH_VAR_NAME_38
+OBJC_METH_VAR_TYPE_39
+OBJC_METH_VAR_TYPE_41
+OBJC_METH_VAR_TYPE_43
+OBJC_METH_VAR_NAME_45
+OBJC_METH_VAR_TYPE_46
+OBJC_METH_VAR_NAME_47
+OBJC_METH_VAR_TYPE_48
+OBJC_METH_VAR_NAME_49
+OBJC_METH_VAR_TYPE_51
+OBJC_METH_VAR_NAME_53
+OBJC_METH_VAR_TYPE_54
+OBJC_METH_VAR_TYPE_56
+OBJC_METH_VAR_NAME_59
+OBJC_METH_VAR_TYPE_60
+OBJC_CLASS_NAME_62
+OBJC_PROP_NAME_ATTR_63
+OBJC_PROP_NAME_ATTR_64
+OBJC_PROP_NAME_ATTR_65
+OBJC_PROP_NAME_ATTR_66
+OBJC_PROP_NAME_ATTR_67
+OBJC_PROP_NAME_ATTR_68
+l_OBJC_$_PROTOCOL_REFS_UMKMockURLResponder
+l_OBJC_$_PROTOCOL_INSTANCE_METHODS_UMKMockURLResponder
+l_OBJC_$_PROTOCOL_METHOD_TYPES_UMKMockURLResponder
+l_OBJC_PROTOCOL_$_UMKMockURLResponder
+l_OBJC_LABEL_PROTOCOL_$_UMKMockURLResponder
+l_OBJC_CLASS_PROTOCOLS_$_UMKMockHTTPResponder
+l_OBJC_METACLASS_RO_$_UMKMockHTTPResponder
+OBJC_METH_VAR_TYPE_70
+l_OBJC_$_INSTANCE_METHODS_UMKMockHTTPResponder
+OBJC_METH_VAR_TYPE_72
+l_OBJC_$_INSTANCE_VARIABLES_UMKMockHTTPResponder
+OBJC_PROP_NAME_ATTR_73
+OBJC_PROP_NAME_ATTR_74
+l_OBJC_$_PROP_LIST_UMKMockHTTPResponder
+l_OBJC_CLASS_RO_$_UMKMockHTTPResponder
+OBJC_IVAR_$_UMKMockHTTPErrorResponder._error
+OBJC_CLASSLIST_REFERENCES_$_81
+.str82
+_unnamed_cfstring_83
+OBJC_CLASS_NAME_86
+l_OBJC_METACLASS_RO_$_UMKMockHTTPErrorResponder
+OBJC_CLASS_NAME_87
+l_OBJC_$_INSTANCE_METHODS_UMKMockHTTPErrorResponder
+l_OBJC_$_INSTANCE_VARIABLES_UMKMockHTTPErrorResponder
+OBJC_PROP_NAME_ATTR_91
+OBJC_PROP_NAME_ATTR_92
+l_OBJC_$_PROP_LIST_UMKMockHTTPErrorResponder
+l_OBJC_CLASS_RO_$_UMKMockHTTPErrorResponder
+OBJC_CLASSLIST_SUP_REFS_$_93
+OBJC_SELECTOR_REFERENCES_95
+OBJC_METH_VAR_NAME_96
+OBJC_SELECTOR_REFERENCES_97
+OBJC_IVAR_$_UMKMockHTTPResponseResponder._statusCode
+OBJC_IVAR_$_UMKMockHTTPResponseResponder._chunkCountHint
+OBJC_IVAR_$_UMKMockHTTPResponseResponder._delayBetweenChunks
+OBJC_CLASSLIST_REFERENCES_$_98
+OBJC_SELECTOR_REFERENCES_100
+OBJC_SELECTOR_REFERENCES_102
+OBJC_SELECTOR_REFERENCES_104
+OBJC_SELECTOR_REFERENCES_106
+OBJC_METH_VAR_NAME_107
+OBJC_SELECTOR_REFERENCES_108
+OBJC_METH_VAR_NAME_112
+OBJC_SELECTOR_REFERENCES_113
+OBJC_SELECTOR_REFERENCES_115
+OBJC_SELECTOR_REFERENCES_117
+OBJC_SELECTOR_REFERENCES_119
+OBJC_SELECTOR_REFERENCES_121
+OBJC_SELECTOR_REFERENCES_123
+OBJC_CLASSLIST_REFERENCES_$_124
+OBJC_SELECTOR_REFERENCES_126
+OBJC_SELECTOR_REFERENCES_128
+.str129
+_unnamed_cfstring_130
+OBJC_CLASS_NAME_131
+l_OBJC_METACLASS_RO_$_UMKMockHTTPResponseResponder
+OBJC_METH_VAR_TYPE_132
+OBJC_METH_VAR_TYPE_133
+l_OBJC_$_INSTANCE_METHODS_UMKMockHTTPResponseResponder
+OBJC_METH_VAR_NAME_134
+OBJC_METH_VAR_TYPE_135
+OBJC_METH_VAR_NAME_136
+OBJC_METH_VAR_TYPE_137
+OBJC_METH_VAR_TYPE_139
+l_OBJC_$_INSTANCE_VARIABLES_UMKMockHTTPResponseResponder
+OBJC_PROP_NAME_ATTR_140
+OBJC_PROP_NAME_ATTR_141
+OBJC_PROP_NAME_ATTR_142
+l_OBJC_$_PROP_LIST_UMKMockHTTPResponseResponder
+l_OBJC_CLASS_RO_$_UMKMockHTTPResponseResponder
+NSMakeRange
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSRange.h
+-[UMKMockHTTPResponseResponder delayBetweenChunks]
+/Users/roymiller/Workspaces/gofish-ios/GoFish/Carthage/Checkouts/URLMock/URLMock/Mock Messages/UMKMockHTTPResponder.m
+-[UMKMockHTTPResponseResponder chunkCountHint]
+-[UMKMockHTTPResponseResponder statusCode]
+-[UMKMockHTTPResponseResponder description]
+-[UMKMockHTTPResponseResponder respondToMockRequest:client:protocol:]
+-[UMKMockHTTPResponseResponder initWithStatusCode:headers:body:chunkCountHint:delayBetweenChunks:]
+-[UMKMockHTTPErrorResponder .cxx_destruct]
+-[UMKMockHTTPErrorResponder error]
+-[UMKMockHTTPErrorResponder description]
+-[UMKMockHTTPErrorResponder respondToMockRequest:client:protocol:]
+-[UMKMockHTTPErrorResponder initWithError:]
+-[UMKMockHTTPResponder setResponding:]
+-[UMKMockHTTPResponder isResponding]
+-[UMKMockHTTPResponder cancelResponse]
+-[UMKMockHTTPResponder respondToMockRequest:client:protocol:]
++[UMKMockHTTPResponder mockHTTPResponderWithStatusCode:headers:body:chunkCountHint:delayBetweenChunks:]
++[UMKMockHTTPResponder mockHTTPResponderWithStatusCode:headers:body:]
++[UMKMockHTTPResponder mockHTTPResponderWithStatusCode:body:]
++[UMKMockHTTPResponder mockHTTPResponderWithStatusCode:headers:]
++[UMKMockHTTPResponder mockHTTPResponderWithStatusCode:]
++[UMKMockHTTPResponder mockHTTPResponderWithError:]
+-[UMKPatternMatchingMockRequest init]
+-[UMKPatternMatchingMockRequest initWithURLPattern:]
+-[UMKPatternMatchingMockRequest setHTTPMethods:]
+-[UMKPatternMatchingMockRequest canonicalURLStringExcludingQueryForURL:]
+-[UMKPatternMatchingMockRequest matchesURLRequest:]
+-[UMKPatternMatchingMockRequest responderForURLRequest:]
+-[UMKPatternMatchingMockRequest shouldRemoveAfterServicingRequest:]
+-[UMKPatternMatchingMockRequest URLPattern]
+-[UMKPatternMatchingMockRequest HTTPMethods]
+-[UMKPatternMatchingMockRequest responderGenerationBlock]
+-[UMKPatternMatchingMockRequest setResponderGenerationBlock:]
+-[UMKPatternMatchingMockRequest requestMatchingBlock]
+-[UMKPatternMatchingMockRequest setRequestMatchingBlock:]
+-[UMKPatternMatchingMockRequest pattern]
+-[UMKPatternMatchingMockRequest .cxx_destruct]
+OBJC_IVAR_$_UMKPatternMatchingMockRequest._URLPattern
+OBJC_METH_VAR_NAME_5
+OBJC_SELECTOR_REFERENCES_6
+OBJC_METH_VAR_NAME_7
+OBJC_SELECTOR_REFERENCES_8
+OBJC_IVAR_$_UMKPatternMatchingMockRequest._pattern
+OBJC_IVAR_$_UMKPatternMatchingMockRequest._HTTPMethods
+OBJC_CLASSLIST_REFERENCES_$_11
+.str16
+_unnamed_cfstring_17
+OBJC_SELECTOR_REFERENCES_19
+OBJC_SELECTOR_REFERENCES_33
+OBJC_SELECTOR_REFERENCES_35
+OBJC_SELECTOR_REFERENCES_37
+OBJC_SELECTOR_REFERENCES_39
+OBJC_IVAR_$_UMKPatternMatchingMockRequest._responderGenerationBlock
+OBJC_IVAR_$_UMKPatternMatchingMockRequest._requestMatchingBlock
+OBJC_METH_VAR_TYPE_45
+OBJC_METH_VAR_TYPE_47
+OBJC_CLASS_NAME_50
+OBJC_METH_VAR_NAME_51
+OBJC_METH_VAR_TYPE_53
+OBJC_METH_VAR_TYPE_55
+OBJC_METH_VAR_TYPE_57
+OBJC_METH_VAR_TYPE_59
+OBJC_METH_VAR_NAME_60
+OBJC_METH_VAR_TYPE_61
+OBJC_METH_VAR_TYPE_63
+OBJC_METH_VAR_NAME_64
+OBJC_METH_VAR_TYPE_65
+OBJC_METH_VAR_TYPE_68
+OBJC_METH_VAR_TYPE_73
+OBJC_METH_VAR_TYPE_76
+OBJC_METH_VAR_TYPE_78
+OBJC_METH_VAR_NAME_80
+OBJC_METH_VAR_TYPE_82
+OBJC_METH_VAR_NAME_83
+OBJC_CLASS_NAME_84
+OBJC_PROP_NAME_ATTR_85
+OBJC_PROP_NAME_ATTR_86
+OBJC_PROP_NAME_ATTR_87
+OBJC_PROP_NAME_ATTR_88
+OBJC_PROP_NAME_ATTR_89
+OBJC_PROP_NAME_ATTR_90
+l_OBJC_CLASS_PROTOCOLS_$_UMKPatternMatchingMockRequest
+l_OBJC_METACLASS_RO_$_UMKPatternMatchingMockRequest
+OBJC_CLASS_NAME_91
+OBJC_METH_VAR_TYPE_93
+OBJC_METH_VAR_TYPE_97
+l_OBJC_$_INSTANCE_METHODS_UMKPatternMatchingMockRequest
+OBJC_METH_VAR_TYPE_104
+l_OBJC_$_INSTANCE_VARIABLES_UMKPatternMatchingMockRequest
+OBJC_PROP_NAME_ATTR_110
+OBJC_PROP_NAME_ATTR_111
+OBJC_PROP_NAME_ATTR_112
+OBJC_PROP_NAME_ATTR_113
+OBJC_PROP_NAME_ATTR_114
+OBJC_PROP_NAME_ATTR_115
+OBJC_PROP_NAME_ATTR_116
+OBJC_PROP_NAME_ATTR_117
+OBJC_PROP_NAME_ATTR_118
+OBJC_PROP_NAME_ATTR_119
+l_OBJC_$_PROP_LIST_UMKPatternMatchingMockRequest
+l_OBJC_CLASS_RO_$_UMKPatternMatchingMockRequest
+-[UMKPatternMatchingMockRequest .cxx_destruct]
+/Users/roymiller/Workspaces/gofish-ios/GoFish/Carthage/Checkouts/URLMock/URLMock/Pattern-Matching Mock Requests/UMKPatternMatchingMockRequest.m
+-[UMKPatternMatchingMockRequest pattern]
+-[UMKPatternMatchingMockRequest setRequestMatchingBlock:]
+/Users/roymiller/Workspaces/gofish-ios/GoFish/Carthage/Checkouts/URLMock/URLMock/Pattern-Matching Mock Requests/UMKPatternMatchingMockRequest.h
+-[UMKPatternMatchingMockRequest requestMatchingBlock]
+-[UMKPatternMatchingMockRequest setResponderGenerationBlock:]
+-[UMKPatternMatchingMockRequest responderGenerationBlock]
+-[UMKPatternMatchingMockRequest HTTPMethods]
+-[UMKPatternMatchingMockRequest URLPattern]
+-[UMKPatternMatchingMockRequest shouldRemoveAfterServicingRequest:]
+-[UMKPatternMatchingMockRequest responderForURLRequest:]
+-[UMKPatternMatchingMockRequest matchesURLRequest:]
+-[UMKPatternMatchingMockRequest canonicalURLStringExcludingQueryForURL:]
+-[UMKPatternMatchingMockRequest setHTTPMethods:]
+-[UMKPatternMatchingMockRequest initWithURLPattern:]
+-[UMKPatternMatchingMockRequest init]
+-[NSObject(UMKURLEncoding) umk_parameterPairsWithKey:]
+-[NSObject(UMKURLEncoding) umk_isValidURLEncodedParameterObject]
+-[NSArray(UMKURLEncoding) umk_parameterPairsWithKey:]
+-[NSArray(UMKURLEncoding) umk_isValidURLEncodedParameterObject]
++[NSDictionary(UMKURLEncoding) umk_dictionaryWithURLEncodedParameterString:]
++[NSDictionary(UMKURLEncoding) umk_dictionaryWithURLEncodedParameterString:encoding:]
+-[NSDictionary(UMKURLEncoding) umk_isValidURLEncodedParameterObject]
+-[NSDictionary(UMKURLEncoding) umk_isValidURLEncodedParameterDictionary]
+-[NSDictionary(UMKURLEncoding) umk_URLEncodedParameterString]
+-[NSDictionary(UMKURLEncoding) umk_URLEncodedParameterStringWithEncoding:]
+-[NSDictionary(UMKURLEncoding) umk_parameterPairsWithKey:]
+__58-[NSDictionary(UMKURLEncoding) umk_parameterPairsWithKey:]_block_invoke
+-[NSSet(UMKURLEncoding) umk_parameterPairsWithKey:]
+-[NSSet(UMKURLEncoding) umk_isValidURLEncodedParameterObject]
+-[NSString(UMKURLEncoding) umk_isValidURLEncodedParameterObject]
+OBJC_CLASSLIST_REFERENCES_$_3
+OBJC_METH_VAR_NAME_4
+OBJC_SELECTOR_REFERENCES_5
+OBJC_METH_VAR_TYPE_8
+l_OBJC_$_CATEGORY_INSTANCE_METHODS_NSObject_$_UMKURLEncoding
+l_OBJC_$_CATEGORY_NSObject_$_UMKURLEncoding
+OBJC_CLASSLIST_REFERENCES_$_9
+OBJC_CLASSLIST_REFERENCES_$_14
+l_OBJC_$_CATEGORY_INSTANCE_METHODS_NSArray_$_UMKURLEncoding
+l_OBJC_$_CATEGORY_NSArray_$_UMKURLEncoding
+OBJC_CLASSLIST_REFERENCES_$_26
+OBJC_SELECTOR_REFERENCES_28
+OBJC_SELECTOR_REFERENCES_30
+OBJC_METH_VAR_NAME_31
+.str40
+_unnamed_cfstring_41
+.str52
+OBJC_SELECTOR_REFERENCES_54
+.str55
+_unnamed_cfstring_56
+OBJC_METH_VAR_TYPE_62
+l_OBJC_$_CATEGORY_INSTANCE_METHODS_NSDictionary_$_UMKURLEncoding
+OBJC_METH_VAR_TYPE_64
+l_OBJC_$_CATEGORY_CLASS_METHODS_NSDictionary_$_UMKURLEncoding
+l_OBJC_$_CATEGORY_NSDictionary_$_UMKURLEncoding
+l_OBJC_$_CATEGORY_INSTANCE_METHODS_NSSet_$_UMKURLEncoding
+l_OBJC_$_CATEGORY_NSSet_$_UMKURLEncoding
+l_OBJC_$_CATEGORY_INSTANCE_METHODS_NSString_$_UMKURLEncoding
+l_OBJC_$_CATEGORY_NSString_$_UMKURLEncoding
+-[NSString(UMKURLEncoding) umk_isValidURLEncodedParameterObject]
+/Users/roymiller/Workspaces/gofish-ios/GoFish/Carthage/Checkouts/URLMock/URLMock/Categories/NSDictionary+UMKURLEncoding.m
+-[NSSet(UMKURLEncoding) umk_isValidURLEncodedParameterObject]
+-[NSSet(UMKURLEncoding) umk_parameterPairsWithKey:]
+-[NSDictionary(UMKURLEncoding) umk_parameterPairsWithKey:]
+-[NSDictionary(UMKURLEncoding) umk_URLEncodedParameterStringWithEncoding:]
+-[NSDictionary(UMKURLEncoding) umk_URLEncodedParameterString]
+-[NSDictionary(UMKURLEncoding) umk_isValidURLEncodedParameterDictionary]
+-[NSDictionary(UMKURLEncoding) umk_isValidURLEncodedParameterObject]
++[NSDictionary(UMKURLEncoding) umk_dictionaryWithURLEncodedParameterString:encoding:]
++[NSDictionary(UMKURLEncoding) umk_dictionaryWithURLEncodedParameterString:]
+-[NSArray(UMKURLEncoding) umk_isValidURLEncodedParameterObject]
+-[NSArray(UMKURLEncoding) umk_parameterPairsWithKey:]
+-[NSObject(UMKURLEncoding) umk_isValidURLEncodedParameterObject]
+-[NSObject(UMKURLEncoding) umk_parameterPairsWithKey:]
++[NSException(UMKSubclassResponsibility) umk_subclassResponsibilityExceptionWithReceiver:selector:]
+l_OBJC_$_CATEGORY_CLASS_METHODS_NSException_$_UMKSubclassResponsibility
+l_OBJC_$_CATEGORY_NSException_$_UMKSubclassResponsibility
++[NSException(UMKSubclassResponsibility) umk_subclassResponsibilityExceptionWithReceiver:selector:]
+/Users/roymiller/Workspaces/gofish-ios/GoFish/Carthage/Checkouts/URLMock/URLMock/Categories/NSException+UMKSubclassResponsibility.m
+-[NSURL(UMKQueryParameters) umk_initWithString:parameters:]
+-[NSURL(UMKQueryParameters) umk_initWithString:parameters:relativeToURL:]
++[NSURL(UMKQueryParameters) umk_URLWithString:parameters:]
++[NSURL(UMKQueryParameters) umk_URLWithString:parameters:relativeToURL:]
+OBJC_SELECTOR_REFERENCES_14
+l_OBJC_$_CATEGORY_INSTANCE_METHODS_NSURL_$_UMKQueryParameters
+l_OBJC_$_CATEGORY_CLASS_METHODS_NSURL_$_UMKQueryParameters
+l_OBJC_$_CATEGORY_NSURL_$_UMKQueryParameters
++[NSURL(UMKQueryParameters) umk_URLWithString:parameters:relativeToURL:]
+/Users/roymiller/Workspaces/gofish-ios/GoFish/Carthage/Checkouts/URLMock/URLMock/Categories/NSURL+UMKQueryParameters.m
++[NSURL(UMKQueryParameters) umk_URLWithString:parameters:]
+-[NSURL(UMKQueryParameters) umk_initWithString:parameters:relativeToURL:]
+-[NSURL(UMKQueryParameters) umk_initWithString:parameters:]
+-[NSURLRequest(UMKHTTPConvenienceMethods) umk_HTTPBodyData]
+-[NSURLRequest(UMKHTTPConvenienceMethods) umk_JSONObjectFromHTTPBody]
+-[NSURLRequest(UMKHTTPConvenienceMethods) umk_parametersFromURLEncodedHTTPBody]
+-[NSURLRequest(UMKHTTPConvenienceMethods) umk_stringFromHTTPBody]
+-[NSURLRequest(UMKHTTPConvenienceMethods) umk_stringFromHTTPBodyWithEncoding:]
+-[NSURLRequest(UMKHTTPConvenienceMethods) umk_HTTPHeadersAreEqualToHeaders:]
+OBJC_CLASSLIST_REFERENCES_$_15
+OBJC_CLASSLIST_REFERENCES_$_31
+OBJC_CLASSLIST_REFERENCES_$_36
+OBJC_METH_VAR_NAME_37
+OBJC_SELECTOR_REFERENCES_38
+OBJC_METH_VAR_NAME_39
+OBJC_SELECTOR_REFERENCES_40
+OBJC_METH_VAR_NAME_41
+OBJC_SELECTOR_REFERENCES_42
+OBJC_METH_VAR_NAME_43
+OBJC_SELECTOR_REFERENCES_44
+OBJC_SELECTOR_REFERENCES_46
+OBJC_SELECTOR_REFERENCES_48
+OBJC_SELECTOR_REFERENCES_50
+l_OBJC_$_CATEGORY_INSTANCE_METHODS_NSURLRequest_$_UMKHTTPConvenienceMethods
+l_OBJC_$_CATEGORY_NSURLRequest_$_UMKHTTPConvenienceMethods
+-[NSURLRequest(UMKHTTPConvenienceMethods) umk_HTTPHeadersAreEqualToHeaders:]
+/Users/roymiller/Workspaces/gofish-ios/GoFish/Carthage/Checkouts/URLMock/URLMock/Categories/NSURLRequest+UMKHTTPConvenienceMethods.m
+-[NSURLRequest(UMKHTTPConvenienceMethods) umk_stringFromHTTPBodyWithEncoding:]
+-[NSURLRequest(UMKHTTPConvenienceMethods) umk_stringFromHTTPBody]
+-[NSURLRequest(UMKHTTPConvenienceMethods) umk_parametersFromURLEncodedHTTPBody]
+-[NSURLRequest(UMKHTTPConvenienceMethods) umk_JSONObjectFromHTTPBody]
+-[NSURLRequest(UMKHTTPConvenienceMethods) umk_HTTPBodyData]
+UMKExceptionString
+/Users/roymiller/Workspaces/gofish-ios/GoFish/Carthage/Checkouts/URLMock/URLMock/Utilities/UMKErrorUtilities.m
+UMKAssertionString
+UMKPrettyMethodName
+UMKPrettySelector
+__UMKRandomDictionaryOfStringsWithElementCount_block_invoke
+__UMKRandomDictionaryOfStringsWithElementCount_block_invoke_2
+__UMKRandomURLEncodedParameterDictionary_block_invoke
+__UMKRandomURLEncodedParameterDictionary_block_invoke_2
+UMKRecursiveRandomJSONObject
+__UMKRandomURLEncodedParameterArray_block_invoke
+UMKRandomJSONArray
+UMKRandomJSONDictionary
+__UMKRandomJSONArray_block_invoke
+__UMKRandomJSONDictionary_block_invoke
+__UMKRandomJSONDictionary_block_invoke_2
+UMKRandomUnicodeStringWithLength.kUMKCharacterSetFirst
+UMKRandomUnicodeStringWithLength.kUMKCharacterSetLast
+.str4
+OBJC_CLASSLIST_REFERENCES_$_10
+OBJC_CLASSLIST_REFERENCES_$_17
+OBJC_CLASSLIST_REFERENCES_$_20
+OBJC_METH_VAR_NAME_21
+OBJC_SELECTOR_REFERENCES_22
+.str23
+.str24
+__block_descriptor_tmp25
+__block_literal_global26
+__block_descriptor_tmp27
+__block_literal_global28
+__block_descriptor_tmp29
+UMKRandomHTTPMethod.methods
+.str30
+.str31
+_unnamed_cfstring_32
+.str33
+_unnamed_cfstring_34
+.str35
+_unnamed_cfstring_36
+.str37
+_unnamed_cfstring_38
+.str39
+_unnamed_cfstring_40
+OBJC_CLASSLIST_REFERENCES_$_41
+.str44
+_unnamed_cfstring_45
+.str50
+_unnamed_cfstring_51
+.str54
+_unnamed_cfstring_55
+OBJC_CLASSLIST_REFERENCES_$_56
+OBJC_CLASSLIST_REFERENCES_$_59
+OBJC_SELECTOR_REFERENCES_61
+OBJC_CLASSLIST_REFERENCES_$_62
+OBJC_CLASSLIST_REFERENCES_$_72
+.str75
+__block_descriptor_tmp76
+__block_literal_global77
+OBJC_CLASS_NAME_78
+__block_descriptor_tmp79
+__block_descriptor_tmp80
+__block_literal_global81
+OBJC_CLASS_NAME_82
+__block_descriptor_tmp83
+/Users/roymiller/Workspaces/gofish-ios/GoFish/Carthage/Checkouts/URLMock/URLMock/Utilities/UMKTestUtilities.m
+UMKRandomSimpleJSONObject
+UMKRandomURLEncodedParameterArray
+UMKRandomURLEncodedParameterObject
+UMKObjectOrNull
+UMKWaitForCondition
+UMKRandomError
+UMKRandomHTTPURL
+UMKRandomHTTPMethod
+UMKRandomJSONObject
+UMKRandomURLEncodedParameterDictionary
+UMKRandomDictionaryOfStringsWithElementCount
+UMKGeneratedDictionaryWithElementCount
+UMKGeneratedSetWithElementCount
+UMKGeneratedArrayWithElementCount
+UMKRandomUnsignedNumberInRange
+UMKRandomUnsignedNumber
+UMKRandomBoolean
+UMKRandomIdentifierStringWithLength
+UMKRandomIdentifierString
+UMKRandomUnicodeStringWithLength
+UMKRandomUnicodeString
+UMKRandomAlphanumericStringWithLength
+UMKRandomAlphanumericString
++[UMKMessageCountingProxy messageCountingProxyWithObject:]
+-[UMKMessageCountingProxy initWithObject:]
+-[UMKMessageCountingProxy hasReceivedSelector:]
+-[UMKMessageCountingProxy receivedMessageCountForSelector:]
+-[UMKMessageCountingProxy forwardInvocation:]
+-[UMKMessageCountingProxy methodSignatureForSelector:]
+-[UMKMessageCountingProxy object]
+-[UMKMessageCountingProxy receivedMessageCounts]
+-[UMKMessageCountingProxy setReceivedMessageCounts:]
+-[UMKMessageCountingProxy .cxx_destruct]
+OBJC_IVAR_$_UMKMessageCountingProxy._object
+OBJC_IVAR_$_UMKMessageCountingProxy._receivedMessageCounts
+l_OBJC_$_CLASS_METHODS_UMKMessageCountingProxy
+l_OBJC_METACLASS_RO_$_UMKMessageCountingProxy
+OBJC_CLASS_NAME_29
+OBJC_METH_VAR_TYPE_32
+OBJC_METH_VAR_TYPE_34
+OBJC_METH_VAR_TYPE_38
+l_OBJC_$_INSTANCE_METHODS_UMKMessageCountingProxy
+l_OBJC_$_INSTANCE_VARIABLES_UMKMessageCountingProxy
+OBJC_PROP_NAME_ATTR_44
+OBJC_PROP_NAME_ATTR_45
+OBJC_PROP_NAME_ATTR_46
+l_OBJC_$_PROP_LIST_UMKMessageCountingProxy
+l_OBJC_CLASS_RO_$_UMKMessageCountingProxy
+-[UMKMessageCountingProxy .cxx_destruct]
+/Users/roymiller/Workspaces/gofish-ios/GoFish/Carthage/Checkouts/URLMock/URLMock/Utilities/UMKMessageCountingProxy.m
+-[UMKMessageCountingProxy setReceivedMessageCounts:]
+-[UMKMessageCountingProxy receivedMessageCounts]
+-[UMKMessageCountingProxy object]
+/Users/roymiller/Workspaces/gofish-ios/GoFish/Carthage/Checkouts/URLMock/URLMock/Utilities/UMKMessageCountingProxy.h
+-[UMKMessageCountingProxy methodSignatureForSelector:]
+-[UMKMessageCountingProxy forwardInvocation:]
+-[UMKMessageCountingProxy receivedMessageCountForSelector:]
+-[UMKMessageCountingProxy hasReceivedSelector:]
+-[UMKMessageCountingProxy initWithObject:]
++[UMKMessageCountingProxy messageCountingProxyWithObject:]
+-[UMKParameterPair initWithKey:value:]
+-[UMKParameterPair URLEncodedStringValueWithEncoding:]
+-[UMKParameterPair URLEncodedStringValue]
+-[UMKParameterPair URLEncodedString:allowedCharacters:]
+-[UMKParameterPair key]
+-[UMKParameterPair setKey:]
+-[UMKParameterPair value]
+-[UMKParameterPair setValue:]
+-[UMKParameterPair .cxx_destruct]
+OBJC_IVAR_$_UMKParameterPair._key
+OBJC_IVAR_$_UMKParameterPair._value
+OBJC_CLASSLIST_REFERENCES_$_19
+l_OBJC_METACLASS_RO_$_UMKParameterPair
+OBJC_CLASS_NAME_24
+OBJC_METH_VAR_TYPE_27
+OBJC_METH_VAR_TYPE_30
+l_OBJC_$_INSTANCE_METHODS_UMKParameterPair
+l_OBJC_$_INSTANCE_VARIABLES_UMKParameterPair
+OBJC_PROP_NAME_ATTR_38
+OBJC_PROP_NAME_ATTR_39
+OBJC_PROP_NAME_ATTR_40
+l_OBJC_$_PROP_LIST_UMKParameterPair
+l_OBJC_CLASS_RO_$_UMKParameterPair
+-[UMKParameterPair .cxx_destruct]
+/Users/roymiller/Workspaces/gofish-ios/GoFish/Carthage/Checkouts/URLMock/URLMock/Utilities/UMKParameterPair.m
+-[UMKParameterPair setValue:]
+/Users/roymiller/Workspaces/gofish-ios/GoFish/Carthage/Checkouts/URLMock/URLMock/Utilities/UMKParameterPair.h
+-[UMKParameterPair value]
+-[UMKParameterPair setKey:]
+-[UMKParameterPair key]
+-[UMKParameterPair URLEncodedString:allowedCharacters:]
+-[UMKParameterPair URLEncodedStringValue]
+-[UMKParameterPair URLEncodedStringValueWithEncoding:]
+-[UMKParameterPair initWithKey:value:]
+-[UMKURLEncodedParameterStringParser init]
+-[UMKURLEncodedParameterStringParser initWithString:]
+-[UMKURLEncodedParameterStringParser initWithString:encoding:]
+-[UMKURLEncodedParameterStringParser encoding]
+-[UMKURLEncodedParameterStringParser parse]
+-[UMKURLEncodedParameterStringParser parameterPairs]
+-[UMKURLEncodedParameterStringParser addObjectForKey:value:toDictionary:]
++[UMKURLEncodedParameterStringParser keyRegularExpression]
+__58+[UMKURLEncodedParameterStringParser keyRegularExpression]_block_invoke
++[UMKURLEncodedParameterStringParser nestedArrayRegularExpression]
+__66+[UMKURLEncodedParameterStringParser nestedArrayRegularExpression]_block_invoke
++[UMKURLEncodedParameterStringParser arrayRegularExpression]
+__60+[UMKURLEncodedParameterStringParser arrayRegularExpression]_block_invoke
+-[UMKURLEncodedParameterStringParser string]
+-[UMKURLEncodedParameterStringParser .cxx_destruct]
+OBJC_IVAR_$_UMKURLEncodedParameterStringParser._string
+.str26
+_unnamed_cfstring_27
+OBJC_CLASSLIST_REFERENCES_$_32
+OBJC_CLASSLIST_REFERENCES_$_35
+.str64
+_unnamed_cfstring_65
+keyRegularExpression.keyRegularExpression
+keyRegularExpression.onceToken
+OBJC_CLASSLIST_REFERENCES_$_74
+_unnamed_cfstring_76
+.str79
+_unnamed_cfstring_80
+.str83
+nestedArrayRegularExpression.nestedArrayRegularExpression
+nestedArrayRegularExpression.onceToken
+.str84
+_unnamed_cfstring_85
+__block_descriptor_tmp86
+__block_literal_global87
+arrayRegularExpression.arrayRegularExpression
+arrayRegularExpression.onceToken
+.str88
+_unnamed_cfstring_89
+__block_descriptor_tmp90
+__block_literal_global91
+l_OBJC_$_CLASS_METHODS_UMKURLEncodedParameterStringParser
+l_OBJC_METACLASS_RO_$_UMKURLEncodedParameterStringParser
+OBJC_CLASS_NAME_92
+OBJC_METH_VAR_TYPE_101
+l_OBJC_$_INSTANCE_METHODS_UMKURLEncodedParameterStringParser
+OBJC_METH_VAR_TYPE_103
+l_OBJC_$_INSTANCE_VARIABLES_UMKURLEncodedParameterStringParser
+OBJC_PROP_NAME_ATTR_106
+l_OBJC_$_PROP_LIST_UMKURLEncodedParameterStringParser
+l_OBJC_CLASS_RO_$_UMKURLEncodedParameterStringParser
+-[UMKURLEncodedParameterStringParser .cxx_destruct]
+/Users/roymiller/Workspaces/gofish-ios/GoFish/Carthage/Checkouts/URLMock/URLMock/Utilities/UMKURLEncodedParameterStringParser.m
+-[UMKURLEncodedParameterStringParser string]
+/Users/roymiller/Workspaces/gofish-ios/GoFish/Carthage/Checkouts/URLMock/URLMock/Utilities/UMKURLEncodedParameterStringParser.h
++[UMKURLEncodedParameterStringParser arrayRegularExpression]
++[UMKURLEncodedParameterStringParser nestedArrayRegularExpression]
++[UMKURLEncodedParameterStringParser keyRegularExpression]
+-[UMKURLEncodedParameterStringParser addObjectForKey:value:toDictionary:]
+-[UMKURLEncodedParameterStringParser parameterPairs]
+-[UMKURLEncodedParameterStringParser parse]
+-[UMKURLEncodedParameterStringParser encoding]
+-[UMKURLEncodedParameterStringParser initWithString:encoding:]
+-[UMKURLEncodedParameterStringParser initWithString:]
+-[UMKURLEncodedParameterStringParser init]
+-[UMKUnexpectedRequestResponder respondToMockRequest:client:protocol:]
+-[UMKUnexpectedRequestResponder cancelResponse]
+-[UMKMockURLProtocolSettings init]
+-[UMKMockURLProtocolSettings reset]
+__35-[UMKMockURLProtocolSettings reset]_block_invoke
+__35-[UMKMockURLProtocolSettings reset]_block_invoke80
+__copy_helper_block_83
+__destroy_helper_block_84
+__35-[UMKMockURLProtocolSettings reset]_block_invoke88
+__copy_helper_block_91
+__destroy_helper_block_92
+-[UMKMockURLProtocolSettings debugDescription]
+-[UMKMockURLProtocolSettings isEnabled]
+-[UMKMockURLProtocolSettings setEnabled:]
+-[UMKMockURLProtocolSettings isVerificationEnabled]
+-[UMKMockURLProtocolSettings setVerificationEnabled:]
+-[UMKMockURLProtocolSettings expectedMockRequestsIsolationQueue]
+-[UMKMockURLProtocolSettings expectedMockRequests]
+-[UMKMockURLProtocolSettings unexpectedRequestsIsolationQueue]
+-[UMKMockURLProtocolSettings unexpectedRequests]
+-[UMKMockURLProtocolSettings servicedRequestsIsolationQueue]
+-[UMKMockURLProtocolSettings servicedRequests]
+-[UMKMockURLProtocolSettings .cxx_destruct]
+-[UMKMockURLProtocol initWithRequest:cachedResponse:client:]
++[UMKMockURLProtocol canInitWithRequest:]
++[UMKMockURLProtocol canonicalRequestForRequest:]
++[UMKMockURLProtocol requestIsCacheEquivalent:toRequest:]
+-[UMKMockURLProtocol startLoading]
+-[UMKMockURLProtocol stopLoading]
++[UMKMockURLProtocol settings]
+__30+[UMKMockURLProtocol settings]_block_invoke
++[UMKMockURLProtocol enable]
++[UMKMockURLProtocol reset]
++[UMKMockURLProtocol disable]
++[UMKMockURLProtocol expectedMockRequestMatchingURLRequest:]
+__Block_byref_object_copy_
+__Block_byref_object_dispose_
+__60+[UMKMockURLProtocol expectedMockRequestMatchingURLRequest:]_block_invoke
+__60+[UMKMockURLProtocol expectedMockRequestMatchingURLRequest:]_block_invoke_2
+__copy_helper_block_182
+__destroy_helper_block_183
+__copy_helper_block_190
+__destroy_helper_block_191
++[UMKMockURLProtocol expectedMockRequests]
+__42+[UMKMockURLProtocol expectedMockRequests]_block_invoke
+__copy_helper_block_196
+__destroy_helper_block_197
++[UMKMockURLProtocol expectMockRequest:]
+__40+[UMKMockURLProtocol expectMockRequest:]_block_invoke
+__copy_helper_block_202
+__destroy_helper_block_203
++[UMKMockURLProtocol removeExpectedMockRequest:]
+__48+[UMKMockURLProtocol removeExpectedMockRequest:]_block_invoke
+__copy_helper_block_208
+__destroy_helper_block_209
++[UMKMockURLProtocol unexpectedRequests]
+__40+[UMKMockURLProtocol unexpectedRequests]_block_invoke
+__copy_helper_block_212
+__destroy_helper_block_213
++[UMKMockURLProtocol addUnexpectedRequest:]
+__43+[UMKMockURLProtocol addUnexpectedRequest:]_block_invoke
+__copy_helper_block_216
+__destroy_helper_block_217
++[UMKMockURLProtocol servicedRequests]
+__38+[UMKMockURLProtocol servicedRequests]_block_invoke
+__copy_helper_block_220
+__destroy_helper_block_221
++[UMKMockURLProtocol markRequest:asServicedByMockRequest:]
+__58+[UMKMockURLProtocol markRequest:asServicedByMockRequest:]_block_invoke
+__copy_helper_block_226
+__destroy_helper_block_227
++[UMKMockURLProtocol isVerificationEnabled]
++[UMKMockURLProtocol setVerificationEnabled:]
++[UMKMockURLProtocol verifyWithError:]
+__38+[UMKMockURLProtocol verifyWithError:]_block_invoke
+__38+[UMKMockURLProtocol verifyWithError:]_block_invoke_2
+__copy_helper_block_241
+__destroy_helper_block_242
+__copy_helper_block_245
+__destroy_helper_block_246
++[UMKMockURLProtocol canonicalURLForURL:]
+-[UMKMockURLProtocol mockRequest]
+-[UMKMockURLProtocol setMockRequest:]
+-[UMKMockURLProtocol mockResponder]
+-[UMKMockURLProtocol setMockResponder:]
+-[UMKMockURLProtocol .cxx_destruct]
+OBJC_METH_VAR_TYPE_10
+OBJC_METH_VAR_TYPE_25
+OBJC_METH_VAR_TYPE_40
+OBJC_METH_VAR_TYPE_44
+OBJC_CLASS_NAME_46
+OBJC_PROP_NAME_ATTR_47
+OBJC_PROP_NAME_ATTR_48
+OBJC_PROP_NAME_ATTR_49
+OBJC_PROP_NAME_ATTR_50
+OBJC_PROP_NAME_ATTR_51
+OBJC_PROP_NAME_ATTR_52
+l_OBJC_CLASS_PROTOCOLS_$_UMKUnexpectedRequestResponder
+l_OBJC_METACLASS_RO_$_UMKUnexpectedRequestResponder
+l_OBJC_$_INSTANCE_METHODS_UMKUnexpectedRequestResponder
+l_OBJC_$_PROP_LIST_UMKUnexpectedRequestResponder
+l_OBJC_CLASS_RO_$_UMKUnexpectedRequestResponder
+OBJC_CLASSLIST_REFERENCES_$_55
+OBJC_IVAR_$_UMKMockURLProtocolSettings._unexpectedRequests
+OBJC_CLASSLIST_REFERENCES_$_58
+OBJC_SELECTOR_REFERENCES_65
+OBJC_IVAR_$_UMKMockURLProtocolSettings._unexpectedRequestsIsolationQueue
+OBJC_IVAR_$_UMKMockURLProtocolSettings._expectedMockRequests
+.str66
+_unnamed_cfstring_67
+OBJC_IVAR_$_UMKMockURLProtocolSettings._expectedMockRequestsIsolationQueue
+OBJC_CLASSLIST_REFERENCES_$_68
+OBJC_IVAR_$_UMKMockURLProtocolSettings._servicedRequests
+.str69
+_unnamed_cfstring_70
+OBJC_IVAR_$_UMKMockURLProtocolSettings._servicedRequestsIsolationQueue
+.str77
+OBJC_METH_VAR_NAME_78
+OBJC_SELECTOR_REFERENCES_79
+__block_descriptor_tmp85
+__block_descriptor_tmp93
+.str94
+_unnamed_cfstring_95
+.str98
+_unnamed_cfstring_99
+.str100
+_unnamed_cfstring_101
+OBJC_SELECTOR_REFERENCES_103
+OBJC_IVAR_$_UMKMockURLProtocolSettings._enabled
+OBJC_IVAR_$_UMKMockURLProtocolSettings._verificationEnabled
+OBJC_CLASS_NAME_105
+l_OBJC_METACLASS_RO_$_UMKMockURLProtocolSettings
+OBJC_CLASS_NAME_106
+OBJC_METH_VAR_NAME_109
+OBJC_METH_VAR_TYPE_110
+OBJC_METH_VAR_NAME_111
+l_OBJC_$_INSTANCE_METHODS_UMKMockURLProtocolSettings
+OBJC_METH_VAR_TYPE_113
+OBJC_METH_VAR_NAME_115
+OBJC_METH_VAR_TYPE_116
+OBJC_METH_VAR_NAME_117
+OBJC_METH_VAR_TYPE_118
+OBJC_METH_VAR_NAME_119
+OBJC_METH_VAR_NAME_121
+l_OBJC_$_INSTANCE_VARIABLES_UMKMockURLProtocolSettings
+OBJC_PROP_NAME_ATTR_124
+OBJC_PROP_NAME_ATTR_125
+OBJC_PROP_NAME_ATTR_126
+OBJC_PROP_NAME_ATTR_127
+OBJC_PROP_NAME_ATTR_128
+OBJC_PROP_NAME_ATTR_129
+OBJC_PROP_NAME_ATTR_130
+OBJC_PROP_NAME_ATTR_131
+OBJC_PROP_NAME_ATTR_132
+OBJC_PROP_NAME_ATTR_133
+OBJC_PROP_NAME_ATTR_134
+OBJC_PROP_NAME_ATTR_135
+OBJC_PROP_NAME_ATTR_136
+OBJC_PROP_NAME_ATTR_137
+OBJC_PROP_NAME_ATTR_138
+OBJC_PROP_NAME_ATTR_139
+l_OBJC_$_PROP_LIST_UMKMockURLProtocolSettings
+l_OBJC_CLASS_RO_$_UMKMockURLProtocolSettings
+OBJC_CLASSLIST_SUP_REFS_$_140
+OBJC_SELECTOR_REFERENCES_142
+OBJC_METH_VAR_NAME_143
+OBJC_SELECTOR_REFERENCES_144
+OBJC_IVAR_$_UMKMockURLProtocol._mockRequest
+OBJC_METH_VAR_NAME_145
+OBJC_SELECTOR_REFERENCES_146
+OBJC_IVAR_$_UMKMockURLProtocol._mockResponder
+OBJC_METH_VAR_NAME_147
+OBJC_SELECTOR_REFERENCES_148
+OBJC_CLASSLIST_REFERENCES_$_149
+OBJC_METH_VAR_NAME_150
+OBJC_SELECTOR_REFERENCES_151
+OBJC_METH_VAR_NAME_152
+OBJC_SELECTOR_REFERENCES_153
+OBJC_SELECTOR_REFERENCES_155
+OBJC_SELECTOR_REFERENCES_156
+OBJC_SELECTOR_REFERENCES_158
+OBJC_METH_VAR_NAME_159
+OBJC_SELECTOR_REFERENCES_160
+OBJC_SELECTOR_REFERENCES_162
+OBJC_SELECTOR_REFERENCES_164
+OBJC_SELECTOR_REFERENCES_166
+OBJC_SELECTOR_REFERENCES_167
+OBJC_SELECTOR_REFERENCES_168
+OBJC_CLASSLIST_REFERENCES_$_169
+__block_descriptor_tmp170
+OBJC_METH_VAR_NAME_171
+OBJC_SELECTOR_REFERENCES_172
+OBJC_SELECTOR_REFERENCES_173
+OBJC_CLASSLIST_SUP_REFS_$_174
+OBJC_METH_VAR_NAME_175
+OBJC_SELECTOR_REFERENCES_176
+OBJC_SELECTOR_REFERENCES_177
+OBJC_METH_VAR_NAME_178
+OBJC_SELECTOR_REFERENCES_179
+OBJC_METH_VAR_NAME_180
+OBJC_SELECTOR_REFERENCES_181
+.str184
+__block_descriptor_tmp185
+OBJC_METH_VAR_NAME_186
+OBJC_SELECTOR_REFERENCES_187
+OBJC_METH_VAR_NAME_188
+OBJC_SELECTOR_REFERENCES_189
+OBJC_CLASS_NAME_192
+__block_descriptor_tmp193
+OBJC_METH_VAR_NAME_194
+OBJC_SELECTOR_REFERENCES_195
+OBJC_CLASS_NAME_198
+__block_descriptor_tmp199
+OBJC_METH_VAR_NAME_200
+OBJC_SELECTOR_REFERENCES_201
+OBJC_CLASS_NAME_204
+__block_descriptor_tmp205
+OBJC_METH_VAR_NAME_206
+OBJC_SELECTOR_REFERENCES_207
+OBJC_CLASS_NAME_210
+__block_descriptor_tmp211
+OBJC_CLASS_NAME_214
+__block_descriptor_tmp215
+OBJC_CLASS_NAME_218
+__block_descriptor_tmp219
+OBJC_CLASS_NAME_222
+__block_descriptor_tmp223
+OBJC_METH_VAR_NAME_224
+OBJC_SELECTOR_REFERENCES_225
+OBJC_CLASS_NAME_228
+__block_descriptor_tmp229
+OBJC_METH_VAR_NAME_230
+OBJC_SELECTOR_REFERENCES_231
+OBJC_SELECTOR_REFERENCES_232
+OBJC_METH_VAR_NAME_233
+OBJC_SELECTOR_REFERENCES_234
+OBJC_SELECTOR_REFERENCES_235
+OBJC_CLASSLIST_REFERENCES_$_236
+.str237
+_unnamed_cfstring_238
+OBJC_METH_VAR_NAME_239
+OBJC_SELECTOR_REFERENCES_240
+OBJC_CLASS_NAME_243
+__block_descriptor_tmp244
+OBJC_CLASS_NAME_247
+__block_descriptor_tmp248
+OBJC_METH_VAR_NAME_249
+OBJC_SELECTOR_REFERENCES_250
+OBJC_CLASSLIST_REFERENCES_$_251
+OBJC_METH_VAR_NAME_252
+OBJC_SELECTOR_REFERENCES_253
+OBJC_CLASSLIST_REFERENCES_$_254
+OBJC_METH_VAR_NAME_255
+OBJC_SELECTOR_REFERENCES_256
+OBJC_METH_VAR_NAME_257
+OBJC_SELECTOR_REFERENCES_258
+OBJC_METH_VAR_NAME_259
+OBJC_SELECTOR_REFERENCES_260
+OBJC_CLASSLIST_REFERENCES_$_261
+OBJC_METH_VAR_NAME_262
+OBJC_SELECTOR_REFERENCES_263
+.str264
+_unnamed_cfstring_265
+.str266
+_unnamed_cfstring_267
+OBJC_METH_VAR_NAME_268
+OBJC_SELECTOR_REFERENCES_269
+.str270
+_unnamed_cfstring_271
+OBJC_METH_VAR_NAME_272
+OBJC_SELECTOR_REFERENCES_273
+OBJC_METH_VAR_NAME_274
+OBJC_SELECTOR_REFERENCES_275
+OBJC_METH_VAR_NAME_276
+OBJC_SELECTOR_REFERENCES_277
+OBJC_METH_VAR_NAME_278
+OBJC_SELECTOR_REFERENCES_279
+OBJC_CLASSLIST_REFERENCES_$_280
+OBJC_METH_VAR_NAME_281
+OBJC_SELECTOR_REFERENCES_282
+OBJC_METH_VAR_NAME_283
+OBJC_SELECTOR_REFERENCES_284
+OBJC_METH_VAR_NAME_285
+OBJC_SELECTOR_REFERENCES_286
+OBJC_CLASSLIST_REFERENCES_$_287
+OBJC_METH_VAR_NAME_288
+OBJC_SELECTOR_REFERENCES_289
+OBJC_METH_VAR_NAME_290
+OBJC_SELECTOR_REFERENCES_291
+OBJC_METH_VAR_NAME_292
+OBJC_SELECTOR_REFERENCES_293
+OBJC_CLASS_NAME_294
+OBJC_METH_VAR_NAME_295
+OBJC_METH_VAR_NAME_296
+OBJC_METH_VAR_TYPE_297
+OBJC_METH_VAR_NAME_298
+OBJC_METH_VAR_TYPE_299
+OBJC_METH_VAR_NAME_300
+OBJC_METH_VAR_NAME_301
+OBJC_METH_VAR_NAME_302
+OBJC_METH_VAR_TYPE_303
+OBJC_METH_VAR_TYPE_304
+OBJC_METH_VAR_NAME_305
+OBJC_METH_VAR_TYPE_306
+l_OBJC_$_CLASS_METHODS_UMKMockURLProtocol
+l_OBJC_METACLASS_RO_$_UMKMockURLProtocol
+OBJC_CLASS_NAME_307
+OBJC_METH_VAR_TYPE_308
+OBJC_METH_VAR_NAME_309
+OBJC_METH_VAR_NAME_310
+OBJC_METH_VAR_NAME_311
+OBJC_METH_VAR_NAME_312
+l_OBJC_$_INSTANCE_METHODS_UMKMockURLProtocol
+OBJC_METH_VAR_NAME_313
+OBJC_METH_VAR_TYPE_314
+OBJC_METH_VAR_NAME_315
+OBJC_METH_VAR_TYPE_316
+l_OBJC_$_INSTANCE_VARIABLES_UMKMockURLProtocol
+OBJC_PROP_NAME_ATTR_317
+OBJC_PROP_NAME_ATTR_318
+OBJC_PROP_NAME_ATTR_319
+OBJC_PROP_NAME_ATTR_320
+l_OBJC_$_PROP_LIST_UMKMockURLProtocol
+l_OBJC_CLASS_RO_$_UMKMockURLProtocol
+-[UMKMockURLProtocol .cxx_destruct]
+/Users/roymiller/Workspaces/gofish-ios/GoFish/Carthage/Checkouts/URLMock/URLMock/Mock URL Protocol/UMKMockURLProtocol.m
+-[UMKMockURLProtocol setMockResponder:]
+-[UMKMockURLProtocol mockResponder]
+-[UMKMockURLProtocol setMockRequest:]
+-[UMKMockURLProtocol mockRequest]
++[UMKMockURLProtocol canonicalURLForURL:]
++[UMKMockURLProtocol verifyWithError:]
++[UMKMockURLProtocol setVerificationEnabled:]
++[UMKMockURLProtocol isVerificationEnabled]
++[UMKMockURLProtocol markRequest:asServicedByMockRequest:]
++[UMKMockURLProtocol servicedRequests]
++[UMKMockURLProtocol addUnexpectedRequest:]
++[UMKMockURLProtocol unexpectedRequests]
++[UMKMockURLProtocol removeExpectedMockRequest:]
++[UMKMockURLProtocol expectMockRequest:]
++[UMKMockURLProtocol expectedMockRequests]
++[UMKMockURLProtocol expectedMockRequestMatchingURLRequest:]
++[UMKMockURLProtocol disable]
++[UMKMockURLProtocol reset]
++[UMKMockURLProtocol enable]
++[UMKMockURLProtocol settings]
+-[UMKMockURLProtocol stopLoading]
+-[UMKMockURLProtocol startLoading]
++[UMKMockURLProtocol requestIsCacheEquivalent:toRequest:]
++[UMKMockURLProtocol canonicalRequestForRequest:]
++[UMKMockURLProtocol canInitWithRequest:]
+-[UMKMockURLProtocol initWithRequest:cachedResponse:client:]
+-[UMKMockURLProtocolSettings .cxx_destruct]
+-[UMKMockURLProtocolSettings servicedRequests]
+-[UMKMockURLProtocolSettings servicedRequestsIsolationQueue]
+-[UMKMockURLProtocolSettings unexpectedRequests]
+-[UMKMockURLProtocolSettings unexpectedRequestsIsolationQueue]
+-[UMKMockURLProtocolSettings expectedMockRequests]
+-[UMKMockURLProtocolSettings expectedMockRequestsIsolationQueue]
+-[UMKMockURLProtocolSettings setVerificationEnabled:]
+-[UMKMockURLProtocolSettings isVerificationEnabled]
+-[UMKMockURLProtocolSettings setEnabled:]
+-[UMKMockURLProtocolSettings isEnabled]
+-[UMKMockURLProtocolSettings debugDescription]
+-[UMKMockURLProtocolSettings reset]
+-[UMKMockURLProtocolSettings init]
+-[UMKUnexpectedRequestResponder cancelResponse]
+-[UMKUnexpectedRequestResponder respondToMockRequest:client:protocol:]
+/Users/roymiller/Library/Developer/Xcode/DerivedData/URLMock-cetslrdzvnhivogilyrmifxfbzuh/Build/Intermediates/URLMock.build/Release-iphoneos/URLMock-iOS.build/DerivedSources/URLMock_vers.c
+l_OBJC_METACLASS_RO_$_PodsDummy_Pods_URLMock_iOS_SOCKit
+l_OBJC_CLASS_RO_$_PodsDummy_Pods_URLMock_iOS_SOCKit
+/Users/roymiller/Library/Developer/Xcode/DerivedData/ModuleCache/13VST224OMVCN/ObjectiveC-2CD0WTQVXITO7.pcm
+/Users/roymiller/Library/Developer/Xcode/DerivedData/ModuleCache/13VST224OMVCN/Foundation-A3SOD99KJ0S9.pcm
+/Users/roymiller/Library/Developer/Xcode/DerivedData/ModuleCache/13VST224OMVCN/UIKit-2LM3EQU7VVY4O.pcm
+UIKit
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.2.sdk/System/Library/Frameworks/UIKit.framework
+/Users/roymiller/Workspaces/gofish-ios/GoFish/Carthage/Checkouts/URLMock/Pods/Target Support Files/Pods-URLMock-iOS-SOCKit/Pods-URLMock-iOS-SOCKit-dummy.m
+/Users/roymiller/Workspaces/gofish-ios/GoFish/Carthage/Checkouts/URLMock/Pods
+-[SOCPattern dealloc]
+-[SOCPattern initWithString:]
++[SOCPattern patternWithString:]
+-[SOCPattern nonParameterCharacterSet]
+-[SOCPattern _compilePattern]
+-[SOCPattern _stringFromEscapedToken:]
+-[SOCPattern gatherParameterValues:fromString:]
+-[SOCPattern stringMatches:]
+-[SOCPattern setArgument:withType:atIndex:forInvocation:]
+-[SOCPattern setArgumentsFromValues:forInvocation:]
+-[SOCPattern performSelector:onObject:sourceString:]
+-[SOCPattern parameterDictionaryFromSourceString:]
+-[SOCPattern _stringWithParameterValues:]
+-[SOCPattern stringFromObject:]
+-[SOCPattern stringFromObject:withBlock:]
+-[SOCParameter dealloc]
+-[SOCParameter initWithString:]
++[SOCParameter parameterWithString:]
+-[SOCParameter description]
+-[SOCParameter string]
+OBJC_IVAR_$_SOCPattern._patternString
+OBJC_IVAR_$_SOCPattern._tokens
+OBJC_IVAR_$_SOCPattern._parameters
+.str17
+_unnamed_cfstring_18
+OBJC_SELECTOR_REFERENCES_24
+OBJC_CLASSLIST_REFERENCES_$_25
+.str28
+_unnamed_cfstring_29
+OBJC_CLASSLIST_REFERENCES_$_34
+.str41
+_unnamed_cfstring_42
+.str45
+_unnamed_cfstring_46
+OBJC_SELECTOR_REFERENCES_52
+.str72
+_unnamed_cfstring_73
+.str74
+_unnamed_cfstring_75
+.str78
+_unnamed_cfstring_79
+.str80
+_unnamed_cfstring_81
+OBJC_CLASSLIST_REFERENCES_$_86
+OBJC_METH_VAR_NAME_87
+OBJC_SELECTOR_REFERENCES_88
+OBJC_SELECTOR_REFERENCES_98
+OBJC_SELECTOR_REFERENCES_110
+OBJC_SELECTOR_REFERENCES_112
+OBJC_SELECTOR_REFERENCES_114
+OBJC_SELECTOR_REFERENCES_116
+.str117
+_unnamed_cfstring_118
+OBJC_SELECTOR_REFERENCES_120
+OBJC_SELECTOR_REFERENCES_122
+OBJC_CLASSLIST_REFERENCES_$_123
+OBJC_SELECTOR_REFERENCES_125
+OBJC_METH_VAR_NAME_126
+OBJC_SELECTOR_REFERENCES_127
+OBJC_METH_VAR_NAME_128
+OBJC_SELECTOR_REFERENCES_129
+OBJC_SELECTOR_REFERENCES_131
+OBJC_SELECTOR_REFERENCES_133
+OBJC_SELECTOR_REFERENCES_135
+OBJC_SELECTOR_REFERENCES_137
+OBJC_CLASSLIST_REFERENCES_$_138
+OBJC_SELECTOR_REFERENCES_140
+OBJC_CLASSLIST_REFERENCES_$_145
+OBJC_METH_VAR_NAME_146
+OBJC_SELECTOR_REFERENCES_147
+OBJC_METH_VAR_NAME_148
+OBJC_SELECTOR_REFERENCES_149
+.str150
+_unnamed_cfstring_151
+.str154
+_unnamed_cfstring_155
+OBJC_METH_VAR_NAME_156
+OBJC_SELECTOR_REFERENCES_157
+OBJC_SELECTOR_REFERENCES_159
+OBJC_SELECTOR_REFERENCES_161
+OBJC_METH_VAR_NAME_162
+l_OBJC_$_CLASS_METHODS_SOCPattern
+l_OBJC_METACLASS_RO_$_SOCPattern
+OBJC_METH_VAR_TYPE_163
+OBJC_METH_VAR_TYPE_165
+OBJC_METH_VAR_NAME_166
+OBJC_METH_VAR_TYPE_167
+OBJC_METH_VAR_TYPE_168
+OBJC_METH_VAR_TYPE_169
+OBJC_METH_VAR_NAME_170
+OBJC_METH_VAR_TYPE_171
+OBJC_METH_VAR_NAME_172
+OBJC_METH_VAR_NAME_173
+OBJC_METH_VAR_NAME_174
+OBJC_METH_VAR_TYPE_175
+l_OBJC_$_INSTANCE_METHODS_SOCPattern
+OBJC_METH_VAR_NAME_176
+OBJC_METH_VAR_TYPE_177
+OBJC_METH_VAR_TYPE_179
+l_OBJC_$_INSTANCE_VARIABLES_SOCPattern
+l_OBJC_CLASS_RO_$_SOCPattern
+OBJC_IVAR_$_SOCParameter._string
+OBJC_CLASSLIST_SUP_REFS_$_181
+.str182
+_unnamed_cfstring_183
+OBJC_METH_VAR_NAME_184
+OBJC_SELECTOR_REFERENCES_185
+OBJC_CLASS_NAME_186
+l_OBJC_$_CLASS_METHODS_SOCParameter
+l_OBJC_METACLASS_RO_$_SOCParameter
+OBJC_METH_VAR_NAME_187
+l_OBJC_$_INSTANCE_METHODS_SOCParameter
+l_OBJC_$_INSTANCE_VARIABLES_SOCParameter
+l_OBJC_CLASS_RO_$_SOCParameter
+OBJC_CLASSLIST_REFERENCES_$_189
+OBJC_SELECTOR_REFERENCES_190
+/Users/roymiller/Library/Developer/Xcode/DerivedData/ModuleCache/24T8MXVBEHDOV/ObjectiveC-2CD0WTQVXITO7.pcm
+/Users/roymiller/Library/Developer/Xcode/DerivedData/ModuleCache/24T8MXVBEHDOV/Foundation-A3SOD99KJ0S9.pcm
+/Users/roymiller/Library/Developer/Xcode/DerivedData/ModuleCache/24T8MXVBEHDOV/UIKit-2LM3EQU7VVY4O.pcm
+SOCStringFromStringWithObject
+/Users/roymiller/Workspaces/gofish-ios/GoFish/Carthage/Checkouts/URLMock/Pods/SOCKit/SOCKit.m
+SOCArgumentTypeForTypeAsChar
+-[SOCParameter string]
+-[SOCParameter description]
++[SOCParameter parameterWithString:]
+-[SOCParameter initWithString:]
+-[SOCParameter dealloc]
+-[SOCPattern stringFromObject:withBlock:]
+-[SOCPattern stringFromObject:]
+-[SOCPattern _stringWithParameterValues:]
+-[SOCPattern parameterDictionaryFromSourceString:]
+-[SOCPattern performSelector:onObject:sourceString:]
+-[SOCPattern setArgumentsFromValues:forInvocation:]
+-[SOCPattern setArgument:withType:atIndex:forInvocation:]
+-[SOCPattern stringMatches:]
+-[SOCPattern gatherParameterValues:fromString:]
+-[SOCPattern _stringFromEscapedToken:]
+-[SOCPattern _compilePattern]
+-[SOCPattern nonParameterCharacterSet]
++[SOCPattern patternWithString:]
+-[SOCPattern initWithString:]
+-[SOCPattern dealloc]
+l_OBJC_METACLASS_RO_$_PodsDummy_Pods_URLMock_iOS
+l_OBJC_CLASS_RO_$_PodsDummy_Pods_URLMock_iOS
+/Users/roymiller/Workspaces/gofish-ios/GoFish/Carthage/Checkouts/URLMock/Pods/Target Support Files/Pods-URLMock-iOS/Pods-URLMock-iOS-dummy.m
+_ZL15__ARCLite__loadv
+_ZL58__arclite_NSMutableDictionary__setObject_forKeyedSubscriptP19NSMutableDictionaryP13objc_selectorP11objc_objectS4_
+_ZL22add_image_hook_swiftV1PK11mach_headerl
+_ZL42__arclite_NSUndoManagerProxy_isKindOfClassP11objc_objectP13objc_selectorP10objc_class
+_ZL13replaceMethodP10objc_classP13objc_selectorPFP11objc_objectS4_S2_zEPS6_
+_ZL30__arclite_NSManagedObject_initP11objc_objectP13objc_selector
+_ZL41__arclite_NSManagedObject_allocWithEntityP11objc_objectP13objc_selectorS0_
+_ZL36__arclite_NSManagedObject_allocBatchP11objc_objectP13objc_selectorPS0_S0_j
+_ZL37__arclite_NSKKMS_fastIndexForKnownKeyP11objc_objectP13objc_selectorS0_
+_ZL28__arclite_NSKKMS_indexForKeyP11objc_objectP13objc_selectorS0_
+_ZL29__arclite_NSKKsD_objectForKeyP11objc_objectP13objc_selectorS0_
+_ZL35__arclite_NSKKsD_removeObjectForKeyP11objc_objectP13objc_selectorS0_
+_ZL33__arclite_NSKKsD_setObject_forKeyP11objc_objectP13objc_selectorS0_S0_
+_ZL41__arclite_NSKKsD_addEntriesFromDictionaryP11objc_objectP13objc_selectorP12NSDictionary
+_ZL28__arclite_objc_readClassPairP10objc_classPK15objc_image_info
+_ZL32__arclite_objc_allocateClassPairP10objc_classPKcm
+_ZL32__arclite_object_getIndexedIvarsP11objc_object
+_ZL23__arclite_objc_getClassPKc
+_ZL27__arclite_objc_getMetaClassPKc
+_ZL31__arclite_objc_getRequiredClassPKc
+_ZL26__arclite_objc_lookUpClassPKc
+_ZL26__arclite_objc_getProtocolPKc
+_ZL23__arclite_class_getNameP10objc_class
+_ZL26__arclite_protocol_getNameP8Protocol
+_ZL37__arclite_objc_copyClassNamesForImagePKcPj
+_ZL17transcribeMethodsP10objc_classP15glue_class_ro_t
+_ZL19transcribeProtocolsP10objc_classP15glue_class_ro_t
+_ZL20transcribePropertiesP10objc_classP15glue_class_ro_t
+_ZL14initialize_impP11objc_objectP13objc_selector
+_ZL18allocateMaybeSwiftP18glue_swift_class_tm
+_ZL22copySwiftV1MangledNamePKcb
+_ZL13demangledNamePKcb
+_ZL16scanMangledFieldRPKcS0_S1_Ri
+_ZL30arclite_uninitialized_functionv
+_ZL12cxxConstructP11objc_object
+_ZL20fixStringForCoreDataP11objc_object
+OBJC_METACLASS_$___ARCLite__
+_ZL24OBJC_CLASS_$___ARCLite__
+_ZL31OBJC_METACLASS_RO_$___ARCLite__
+_non_lazy_classes
+_ZL27OBJC_CLASS_RO_$___ARCLite__
+_ZL11_class_name
+_ZL32OBJC_$_CLASS_METHODS___ARCLite__
+_ZL17_load_method_name
+_ZL17_load_method_type
+OBJC_METH_VAR_TYPE_6
+l_OBJC_$_PROTOCOL_INSTANCE_METHODS___ARCLiteKeyedSubscripting__
+l_OBJC_$_PROTOCOL_METHOD_TYPES___ARCLiteKeyedSubscripting__
+l_OBJC_PROTOCOL_$___ARCLiteKeyedSubscripting__
+l_OBJC_LABEL_PROTOCOL_$___ARCLiteKeyedSubscripting__
+l_OBJC_PROTOCOL_REFERENCE_$___ARCLiteKeyedSubscripting__
+.str8
+_ZL30NSUndoManagerProxy_targetClass
+.str12
+_ZL29original_NSManagedObject_init
+_ZL40original_NSManagedObject_allocWithEntity
+_ZL35original_NSManagedObject_allocBatch
+_ZL25NSMutableDictionary_class
+.str19
+_ZL22NSConstantString_class
+.str20
+_ZL14NSString_class
+.str21
+_ZL36original_NSKKMS_fastIndexForKnownKey
+_ZL27original_NSKKMS_indexForKey
+_ZL28original_NSKKsD_objectForKey
+_ZL34original_NSKKsD_removeObjectForKey
+_ZL32original_NSKKsD_setObject_forKey
+_ZL40original_NSKKsD_addEntriesFromDictionary
+_ZZL22add_image_hook_swiftV1PK11mach_headerlE7patches
+_ZGVZL22add_image_hook_swiftV1PK11mach_headerlE7patches
+_ZL31original_objc_allocateClassPair
+_ZL31original_object_getIndexedIvars
+.str34
+_ZL22original_objc_getClass
+_ZL26original_objc_getMetaClass
+.str36
+_ZL30original_objc_getRequiredClass
+_ZL25original_objc_lookUpClass
+_ZL25original_objc_getProtocol
+_ZL22original_class_getName
+_ZL25original_protocol_getName
+_ZL36original_objc_copyClassNamesForImage
+.str47
+.str49
+.str51
+.str53
+_ZL12demangleLock
+_ZL9Demangled
+.str56
+.str57
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c++ -arch arm64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c++11 -Wno-trigraphs -fno-exceptions -fno-rtti -mpascal-strings -Os -Wno-missing-field-initializers -Wmissing-prototypes -Wno-implicit-atomic-properties -Wno-arc-repeated-use-of-weak -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -Wno-c++11-extensions -D NDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.2.Internal.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -Winvalid-offsetof -miphoneos-version-min=4.3 -g -fno-threadsafe-statics -Wno-sign-conversion -fembed-bitcode -iquote /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/arclite_iOS-65~37/Objects/arclite.build/arclite_iOS.build/arclite_iphoneos-generated-files.hmap -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/arclite_iOS-65~37/Objects/arclite.build/arclite_iOS.build/arclite_iphoneos-own-target-headers.hmap -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/arclite_iOS-65~37/Objects/arclite.build/arclite_iOS.build/arclite_iphoneos-all-target-headers.hmap -iquote /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/arclite_iOS-65~37/Objects/arclite.build/arclite_iOS.build/arclite_iphoneos-project-headers.hmap -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/arclite_iOS-65~37/Symbols/BuiltProducts/include -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/arclite_iOS-65~37/Objects/arclite.build/arclite_iOS.build/DerivedSources/arm64 -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/arclite_iOS-65~37/Objects/arclite.build/arclite_iOS.build/DerivedSources -F/Library/Caches/com.apple.xbs/Binaries/arclite_iOS/arclite_iOS-65~37/Symbols/BuiltProducts -F/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.2.Internal.sdk/System/Library/PrivateFrameworks -Wall -Wextra -Wno-gcc-compat -fgnu-inline-asm -MMD -MT dependencies -MF /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/arclite_iOS-65~37/Objects/arclite.build/arclite_iOS.build/Objects-normal/arm64/arclite.d --serialize-diagnostics /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/arclite_iOS-65~37/Objects/arclite.build/arclite_iOS.build/Objects-normal/arm64/arclite.dia -c /Library/Caches/com.apple.xbs/Sources/arclite_iOS/arclite-65/source/arclite.mm -o /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/arclite_iOS-65~37/Objects/arclite.build/arclite_iOS.build/Objects-normal/arm64/arclite.o -mlinker-version=253.9
+__arclite_NSKKsD_addEntriesFromDictionary
+/Library/Caches/com.apple.xbs/Sources/arclite_iOS/arclite-65/source/arclite.mm
+/Library/Caches/com.apple.xbs/Sources/arclite_iOS/arclite-65
+__arclite_NSKKsD_setObject_forKey
+__arclite_NSKKsD_removeObjectForKey
+__arclite_NSKKsD_objectForKey
+__arclite_NSKKMS_indexForKey
+fixStringForCoreData
+__arclite_NSKKMS_fastIndexForKnownKey
+__arclite_NSManagedObject_allocBatch
+__arclite_NSManagedObject_allocWithEntity
+cxxConstruct
+__arclite_NSManagedObject_init
+arclite_uninitialized_function
+replaceMethod
+__arclite_NSUndoManagerProxy_isKindOfClass
+patch_lazy_pointers
+patch_t<const char **(const char *, unsigned int *)>
+__arclite_objc_copyClassNamesForImage
+patch_t<const char *(Protocol *)>
+__arclite_protocol_getName
+patch_t<const char *(Class)>
+__isctype
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.2.Internal.sdk/usr/include/ctype.h
+isdigit
+scanMangledField
+copySwiftV1DemangledName
+demangledName
+__arclite_class_getName
+patch_t<Protocol *(const char *)>
+__arclite_objc_getProtocol
+__arclite_objc_lookUpClass
+__arclite_objc_getRequiredClass
+__arclite_objc_getMetaClass
+patch_t<Class (const char *)>
+copySwiftV1MangledName
+__arclite_objc_getClass
+patch_t<void *(id)>
+word_align
+__arclite_object_getIndexedIvars
+patch_t<Class (Class, const char *, unsigned long)>
+allocateMaybeSwift
+isSwift
+metaclass
+__arclite_objc_allocateClassPair
+patch_t<Class (Class, const objc_image_info *)>
+initialize_imp
+property_list_nth
+transcribeProperties
+transcribeProtocols
+method_list_nth
+transcribeMethods
+alignment
+max
+ivar_list_nth
+transcribeIvars
+fastFlags
+data
+ro
+__arclite_objc_readClassPair
+add_image_hook_swiftV1
+install_swiftV1
+install_ARC
+objc_collectingEnabled
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.2.Internal.sdk/usr/include/objc/objc-auto.h
+keyedGetter
+__arclite_NSMutableDictionary__setObject_forKeyedSubscript
+addOrReplaceMethod
+install_dict_nil_value
+install_subscripting
+install_autoreleasepool
+__ARCLite__load
