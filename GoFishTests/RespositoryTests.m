@@ -9,7 +9,6 @@
 #import <XCTest/XCTest.h>
 #import "GFHRepository.h"
 #import "GFHDatabase.h"
-#import "URLMock/URLmock.h"
 #import "GFHMockServer.h"
 #import "User.h"
 

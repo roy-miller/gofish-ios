@@ -20,4 +20,11 @@ static GFHDatabase *_sharedDatabase;
     return _sharedDatabase;
 }
 
+- (NSMutableArray *)players {
+    if (!_players) {
+        _players = [NSMutableArray new];
+    }
+    return _players;
+}
+
 @end

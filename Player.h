@@ -14,7 +14,13 @@
 @property (nonatomic, strong) NSString *name;
 @property (nonatomic, strong) NSMutableArray *cards;
 @property (nonatomic, strong) NSNumber *externalId;
+@property (nonatomic, strong) NSNumber *bookCount;
+@property (nonatomic, strong) NSNumber *cardCount;
 
 + (instancetype)newWithAttributes:(NSDictionary *)attributes;
+
++ (instancetype)newWithAttributes:(NSDictionary *)attributes inDatabase:(GFHDatabase *)database;
+
+- (void)makeCards:(NSArray *)cards;
 
 @end

@@ -56,7 +56,7 @@ static NSString * const PLAYERS_KEY = @"players";
 }
 - (void)loadMatchPerspectiveWithSuccess:(EmptyBlock)success failure:(EmptyBlock)failure {
     [self.requestSerializer setValue:[NSString stringWithFormat:@"Token token=\"%@\"", self.database.user.token] forHTTPHeaderField:@"Authorization"];
-    [self GET:@"/api/show" parameters:@{@"match_id":self.matchId} progress:nil success:^(NSURLSessionDataTask * _Nonnull task, NSDictionary *  _Nullable responseObject) {
+    [self GET:[NSString stringWithFormat:@"/api/matches/%@", self.matchId] parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, NSDictionary *  _Nullable responseObject) {
         if (responseObject) {
             [MatchPerspective newWithAttributes:responseObject inDatabase:self.database];
         }

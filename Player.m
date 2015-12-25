@@ -16,19 +16,31 @@
     Player *player = [Player new];
     player.name = attributes[GFHMatchPerspectiveNameKey];
     if (attributes[GFHMatchPerspectiveCardsKey]) {
-        player.cards = [player makeCards:attributes[GFHMatchPerspectiveCardsKey]];
+        [player makeCards:attributes[GFHMatchPerspectiveCardsKey]];
     }
-    player.externalId = attributes[GFHMatchPerspectiveIdKey];
+    player.externalId = attributes[GFHMatchPerspectivePlayerIdKey];
+    player.bookCount = attributes[GFHMatchPerspectiveBookCountKey];
+    player.cardCount = attributes[GFHMatchPerspectiveCardCountKey];
     return player;
 }
 
-- (NSMutableArray *)makeCards:(NSArray *)cards {
-    NSMutableArray *playerCards = [NSMutableArray new];
-    for (NSDictionary *card in cards) {
-        PlayingCard *playerCard = [PlayingCard newWithRank:card[GFHPlayingCardRankKey] withSuit:card[GFHPlayingCardSuitKey]];
-        [playerCards addObject: playerCard];
++ (instancetype)newWithAttributes:(NSDictionary *)attributes inDatabase:(GFHDatabase *)database {
+    Player *player = [Player newWithAttributes:attributes];
+    [database.players addObject:player];
+    return player;
+}
+
+- (NSMutableArray *)cards {
+    if (!_cards) {
+        _cards = [NSMutableArray new];
     }
-    return playerCards;
+    return _cards;
+}
+
+- (void)makeCards:(NSArray *)cards {
+    for (NSDictionary *card in cards) {
+        [self.cards addObject: [PlayingCard newWithRank:card[GFHPlayingCardRankKey] withSuit:card[GFHPlayingCardSuitKey]]];
+    }
 }
 
 @end

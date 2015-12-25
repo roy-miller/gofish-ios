@@ -18,8 +18,8 @@ NSString * const GFHUserExternalIdKey = @"id";
 + (instancetype)newWithAttributes:(NSDictionary *)attributes inDatabase:(GFHDatabase *)database {
     User *user = [User new];
     user.email = attributes[GFHUserKey][GFHUserEmailKey];
-    user.token = attributes[GFHUserTokenKey];
-    user.externalId = attributes[GFHUserExternalIdKey];
+    user.token = attributes[GFHUserKey][GFHUserTokenKey];
+    user.externalId = attributes[GFHUserKey][GFHUserExternalIdKey];
     database.user = user;
     return user;
 }
