@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="yUy-le-ORq">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="qfo-jK-1qm">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
@@ -8,7 +8,7 @@
         <!--Match Setup View-->
         <scene sceneID="As5-ql-I6H">
             <objects>
-                <viewController title="Match Setup View" id="5Zz-Nf-mr1" customClass="GFHMatchSetupViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MatchSetupViewController" title="Match Setup View" id="5Zz-Nf-mr1" customClass="GFHMatchSetupViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="smw-0M-IJr"/>
                         <viewControllerLayoutGuide type="bottom" id="akG-0Q-dxr"/>
@@ -38,20 +38,61 @@
                                 <state key="normal" title="Play">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="playButtonTapped:" destination="5Zz-Nf-mr1" eventType="touchUpInside" id="9DL-wz-IN7"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.23137254900000001" green="0.34901960780000002" blue="0.59607843140000005" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="rXg-ps-8Zg"/>
+                    <connections>
+                        <outlet property="setupImageView" destination="hqn-Pk-a51" id="5Cj-ZC-Qto"/>
+                        <outlet property="setupOpponentsPicker" destination="Fo9-qt-dC5" id="mwG-Zh-vPz"/>
+                        <outlet property="setupPlayButton" destination="fB8-mq-a0x" id="iDu-MO-CCz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Sr-cI-rwi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1449" y="132"/>
+            <point key="canvasLocation" x="2936" y="120"/>
         </scene>
-        <!--LoginViewController-->
+        <!--Match View Controller-->
+        <scene sceneID="NBP-uA-8Vz">
+            <objects>
+                <viewController storyboardIdentifier="MatchViewController" title="Match View Controller" id="c4w-3m-mA5" customClass="GFHMatchViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="q4n-6y-Hod"/>
+                        <viewControllerLayoutGuide type="bottom" id="X8W-Qz-mwA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tY4-GU-kOy">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="msM-cl-bUw">
+                                <rect key="frame" x="0.0" y="354" width="600" height="246"/>
+                                <connections>
+                                    <segue destination="LYn-x9-jEQ" kind="embed" identifier="playerView" id="0MJ-uz-ZNZ"/>
+                                </connections>
+                            </containerView>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FXo-bj-eaS">
+                                <rect key="frame" x="20" y="20" width="560" height="326"/>
+                                <color key="backgroundColor" red="0.1712616508" green="0.4811712414" blue="0.13603010909999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <segue destination="j0k-ZT-3bI" kind="embed" identifier="cardTableView" id="wbw-uD-9Zg"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.23137254900000001" green="0.34901960780000002" blue="0.59607843140000005" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uaY-j0-hRG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3625" y="120"/>
+        </scene>
+        <!--Login View Controller-->
         <scene sceneID="pCo-5f-nQd">
             <objects>
-                <viewController storyboardIdentifier="LoginViewController" title="LoginViewController" id="7V1-Cz-GDw" customClass="GFHLoginViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" title="Login View Controller" id="7V1-Cz-GDw" customClass="GFHLoginViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bwy-dh-sRM"/>
                         <viewControllerLayoutGuide type="bottom" id="q9D-cK-R2D"/>
@@ -68,13 +109,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="1i5-gn-f9T">
-                                <rect key="frame" x="252" y="307" width="97" height="30"/>
+                                <rect key="frame" x="186" y="307" width="225" height="30"/>
                                 <accessibility key="accessibilityConfiguration" identifier="loginEmailTextField" label="Email"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="vZ3-SG-Ywm">
-                                <rect key="frame" x="252" y="355" width="97" height="30"/>
+                                <rect key="frame" x="186" y="355" width="225" height="30"/>
                                 <accessibility key="accessibilityConfiguration" identifier="loginPasswordTextField" label="Password"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
@@ -86,6 +127,9 @@
                                 <state key="normal" title="Login">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="loginButtonTapped:" destination="7V1-Cz-GDw" eventType="touchUpInside" id="xGv-Pn-dPV"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SjW-bp-XtN">
                                 <rect key="frame" x="186" y="116" width="225" height="169"/>
@@ -95,36 +139,172 @@
                     </view>
                     <navigationItem key="navigationItem" id="GAI-bN-BIy"/>
                     <connections>
-                        <outlet property="emailTextField" destination="1i5-gn-f9T" id="E8d-8X-ttr"/>
-                        <outlet property="loginButton" destination="BlF-6D-paj" id="GNw-aM-avd"/>
-                        <outlet property="loginEmailTextField" destination="1i5-gn-f9T" id="vaq-B0-45W"/>
-                        <outlet property="loginImageView" destination="SjW-bp-XtN" id="20A-CW-xTO"/>
-                        <outlet property="loginLoginButton" destination="BlF-6D-paj" id="cnl-ek-CdC"/>
-                        <outlet property="loginPasswordTextField" destination="vZ3-SG-Ywm" id="zXg-ae-bC1"/>
-                        <outlet property="passwordTextField" destination="vZ3-SG-Ywm" id="hyp-4m-sp5"/>
+                        <outlet property="loginEmailTextField" destination="1i5-gn-f9T" id="Lyh-0e-hhe"/>
+                        <outlet property="loginImageView" destination="SjW-bp-XtN" id="2nL-St-sNS"/>
+                        <outlet property="loginLoginButton" destination="BlF-6D-paj" id="XXo-sa-eMN"/>
+                        <outlet property="loginPasswordTextField" destination="vZ3-SG-Ywm" id="g2G-P8-QoO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7y3-78-TSK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1449" y="810"/>
+            <point key="canvasLocation" x="2936" y="806"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="2vR-Bu-sb2">
+        <scene sceneID="OEJ-YA-Nmo">
             <objects>
-                <navigationController title="Navigation Controller" automaticallyAdjustsScrollViewInsets="NO" id="yUy-le-ORq" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="NavigationController" title="Navigation Controller" automaticallyAdjustsScrollViewInsets="NO" id="qfo-jK-1qm" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="vZM-jZ-4xQ">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xIK-A2-jAJ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="5Zz-Nf-mr1" kind="relationship" relationship="rootViewController" id="xGm-qB-Ui5"/>
+                        <segue destination="5Zz-Nf-mr1" kind="relationship" relationship="rootViewController" id="Mmt-gy-SoV"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="vgo-Xm-1Lj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V8j-yi-Sa2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="728" y="132"/>
+            <point key="canvasLocation" x="2175" y="120"/>
+        </scene>
+        <!--Player View Controller-->
+        <scene sceneID="VTE-Zd-RE7">
+            <objects>
+                <viewController storyboardIdentifier="PlayerViewController" title="Player View Controller" id="LYn-x9-jEQ" customClass="GFHPlayerViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pwc-en-MEm">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="246"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="nJg-z5-QTO">
+                                <rect key="frame" x="20" y="29" width="560" height="197"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="cMv-bP-akB">
+                                    <size key="itemSize" width="71" height="96"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cardCell" id="9SM-lt-rLb" customClass="GFHPlayerCardCollectionCell">
+                                        <rect key="frame" x="0.0" y="0.0" width="71" height="96"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="71" height="96"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="APW-Ut-IoY">
+                                                    <rect key="frame" x="0.0" y="0.0" width="71" height="96"/>
+                                                    <accessibility key="accessibilityConfiguration" identifier="playerImageView" label="PlayerCard">
+                                                        <bool key="isElement" value="YES"/>
+                                                    </accessibility>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <connections>
+                                            <outlet property="imageView" destination="APW-Ut-IoY" id="Lmf-WJ-8O6"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rqO-GV-DOv">
+                                <rect key="frame" x="279" y="0.0" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="playerCardsCollectionView" destination="nJg-z5-QTO" id="6E6-TB-k8G"/>
+                        <outlet property="playerNameLabel" destination="rqO-GV-DOv" id="2ty-V0-Hcm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eVZ-4F-7gJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4373" y="297"/>
+        </scene>
+        <!--Card Table View Controller-->
+        <scene sceneID="kzJ-e1-Gfd">
+            <objects>
+                <viewController storyboardIdentifier="CardTableViewController" title="Card Table View Controller" id="j0k-ZT-3bI" customClass="GFHCardTableViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eMs-IY-UwR">
+                        <rect key="frame" x="0.0" y="0.0" width="560" height="326"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Nyc-fk-FmO">
+                                <rect key="frame" x="20" y="20" width="520" height="223"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="CQ2-Br-u8C">
+                                    <size key="itemSize" width="120" height="100"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="opponentCell" reuseIdentifier="opponentCell" id="02V-Kj-rNO" customClass="GFHOpponentCollectionViewCell">
+                                        <rect key="frame" x="0.0" y="0.0" width="120" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="120" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cm0-eS-odN">
+                                                    <rect key="frame" x="0.0" y="30" width="45" height="61"/>
+                                                    <accessibility key="accessibilityConfiguration" identifier="cardTableOpponentCardImage" label="OpponentCardImage"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qrf-1y-wSx">
+                                                    <rect key="frame" x="50" y="36" width="70" height="21"/>
+                                                    <accessibility key="accessibilityConfiguration" identifier="cardTableOpponentCardCount" label="OpponentCardCount"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nco-5t-rP6">
+                                                    <rect key="frame" x="50" y="61" width="70" height="21"/>
+                                                    <accessibility key="accessibilityConfiguration" identifier="cardTableOpponentBookCount" label="OpponentBookCount"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="585-Ci-0m3">
+                                                    <rect key="frame" x="39" y="0.0" width="42" height="21"/>
+                                                    <accessibility key="accessibilityConfiguration" identifier="cardTableOpponentName" label="OpponentName"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <connections>
+                                            <outlet property="opponentBookCountLabel" destination="nco-5t-rP6" id="EPg-oH-z0l"/>
+                                            <outlet property="opponentCardCountLabel" destination="Qrf-1y-wSx" id="Ye3-7V-gGu"/>
+                                            <outlet property="opponentImageView" destination="cm0-eS-odN" id="oLR-wQ-pRr"/>
+                                            <outlet property="opponentNameLabel" destination="585-Ci-0m3" id="2hl-uu-EDV"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xli-cs-xLs">
+                                <rect key="frame" x="20" y="240" width="520" height="86"/>
+                                <accessibility key="accessibilityConfiguration" identifier="cardTableMatchMessage" label="MatchMessage"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="cardTableMatchMessage" destination="Xli-cs-xLs" id="qvr-WB-2Sm"/>
+                        <outlet property="cardTableMatchMessageLabel" destination="Xli-cs-xLs" id="tgy-7i-xAw"/>
+                        <outlet property="cardTableOpponentsCollectionView" destination="Nyc-fk-FmO" id="JKb-Z4-Ape"/>
+                        <outlet property="cardTableOpponentsController" destination="Nyc-fk-FmO" id="ph5-e2-Tm4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ljy-c7-a4y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4353" y="-83"/>
         </scene>
     </scenes>
 </document>

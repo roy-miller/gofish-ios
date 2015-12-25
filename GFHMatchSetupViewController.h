@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface GFHMatchSetupViewController : UIViewController
+@interface GFHMatchSetupViewController : UIViewController <UIPickerViewDataSource, UIPickerViewDelegate>
+
+@property (nonatomic, strong) NSArray *opponentCountOptions;
 
 @end

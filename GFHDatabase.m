@@ -7,6 +7,8 @@
 //
 
 #import "GFHDatabase.h"
+#import "User.h"
+#import "MatchPerspective.h"
 
 static GFHDatabase *_sharedDatabase;
 

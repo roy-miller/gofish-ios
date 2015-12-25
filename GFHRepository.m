@@ -40,10 +40,7 @@ static NSString * const PLAYERS_KEY = @"players";
 - (void)startMatchWithNumberOfOpponents:(NSInteger)numberOfOpponents success:(EmptyBlock)success failure:(EmptyBlock)failure {
     [self.requestSerializer setValue:[NSString stringWithFormat:@"Token token=\"%@\"", self.database.user.token] forHTTPHeaderField:@"Authorization"];
     [self POST:@"/api/create" parameters:@{@"number_of_opponents":@(numberOfOpponents)} progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id _Nullable responseObject) {
-        if ([self responseStatusAccepted:task]) {
-            
-        }
-        //[self loadMatchPerspectiveWithSuccess:nil failure:nil];
+        if ([self responseStatusAccepted:task]) {}
         if (success) {
             success();
         }
@@ -73,7 +70,9 @@ static NSString * const PLAYERS_KEY = @"players";
 - (void)loginWithUsername:(NSString *)username password:(NSString *)password success:(EmptyBlock)success failure:(EmptyBlock)failure {
     [self.requestSerializer setAuthorizationHeaderFieldWithUsername:username password:password];
     [self POST:@"/api/authenticate" parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id _Nullable responseObject) {
-        [User newWithAttributes:responseObject inDatabase:self.database];
+        if (responseObject) {
+            [User newWithAttributes:responseObject inDatabase:self.database];
+        }
         if (success) {
             success();
         }

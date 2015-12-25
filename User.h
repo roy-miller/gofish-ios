@@ -1,6 +1,6 @@
 //
 //  User.h
-//  GoFishIOS
+//  GoFish
 //
 //  Created by Roy Miller on 12/24/15.
 //  Copyright © 2015 RoleModel Software. All rights reserved.

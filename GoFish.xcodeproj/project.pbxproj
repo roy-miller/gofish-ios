@@ -39,6 +39,11 @@
 		D3D7AC231C2CE6F50067F7C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3D7AC221C2CE6F50067F7C8 /* Assets.xcassets */; };
 		D3D7AC2C1C2D5C0E0067F7C8 /* GFHMatchSetupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3D7AC2B1C2D5C0E0067F7C8 /* GFHMatchSetupViewController.m */; };
 		D3D7AC2F1C2D5CAD0067F7C8 /* GFHLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3D7AC2E1C2D5CAD0067F7C8 /* GFHLoginViewController.m */; };
+		D3D7AC341C2DDFE50067F7C8 /* GFHMatchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3D7AC331C2DDFE50067F7C8 /* GFHMatchViewController.m */; };
+		D3D7AC371C2DE10D0067F7C8 /* GFHPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3D7AC361C2DE10D0067F7C8 /* GFHPlayerViewController.m */; };
+		D3D7AC3A1C2DE5E80067F7C8 /* GFHPlayerCardCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D3D7AC391C2DE5E80067F7C8 /* GFHPlayerCardCollectionCell.m */; };
+		D3D7AC3D1C2DEDD30067F7C8 /* GFHCardTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3D7AC3C1C2DEDD30067F7C8 /* GFHCardTableViewController.m */; };
+		D3D7AC401C2E04550067F7C8 /* GFHOpponentCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D3D7AC3F1C2E04550067F7C8 /* GFHOpponentCollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -122,6 +127,16 @@
 		D3D7AC2B1C2D5C0E0067F7C8 /* GFHMatchSetupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFHMatchSetupViewController.m; sourceTree = SOURCE_ROOT; };
 		D3D7AC2D1C2D5CAD0067F7C8 /* GFHLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFHLoginViewController.h; sourceTree = SOURCE_ROOT; };
 		D3D7AC2E1C2D5CAD0067F7C8 /* GFHLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFHLoginViewController.m; sourceTree = SOURCE_ROOT; };
+		D3D7AC321C2DDFE50067F7C8 /* GFHMatchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFHMatchViewController.h; sourceTree = SOURCE_ROOT; };
+		D3D7AC331C2DDFE50067F7C8 /* GFHMatchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFHMatchViewController.m; sourceTree = SOURCE_ROOT; };
+		D3D7AC351C2DE10D0067F7C8 /* GFHPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFHPlayerViewController.h; sourceTree = SOURCE_ROOT; };
+		D3D7AC361C2DE10D0067F7C8 /* GFHPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFHPlayerViewController.m; sourceTree = SOURCE_ROOT; };
+		D3D7AC381C2DE5E80067F7C8 /* GFHPlayerCardCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFHPlayerCardCollectionCell.h; sourceTree = SOURCE_ROOT; };
+		D3D7AC391C2DE5E80067F7C8 /* GFHPlayerCardCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFHPlayerCardCollectionCell.m; sourceTree = SOURCE_ROOT; };
+		D3D7AC3B1C2DEDD30067F7C8 /* GFHCardTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFHCardTableViewController.h; sourceTree = SOURCE_ROOT; };
+		D3D7AC3C1C2DEDD30067F7C8 /* GFHCardTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFHCardTableViewController.m; sourceTree = SOURCE_ROOT; };
+		D3D7AC3E1C2E04550067F7C8 /* GFHOpponentCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFHOpponentCollectionViewCell.h; sourceTree = SOURCE_ROOT; };
+		D3D7AC3F1C2E04550067F7C8 /* GFHOpponentCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFHOpponentCollectionViewCell.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,12 +202,12 @@
 				D3D7AB631C2CCDDD0067F7C8 /* GFHRepository.h */,
 				D3D7AB641C2CCDDD0067F7C8 /* GFHRepository.m */,
 				D3D7AC221C2CE6F50067F7C8 /* Assets.xcassets */,
-				D31F588F1C1F5DAF00A3E3B9 /* Supporting Files */,
 				D3D7AB6C1C2CD3A30067F7C8 /* AppDelegate.h */,
 				D3D7AB6D1C2CD3A30067F7C8 /* AppDelegate.m */,
 				D3D7AB9E1C2CDE510067F7C8 /* Main.storyboard */,
 				D3D7AC281C2CEA9C0067F7C8 /* Info.plist */,
 				D3D7ABA01C2CDE610067F7C8 /* Launch Screen.storyboard */,
+				D31F588F1C1F5DAF00A3E3B9 /* Supporting Files */,
 			);
 			path = GoFish;
 			sourceTree = "<group>";
@@ -245,6 +260,10 @@
 		D31F58C31C1F5E6300A3E3B9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				D3D7AC381C2DE5E80067F7C8 /* GFHPlayerCardCollectionCell.h */,
+				D3D7AC391C2DE5E80067F7C8 /* GFHPlayerCardCollectionCell.m */,
+				D3D7AC3E1C2E04550067F7C8 /* GFHOpponentCollectionViewCell.h */,
+				D3D7AC3F1C2E04550067F7C8 /* GFHOpponentCollectionViewCell.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -273,6 +292,12 @@
 				D3D7AC2B1C2D5C0E0067F7C8 /* GFHMatchSetupViewController.m */,
 				D3D7AC2D1C2D5CAD0067F7C8 /* GFHLoginViewController.h */,
 				D3D7AC2E1C2D5CAD0067F7C8 /* GFHLoginViewController.m */,
+				D3D7AC321C2DDFE50067F7C8 /* GFHMatchViewController.h */,
+				D3D7AC331C2DDFE50067F7C8 /* GFHMatchViewController.m */,
+				D3D7AC351C2DE10D0067F7C8 /* GFHPlayerViewController.h */,
+				D3D7AC361C2DE10D0067F7C8 /* GFHPlayerViewController.m */,
+				D3D7AC3B1C2DEDD30067F7C8 /* GFHCardTableViewController.h */,
+				D3D7AC3C1C2DEDD30067F7C8 /* GFHCardTableViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -470,9 +495,14 @@
 			files = (
 				D3D7AB791C2CD8280067F7C8 /* Player.m in Sources */,
 				D3D7AB6B1C2CD2D00067F7C8 /* User.m in Sources */,
+				D3D7AC3A1C2DE5E80067F7C8 /* GFHPlayerCardCollectionCell.m in Sources */,
+				D3D7AC3D1C2DEDD30067F7C8 /* GFHCardTableViewController.m in Sources */,
+				D3D7AC341C2DDFE50067F7C8 /* GFHMatchViewController.m in Sources */,
 				D3D7AB651C2CCDDD0067F7C8 /* GFHRepository.m in Sources */,
 				D3D7AB711C2CD46B0067F7C8 /* GFHDatabase.m in Sources */,
+				D3D7AC371C2DE10D0067F7C8 /* GFHPlayerViewController.m in Sources */,
 				D3D7AC2F1C2D5CAD0067F7C8 /* GFHLoginViewController.m in Sources */,
+				D3D7AC401C2E04550067F7C8 /* GFHOpponentCollectionViewCell.m in Sources */,
 				D3D7AB681C2CCE1B0067F7C8 /* PlayingCard.m in Sources */,
 				D3D7AB761C2CD7260067F7C8 /* MatchPerspective.m in Sources */,
 				D3D7AB6E1C2CD3A30067F7C8 /* AppDelegate.m in Sources */,
@@ -555,7 +585,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -594,7 +624,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
