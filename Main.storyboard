@@ -1,7 +1,130 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="yUy-le-ORq">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
-    <scenes/>
+    <scenes>
+        <!--Match Setup View-->
+        <scene sceneID="As5-ql-I6H">
+            <objects>
+                <viewController title="Match Setup View" id="5Zz-Nf-mr1" customClass="GFHMatchSetupViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="smw-0M-IJr"/>
+                        <viewControllerLayoutGuide type="bottom" id="akG-0Q-dxr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aBw-DW-aln">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Setup Your Game" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3fo-sM-CeE">
+                                <rect key="frame" x="279" y="85" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hqn-Pk-a51">
+                                <rect key="frame" x="186" y="119" width="225" height="169"/>
+                            </imageView>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fo9-qt-dC5">
+                                <rect key="frame" x="-2" y="296" width="600" height="216"/>
+                                <accessibility key="accessibilityConfiguration" identifier="setupOpponentPicker" label="OpponentPicker">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fB8-mq-a0x">
+                                <rect key="frame" x="277" y="505" width="46" height="30"/>
+                                <accessibility key="accessibilityConfiguration" identifier="setupPlayButton" label="Play"/>
+                                <state key="normal" title="Play">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.23137254900000001" green="0.34901960780000002" blue="0.59607843140000005" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="rXg-ps-8Zg"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Sr-cI-rwi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1449" y="132"/>
+        </scene>
+        <!--LoginViewController-->
+        <scene sceneID="pCo-5f-nQd">
+            <objects>
+                <viewController storyboardIdentifier="LoginViewController" title="LoginViewController" id="7V1-Cz-GDw" customClass="GFHLoginViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bwy-dh-sRM"/>
+                        <viewControllerLayoutGuide type="bottom" id="q9D-cK-R2D"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wNg-eI-V4O">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome to GoFish" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D2C-vr-UjZ">
+                                <rect key="frame" x="279" y="85" width="42" height="21"/>
+                                <accessibility key="accessibilityConfiguration" identifier="loginWelcomeLabel" label="Welcome"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="1i5-gn-f9T">
+                                <rect key="frame" x="252" y="307" width="97" height="30"/>
+                                <accessibility key="accessibilityConfiguration" identifier="loginEmailTextField" label="Email"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="vZ3-SG-Ywm">
+                                <rect key="frame" x="252" y="355" width="97" height="30"/>
+                                <accessibility key="accessibilityConfiguration" identifier="loginPasswordTextField" label="Password"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BlF-6D-paj">
+                                <rect key="frame" x="275" y="404" width="46" height="30"/>
+                                <accessibility key="accessibilityConfiguration" identifier="loginLoginButton" label="Login"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SjW-bp-XtN">
+                                <rect key="frame" x="186" y="116" width="225" height="169"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.23137254900000001" green="0.34901960780000002" blue="0.59607843140000005" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="GAI-bN-BIy"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="1i5-gn-f9T" id="E8d-8X-ttr"/>
+                        <outlet property="loginButton" destination="BlF-6D-paj" id="GNw-aM-avd"/>
+                        <outlet property="loginEmailTextField" destination="1i5-gn-f9T" id="vaq-B0-45W"/>
+                        <outlet property="loginImageView" destination="SjW-bp-XtN" id="20A-CW-xTO"/>
+                        <outlet property="loginLoginButton" destination="BlF-6D-paj" id="cnl-ek-CdC"/>
+                        <outlet property="loginPasswordTextField" destination="vZ3-SG-Ywm" id="zXg-ae-bC1"/>
+                        <outlet property="passwordTextField" destination="vZ3-SG-Ywm" id="hyp-4m-sp5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7y3-78-TSK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1449" y="810"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="2vR-Bu-sb2">
+            <objects>
+                <navigationController title="Navigation Controller" automaticallyAdjustsScrollViewInsets="NO" id="yUy-le-ORq" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="vZM-jZ-4xQ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="5Zz-Nf-mr1" kind="relationship" relationship="rootViewController" id="xGm-qB-Ui5"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vgo-Xm-1Lj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="728" y="132"/>
+        </scene>
+    </scenes>
 </document>

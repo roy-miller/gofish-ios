@@ -37,6 +37,8 @@
 		D3D7AB9F1C2CDE510067F7C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3D7AB9E1C2CDE510067F7C8 /* Main.storyboard */; };
 		D3D7ABA11C2CDE610067F7C8 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3D7ABA01C2CDE610067F7C8 /* Launch Screen.storyboard */; };
 		D3D7AC231C2CE6F50067F7C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3D7AC221C2CE6F50067F7C8 /* Assets.xcassets */; };
+		D3D7AC2C1C2D5C0E0067F7C8 /* GFHMatchSetupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3D7AC2B1C2D5C0E0067F7C8 /* GFHMatchSetupViewController.m */; };
+		D3D7AC2F1C2D5CAD0067F7C8 /* GFHLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3D7AC2E1C2D5CAD0067F7C8 /* GFHLoginViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -116,6 +118,10 @@
 		D3D7ABA01C2CDE610067F7C8 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = SOURCE_ROOT; };
 		D3D7AC221C2CE6F50067F7C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = SOURCE_ROOT; };
 		D3D7AC281C2CEA9C0067F7C8 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = SOURCE_ROOT; };
+		D3D7AC2A1C2D5C0E0067F7C8 /* GFHMatchSetupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFHMatchSetupViewController.h; sourceTree = SOURCE_ROOT; };
+		D3D7AC2B1C2D5C0E0067F7C8 /* GFHMatchSetupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFHMatchSetupViewController.m; sourceTree = SOURCE_ROOT; };
+		D3D7AC2D1C2D5CAD0067F7C8 /* GFHLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFHLoginViewController.h; sourceTree = SOURCE_ROOT; };
+		D3D7AC2E1C2D5CAD0067F7C8 /* GFHLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFHLoginViewController.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -263,6 +269,10 @@
 		D31F58C51C1F5E7200A3E3B9 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				D3D7AC2A1C2D5C0E0067F7C8 /* GFHMatchSetupViewController.h */,
+				D3D7AC2B1C2D5C0E0067F7C8 /* GFHMatchSetupViewController.m */,
+				D3D7AC2D1C2D5CAD0067F7C8 /* GFHLoginViewController.h */,
+				D3D7AC2E1C2D5CAD0067F7C8 /* GFHLoginViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -462,9 +472,11 @@
 				D3D7AB6B1C2CD2D00067F7C8 /* User.m in Sources */,
 				D3D7AB651C2CCDDD0067F7C8 /* GFHRepository.m in Sources */,
 				D3D7AB711C2CD46B0067F7C8 /* GFHDatabase.m in Sources */,
+				D3D7AC2F1C2D5CAD0067F7C8 /* GFHLoginViewController.m in Sources */,
 				D3D7AB681C2CCE1B0067F7C8 /* PlayingCard.m in Sources */,
 				D3D7AB761C2CD7260067F7C8 /* MatchPerspective.m in Sources */,
 				D3D7AB6E1C2CD3A30067F7C8 /* AppDelegate.m in Sources */,
+				D3D7AC2C1C2D5C0E0067F7C8 /* GFHMatchSetupViewController.m in Sources */,
 				D3D7AB731C2CD6C50067F7C8 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
