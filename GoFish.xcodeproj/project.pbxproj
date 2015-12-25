@@ -7,48 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D31F58911C1F5DAF00A3E3B9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D31F58901C1F5DAF00A3E3B9 /* main.m */; };
-		D31F58941C1F5DAF00A3E3B9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D31F58931C1F5DAF00A3E3B9 /* AppDelegate.m */; };
-		D31F589A1C1F5DAF00A3E3B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D31F58981C1F5DAF00A3E3B9 /* Main.storyboard */; };
-		D31F589C1C1F5DAF00A3E3B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D31F589B1C1F5DAF00A3E3B9 /* Assets.xcassets */; };
-		D31F589F1C1F5DAF00A3E3B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D31F589D1C1F5DAF00A3E3B9 /* LaunchScreen.storyboard */; };
-		D31F58AA1C1F5DAF00A3E3B9 /* GoFishTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D31F58A91C1F5DAF00A3E3B9 /* GoFishTests.m */; };
 		D31F58B51C1F5DAF00A3E3B9 /* GoFishUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D31F58B41C1F5DAF00A3E3B9 /* GoFishUITests.m */; };
-		D31F58C81C1F5E8C00A3E3B9 /* PlayingCard.m in Sources */ = {isa = PBXBuildFile; fileRef = D31F58C71C1F5E8C00A3E3B9 /* PlayingCard.m */; };
 		D31F58CA1C1F5EA100A3E3B9 /* PlayingCardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D31F58C91C1F5EA100A3E3B9 /* PlayingCardTests.m */; };
 		D31F58CF1C1F5F9500A3E3B9 /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D31F58CE1C1F5F9500A3E3B9 /* AFNetworking.framework */; };
-		D31F58D21C1F62BC00A3E3B9 /* GFHDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = D31F58D11C1F62BC00A3E3B9 /* GFHDatabase.m */; };
 		D31F58D41C1F631900A3E3B9 /* RespositoryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D31F58D31C1F631900A3E3B9 /* RespositoryTests.m */; };
-		D31F58D51C1F639300A3E3B9 /* GFHRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = D31F58CC1C1F5EDC00A3E3B9 /* GFHRepository.m */; };
-		D31F58D61C1F639700A3E3B9 /* GFHRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = D31F58CC1C1F5EDC00A3E3B9 /* GFHRepository.m */; };
 		D31F58D71C1F644400A3E3B9 /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D31F58CE1C1F5F9500A3E3B9 /* AFNetworking.framework */; };
-		D31F58DA1C1F6C5900A3E3B9 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = D31F58D91C1F6C5900A3E3B9 /* Player.m */; };
 		D31F58DC1C1F6E9800A3E3B9 /* PlayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D31F58DB1C1F6E9800A3E3B9 /* PlayerTests.m */; };
-		D31F58E21C2048DD00A3E3B9 /* MatchPerspective.m in Sources */ = {isa = PBXBuildFile; fileRef = D31F58E11C2048DD00A3E3B9 /* MatchPerspective.m */; };
 		D31F58E41C20764500A3E3B9 /* MatchPerspectiveTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D31F58E31C20764500A3E3B9 /* MatchPerspectiveTests.m */; };
 		D31F58E91C21CF0C00A3E3B9 /* match_json_fixture.json in Resources */ = {isa = PBXBuildFile; fileRef = D31F58E81C21CF0C00A3E3B9 /* match_json_fixture.json */; };
-		D31F58EB1C21D5E100A3E3B9 /* libPusher-combined.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D31F58EA1C21D5E100A3E3B9 /* libPusher-combined.a */; };
 		D31F58FD1C21D78500A3E3B9 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D31F58FC1C21D78500A3E3B9 /* libicucore.tbd */; };
 		D31F58FF1C21D78E00A3E3B9 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D31F58FE1C21D78E00A3E3B9 /* SystemConfiguration.framework */; };
 		D31F59011C21D79B00A3E3B9 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D31F59001C21D79B00A3E3B9 /* Security.framework */; };
 		D31F59031C21D7A200A3E3B9 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D31F59021C21D7A200A3E3B9 /* CFNetwork.framework */; };
 		D31F59051C21D8F500A3E3B9 /* SocketRocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D31F59041C21D8F500A3E3B9 /* SocketRocket.framework */; };
-		D31F590B1C21DA2A00A3E3B9 /* GFHMatchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D31F590A1C21DA2A00A3E3B9 /* GFHMatchViewController.m */; };
-		D31F590E1C21ED1700A3E3B9 /* GFHPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D31F590D1C21ED1700A3E3B9 /* GFHPlayerViewController.m */; };
-		D31F59111C21FD3D00A3E3B9 /* GFHPlayingCardCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D31F59101C21FD3D00A3E3B9 /* GFHPlayingCardCollectionCell.m */; };
-		D31F59141C22375400A3E3B9 /* GFHOpponentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D31F59131C22375400A3E3B9 /* GFHOpponentsViewController.m */; };
-		D31F59171C223EEC00A3E3B9 /* GFHOpponentCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D31F59161C223EEC00A3E3B9 /* GFHOpponentCollectionCell.m */; };
-		D34510231C25947500B90650 /* GFHMatchSetupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D34510221C25947500B90650 /* GFHMatchSetupViewController.m */; };
-		D34510261C2595E900B90650 /* GFHLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D34510251C2595E900B90650 /* GFHLoginViewController.m */; };
 		D345102D1C28A07900B90650 /* OHHTTPStubs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D345102C1C28A07900B90650 /* OHHTTPStubs.framework */; };
-		D38E8EBC1C23970C0049AC2F /* GFHMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D38E8EBB1C23970C0049AC2F /* GFHMessageViewController.m */; };
-		D38E8EBF1C241C960049AC2F /* GFHMessageLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = D38E8EBE1C241C960049AC2F /* GFHMessageLabel.m */; };
-		D38E8EC21C24985E0049AC2F /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = D38E8EC11C24985E0049AC2F /* User.m */; };
 		D38E8EC41C2498C60049AC2F /* UserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D38E8EC31C2498C60049AC2F /* UserTests.m */; };
 		D38E8EC61C249D600049AC2F /* user_login_valid_json_fixture.json in Resources */ = {isa = PBXBuildFile; fileRef = D38E8EC51C249D600049AC2F /* user_login_valid_json_fixture.json */; };
 		D38E8EC81C249D800049AC2F /* user_login_invalid_json_fixture.json in Resources */ = {isa = PBXBuildFile; fileRef = D38E8EC71C249D800049AC2F /* user_login_invalid_json_fixture.json */; };
-		D38E8ECA1C24BED50049AC2F /* URLMock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D38E8EC91C24BED50049AC2F /* URLMock.framework */; };
 		D38E8ECD1C24BFA30049AC2F /* GFHMockServer.m in Sources */ = {isa = PBXBuildFile; fileRef = D38E8ECC1C24BFA30049AC2F /* GFHMockServer.m */; };
+		D3D7AB651C2CCDDD0067F7C8 /* GFHRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = D3D7AB641C2CCDDD0067F7C8 /* GFHRepository.m */; };
+		D3D7AB681C2CCE1B0067F7C8 /* PlayingCard.m in Sources */ = {isa = PBXBuildFile; fileRef = D3D7AB671C2CCE1B0067F7C8 /* PlayingCard.m */; };
+		D3D7AB6B1C2CD2D00067F7C8 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = D3D7AB6A1C2CD2D00067F7C8 /* User.m */; };
+		D3D7AB6E1C2CD3A30067F7C8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D3D7AB6D1C2CD3A30067F7C8 /* AppDelegate.m */; };
+		D3D7AB711C2CD46B0067F7C8 /* GFHDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = D3D7AB701C2CD46B0067F7C8 /* GFHDatabase.m */; };
+		D3D7AB731C2CD6C50067F7C8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D3D7AB721C2CD6C50067F7C8 /* main.m */; };
+		D3D7AB761C2CD7260067F7C8 /* MatchPerspective.m in Sources */ = {isa = PBXBuildFile; fileRef = D3D7AB751C2CD7260067F7C8 /* MatchPerspective.m */; };
+		D3D7AB791C2CD8280067F7C8 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = D3D7AB781C2CD8280067F7C8 /* Player.m */; };
+		D3D7AB9D1C2CDA5F0067F7C8 /* libPusher-combined.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D3D7AB9C1C2CDA5F0067F7C8 /* libPusher-combined.a */; };
+		D3D7AB9F1C2CDE510067F7C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3D7AB9E1C2CDE510067F7C8 /* Main.storyboard */; };
+		D3D7ABA11C2CDE610067F7C8 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3D7ABA01C2CDE610067F7C8 /* Launch Screen.storyboard */; };
+		D3D7AC231C2CE6F50067F7C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3D7AC221C2CE6F50067F7C8 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,83 +58,64 @@
 
 /* Begin PBXFileReference section */
 		D31F588C1C1F5DAF00A3E3B9 /* GoFish.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoFish.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D31F58901C1F5DAF00A3E3B9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		D31F58921C1F5DAF00A3E3B9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		D31F58931C1F5DAF00A3E3B9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		D31F58991C1F5DAF00A3E3B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		D31F589B1C1F5DAF00A3E3B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D31F589E1C1F5DAF00A3E3B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		D31F58A01C1F5DAF00A3E3B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D31F58A51C1F5DAF00A3E3B9 /* GoFishTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoFishTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D31F58A91C1F5DAF00A3E3B9 /* GoFishTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GoFishTests.m; sourceTree = "<group>"; };
 		D31F58AB1C1F5DAF00A3E3B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D31F58B01C1F5DAF00A3E3B9 /* GoFishUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoFishUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D31F58B41C1F5DAF00A3E3B9 /* GoFishUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GoFishUITests.m; sourceTree = "<group>"; };
 		D31F58B61C1F5DAF00A3E3B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D31F58C61C1F5E8C00A3E3B9 /* PlayingCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlayingCard.h; path = ../../../../Desktop/Cards/Cards/PlayingCard.h; sourceTree = "<group>"; };
-		D31F58C71C1F5E8C00A3E3B9 /* PlayingCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlayingCard.m; path = ../../../../Desktop/Cards/Cards/PlayingCard.m; sourceTree = "<group>"; };
 		D31F58C91C1F5EA100A3E3B9 /* PlayingCardTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlayingCardTests.m; path = ../../../../Desktop/Cards/CardsTests/PlayingCardTests.m; sourceTree = "<group>"; };
-		D31F58CB1C1F5EDC00A3E3B9 /* GFHRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFHRepository.h; sourceTree = "<group>"; };
-		D31F58CC1C1F5EDC00A3E3B9 /* GFHRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFHRepository.m; sourceTree = "<group>"; };
 		D31F58CE1C1F5F9500A3E3B9 /* AFNetworking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AFNetworking.framework; path = Carthage/Build/iOS/AFNetworking.framework; sourceTree = SOURCE_ROOT; };
-		D31F58D01C1F62BC00A3E3B9 /* GFHDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFHDatabase.h; sourceTree = "<group>"; };
-		D31F58D11C1F62BC00A3E3B9 /* GFHDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFHDatabase.m; sourceTree = "<group>"; };
 		D31F58D31C1F631900A3E3B9 /* RespositoryTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RespositoryTests.m; sourceTree = "<group>"; };
-		D31F58D81C1F6C5900A3E3B9 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
-		D31F58D91C1F6C5900A3E3B9 /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
 		D31F58DB1C1F6E9800A3E3B9 /* PlayerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerTests.m; sourceTree = "<group>"; };
-		D31F58E01C2048CA00A3E3B9 /* MatchPerspective.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MatchPerspective.h; sourceTree = "<group>"; };
-		D31F58E11C2048DD00A3E3B9 /* MatchPerspective.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MatchPerspective.m; sourceTree = "<group>"; };
 		D31F58E31C20764500A3E3B9 /* MatchPerspectiveTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MatchPerspectiveTests.m; sourceTree = "<group>"; };
 		D31F58E81C21CF0C00A3E3B9 /* match_json_fixture.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = match_json_fixture.json; sourceTree = "<group>"; };
-		D31F58EA1C21D5E100A3E3B9 /* libPusher-combined.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libPusher-combined.a"; sourceTree = "<group>"; };
-		D31F58ED1C21D6AB00A3E3B9 /* PTEventListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTEventListener.h; sourceTree = "<group>"; };
-		D31F58EE1C21D6AB00A3E3B9 /* PTPusher+Testing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PTPusher+Testing.h"; sourceTree = "<group>"; };
-		D31F58EF1C21D6AB00A3E3B9 /* PTPusher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTPusher.h; sourceTree = "<group>"; };
-		D31F58F01C21D6AB00A3E3B9 /* PTPusherAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTPusherAPI.h; sourceTree = "<group>"; };
-		D31F58F11C21D6AB00A3E3B9 /* PTPusherChannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTPusherChannel.h; sourceTree = "<group>"; };
-		D31F58F21C21D6AB00A3E3B9 /* PTPusherConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTPusherConnection.h; sourceTree = "<group>"; };
-		D31F58F31C21D6AB00A3E3B9 /* PTPusherDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTPusherDelegate.h; sourceTree = "<group>"; };
-		D31F58F41C21D6AB00A3E3B9 /* PTPusherErrors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTPusherErrors.h; sourceTree = "<group>"; };
-		D31F58F51C21D6AB00A3E3B9 /* PTPusherEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTPusherEvent.h; sourceTree = "<group>"; };
-		D31F58F61C21D6AB00A3E3B9 /* PTPusherEventDispatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTPusherEventDispatcher.h; sourceTree = "<group>"; };
-		D31F58F71C21D6AB00A3E3B9 /* PTPusherEventPublisher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTPusherEventPublisher.h; sourceTree = "<group>"; };
-		D31F58F81C21D6AB00A3E3B9 /* PTPusherMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTPusherMacros.h; sourceTree = "<group>"; };
-		D31F58F91C21D6AB00A3E3B9 /* PTPusherMockConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTPusherMockConnection.h; sourceTree = "<group>"; };
-		D31F58FA1C21D6AB00A3E3B9 /* PTPusherPresenceChannelDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTPusherPresenceChannelDelegate.h; sourceTree = "<group>"; };
-		D31F58FB1C21D6AB00A3E3B9 /* Pusher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pusher.h; sourceTree = "<group>"; };
 		D31F58FC1C21D78500A3E3B9 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
 		D31F58FE1C21D78E00A3E3B9 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		D31F59001C21D79B00A3E3B9 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		D31F59021C21D7A200A3E3B9 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		D31F59041C21D8F500A3E3B9 /* SocketRocket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SocketRocket.framework; path = Carthage/Build/iOS/SocketRocket.framework; sourceTree = SOURCE_ROOT; };
-		D31F59091C21DA2A00A3E3B9 /* GFHMatchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFHMatchViewController.h; sourceTree = "<group>"; };
-		D31F590A1C21DA2A00A3E3B9 /* GFHMatchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFHMatchViewController.m; sourceTree = "<group>"; };
-		D31F590C1C21ED1700A3E3B9 /* GFHPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFHPlayerViewController.h; sourceTree = "<group>"; };
-		D31F590D1C21ED1700A3E3B9 /* GFHPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFHPlayerViewController.m; sourceTree = "<group>"; };
-		D31F590F1C21FD3D00A3E3B9 /* GFHPlayingCardCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFHPlayingCardCollectionCell.h; sourceTree = "<group>"; };
-		D31F59101C21FD3D00A3E3B9 /* GFHPlayingCardCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFHPlayingCardCollectionCell.m; sourceTree = "<group>"; };
-		D31F59121C22375400A3E3B9 /* GFHOpponentsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFHOpponentsViewController.h; sourceTree = "<group>"; };
-		D31F59131C22375400A3E3B9 /* GFHOpponentsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFHOpponentsViewController.m; sourceTree = "<group>"; };
-		D31F59151C223EEC00A3E3B9 /* GFHOpponentCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFHOpponentCollectionCell.h; sourceTree = "<group>"; };
-		D31F59161C223EEC00A3E3B9 /* GFHOpponentCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFHOpponentCollectionCell.m; sourceTree = "<group>"; };
-		D34510211C25947500B90650 /* GFHMatchSetupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFHMatchSetupViewController.h; sourceTree = "<group>"; };
-		D34510221C25947500B90650 /* GFHMatchSetupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFHMatchSetupViewController.m; sourceTree = "<group>"; };
-		D34510241C2595E900B90650 /* GFHLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFHLoginViewController.h; sourceTree = "<group>"; };
-		D34510251C2595E900B90650 /* GFHLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFHLoginViewController.m; sourceTree = "<group>"; };
 		D345102C1C28A07900B90650 /* OHHTTPStubs.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OHHTTPStubs.framework; path = Carthage/Build/iOS/OHHTTPStubs.framework; sourceTree = SOURCE_ROOT; };
-		D38E8EBA1C23970C0049AC2F /* GFHMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFHMessageViewController.h; sourceTree = "<group>"; };
-		D38E8EBB1C23970C0049AC2F /* GFHMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFHMessageViewController.m; sourceTree = "<group>"; };
-		D38E8EBD1C241C960049AC2F /* GFHMessageLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFHMessageLabel.h; sourceTree = "<group>"; };
-		D38E8EBE1C241C960049AC2F /* GFHMessageLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFHMessageLabel.m; sourceTree = "<group>"; };
-		D38E8EC01C24985E0049AC2F /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
-		D38E8EC11C24985E0049AC2F /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		D38E8EC31C2498C60049AC2F /* UserTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserTests.m; sourceTree = "<group>"; };
 		D38E8EC51C249D600049AC2F /* user_login_valid_json_fixture.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = user_login_valid_json_fixture.json; sourceTree = "<group>"; };
 		D38E8EC71C249D800049AC2F /* user_login_invalid_json_fixture.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = user_login_invalid_json_fixture.json; sourceTree = "<group>"; };
 		D38E8EC91C24BED50049AC2F /* URLMock.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = URLMock.framework; path = Carthage/Build/iOS/URLMock.framework; sourceTree = SOURCE_ROOT; };
 		D38E8ECB1C24BFA30049AC2F /* GFHMockServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFHMockServer.h; sourceTree = "<group>"; };
 		D38E8ECC1C24BFA30049AC2F /* GFHMockServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFHMockServer.m; sourceTree = "<group>"; };
+		D3D7AB631C2CCDDD0067F7C8 /* GFHRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFHRepository.h; sourceTree = SOURCE_ROOT; };
+		D3D7AB641C2CCDDD0067F7C8 /* GFHRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFHRepository.m; sourceTree = SOURCE_ROOT; };
+		D3D7AB661C2CCE1B0067F7C8 /* PlayingCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayingCard.h; sourceTree = SOURCE_ROOT; };
+		D3D7AB671C2CCE1B0067F7C8 /* PlayingCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayingCard.m; sourceTree = SOURCE_ROOT; };
+		D3D7AB691C2CD2D00067F7C8 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = SOURCE_ROOT; };
+		D3D7AB6A1C2CD2D00067F7C8 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = SOURCE_ROOT; };
+		D3D7AB6C1C2CD3A30067F7C8 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = SOURCE_ROOT; };
+		D3D7AB6D1C2CD3A30067F7C8 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = SOURCE_ROOT; };
+		D3D7AB6F1C2CD46B0067F7C8 /* GFHDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFHDatabase.h; sourceTree = SOURCE_ROOT; };
+		D3D7AB701C2CD46B0067F7C8 /* GFHDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFHDatabase.m; sourceTree = SOURCE_ROOT; };
+		D3D7AB721C2CD6C50067F7C8 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = SOURCE_ROOT; };
+		D3D7AB741C2CD7260067F7C8 /* MatchPerspective.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MatchPerspective.h; sourceTree = SOURCE_ROOT; };
+		D3D7AB751C2CD7260067F7C8 /* MatchPerspective.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MatchPerspective.m; sourceTree = SOURCE_ROOT; };
+		D3D7AB771C2CD8280067F7C8 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = SOURCE_ROOT; };
+		D3D7AB781C2CD8280067F7C8 /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = SOURCE_ROOT; };
+		D3D7AB8D1C2CDA5F0067F7C8 /* PTEventListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTEventListener.h; sourceTree = "<group>"; };
+		D3D7AB8E1C2CDA5F0067F7C8 /* PTPusher+Testing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PTPusher+Testing.h"; sourceTree = "<group>"; };
+		D3D7AB8F1C2CDA5F0067F7C8 /* PTPusher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTPusher.h; sourceTree = "<group>"; };
+		D3D7AB901C2CDA5F0067F7C8 /* PTPusherAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTPusherAPI.h; sourceTree = "<group>"; };
+		D3D7AB911C2CDA5F0067F7C8 /* PTPusherChannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTPusherChannel.h; sourceTree = "<group>"; };
+		D3D7AB921C2CDA5F0067F7C8 /* PTPusherConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTPusherConnection.h; sourceTree = "<group>"; };
+		D3D7AB931C2CDA5F0067F7C8 /* PTPusherDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTPusherDelegate.h; sourceTree = "<group>"; };
+		D3D7AB941C2CDA5F0067F7C8 /* PTPusherErrors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTPusherErrors.h; sourceTree = "<group>"; };
+		D3D7AB951C2CDA5F0067F7C8 /* PTPusherEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTPusherEvent.h; sourceTree = "<group>"; };
+		D3D7AB961C2CDA5F0067F7C8 /* PTPusherEventDispatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTPusherEventDispatcher.h; sourceTree = "<group>"; };
+		D3D7AB971C2CDA5F0067F7C8 /* PTPusherEventPublisher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTPusherEventPublisher.h; sourceTree = "<group>"; };
+		D3D7AB981C2CDA5F0067F7C8 /* PTPusherMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTPusherMacros.h; sourceTree = "<group>"; };
+		D3D7AB991C2CDA5F0067F7C8 /* PTPusherMockConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTPusherMockConnection.h; sourceTree = "<group>"; };
+		D3D7AB9A1C2CDA5F0067F7C8 /* PTPusherPresenceChannelDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTPusherPresenceChannelDelegate.h; sourceTree = "<group>"; };
+		D3D7AB9B1C2CDA5F0067F7C8 /* Pusher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pusher.h; sourceTree = "<group>"; };
+		D3D7AB9C1C2CDA5F0067F7C8 /* libPusher-combined.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libPusher-combined.a"; sourceTree = SOURCE_ROOT; };
+		D3D7AB9E1C2CDE510067F7C8 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = SOURCE_ROOT; };
+		D3D7ABA01C2CDE610067F7C8 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = SOURCE_ROOT; };
+		D3D7AC221C2CE6F50067F7C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = SOURCE_ROOT; };
+		D3D7AC281C2CEA9C0067F7C8 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,13 +124,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				D31F59031C21D7A200A3E3B9 /* CFNetwork.framework in Frameworks */,
+				D3D7AB9D1C2CDA5F0067F7C8 /* libPusher-combined.a in Frameworks */,
 				D31F59011C21D79B00A3E3B9 /* Security.framework in Frameworks */,
-				D38E8ECA1C24BED50049AC2F /* URLMock.framework in Frameworks */,
 				D31F59051C21D8F500A3E3B9 /* SocketRocket.framework in Frameworks */,
 				D31F58FF1C21D78E00A3E3B9 /* SystemConfiguration.framework in Frameworks */,
 				D31F58FD1C21D78500A3E3B9 /* libicucore.tbd in Frameworks */,
 				D31F58CF1C1F5F9500A3E3B9 /* AFNetworking.framework in Frameworks */,
-				D31F58EB1C21D5E100A3E3B9 /* libPusher-combined.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,15 +178,15 @@
 				D31F58C51C1F5E7200A3E3B9 /* Controllers */,
 				D31F58C41C1F5E6C00A3E3B9 /* Models */,
 				D31F58C31C1F5E6300A3E3B9 /* Views */,
-				D31F58921C1F5DAF00A3E3B9 /* AppDelegate.h */,
-				D31F58931C1F5DAF00A3E3B9 /* AppDelegate.m */,
-				D31F58981C1F5DAF00A3E3B9 /* Main.storyboard */,
-				D31F589B1C1F5DAF00A3E3B9 /* Assets.xcassets */,
-				D31F589D1C1F5DAF00A3E3B9 /* LaunchScreen.storyboard */,
-				D31F58A01C1F5DAF00A3E3B9 /* Info.plist */,
+				D3D7AB631C2CCDDD0067F7C8 /* GFHRepository.h */,
+				D3D7AB641C2CCDDD0067F7C8 /* GFHRepository.m */,
+				D3D7AC221C2CE6F50067F7C8 /* Assets.xcassets */,
 				D31F588F1C1F5DAF00A3E3B9 /* Supporting Files */,
-				D31F58CB1C1F5EDC00A3E3B9 /* GFHRepository.h */,
-				D31F58CC1C1F5EDC00A3E3B9 /* GFHRepository.m */,
+				D3D7AB6C1C2CD3A30067F7C8 /* AppDelegate.h */,
+				D3D7AB6D1C2CD3A30067F7C8 /* AppDelegate.m */,
+				D3D7AB9E1C2CDE510067F7C8 /* Main.storyboard */,
+				D3D7AC281C2CEA9C0067F7C8 /* Info.plist */,
+				D3D7ABA01C2CDE610067F7C8 /* Launch Screen.storyboard */,
 			);
 			path = GoFish;
 			sourceTree = "<group>";
@@ -226,6 +194,8 @@
 		D31F588F1C1F5DAF00A3E3B9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D3D7AB8C1C2CDA5F0067F7C8 /* headers */,
+				D3D7AB9C1C2CDA5F0067F7C8 /* libPusher-combined.a */,
 				D345102C1C28A07900B90650 /* OHHTTPStubs.framework */,
 				D38E8EC91C24BED50049AC2F /* URLMock.framework */,
 				D31F59041C21D8F500A3E3B9 /* SocketRocket.framework */,
@@ -233,10 +203,8 @@
 				D31F59021C21D7A200A3E3B9 /* CFNetwork.framework */,
 				D31F59001C21D79B00A3E3B9 /* Security.framework */,
 				D31F58FE1C21D78E00A3E3B9 /* SystemConfiguration.framework */,
-				D31F58EC1C21D6AB00A3E3B9 /* headers */,
-				D31F58EA1C21D5E100A3E3B9 /* libPusher-combined.a */,
 				D31F58CE1C1F5F9500A3E3B9 /* AFNetworking.framework */,
-				D31F58901C1F5DAF00A3E3B9 /* main.m */,
+				D3D7AB721C2CD6C50067F7C8 /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -245,7 +213,6 @@
 			isa = PBXGroup;
 			children = (
 				D31F58C91C1F5EA100A3E3B9 /* PlayingCardTests.m */,
-				D31F58A91C1F5DAF00A3E3B9 /* GoFishTests.m */,
 				D31F58AB1C1F5DAF00A3E3B9 /* Info.plist */,
 				D31F58D31C1F631900A3E3B9 /* RespositoryTests.m */,
 				D31F58DB1C1F6E9800A3E3B9 /* PlayerTests.m */,
@@ -272,12 +239,6 @@
 		D31F58C31C1F5E6300A3E3B9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				D31F590F1C21FD3D00A3E3B9 /* GFHPlayingCardCollectionCell.h */,
-				D31F59101C21FD3D00A3E3B9 /* GFHPlayingCardCollectionCell.m */,
-				D31F59151C223EEC00A3E3B9 /* GFHOpponentCollectionCell.h */,
-				D31F59161C223EEC00A3E3B9 /* GFHOpponentCollectionCell.m */,
-				D38E8EBD1C241C960049AC2F /* GFHMessageLabel.h */,
-				D38E8EBE1C241C960049AC2F /* GFHMessageLabel.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -285,16 +246,16 @@
 		D31F58C41C1F5E6C00A3E3B9 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				D31F58C61C1F5E8C00A3E3B9 /* PlayingCard.h */,
-				D31F58C71C1F5E8C00A3E3B9 /* PlayingCard.m */,
-				D31F58D01C1F62BC00A3E3B9 /* GFHDatabase.h */,
-				D31F58D11C1F62BC00A3E3B9 /* GFHDatabase.m */,
-				D31F58D81C1F6C5900A3E3B9 /* Player.h */,
-				D31F58D91C1F6C5900A3E3B9 /* Player.m */,
-				D31F58E01C2048CA00A3E3B9 /* MatchPerspective.h */,
-				D31F58E11C2048DD00A3E3B9 /* MatchPerspective.m */,
-				D38E8EC01C24985E0049AC2F /* User.h */,
-				D38E8EC11C24985E0049AC2F /* User.m */,
+				D3D7AB661C2CCE1B0067F7C8 /* PlayingCard.h */,
+				D3D7AB671C2CCE1B0067F7C8 /* PlayingCard.m */,
+				D3D7AB691C2CD2D00067F7C8 /* User.h */,
+				D3D7AB6A1C2CD2D00067F7C8 /* User.m */,
+				D3D7AB6F1C2CD46B0067F7C8 /* GFHDatabase.h */,
+				D3D7AB701C2CD46B0067F7C8 /* GFHDatabase.m */,
+				D3D7AB741C2CD7260067F7C8 /* MatchPerspective.h */,
+				D3D7AB751C2CD7260067F7C8 /* MatchPerspective.m */,
+				D3D7AB771C2CD8280067F7C8 /* Player.h */,
+				D3D7AB781C2CD8280067F7C8 /* Player.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -302,43 +263,31 @@
 		D31F58C51C1F5E7200A3E3B9 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				D31F59091C21DA2A00A3E3B9 /* GFHMatchViewController.h */,
-				D31F590A1C21DA2A00A3E3B9 /* GFHMatchViewController.m */,
-				D31F590C1C21ED1700A3E3B9 /* GFHPlayerViewController.h */,
-				D31F590D1C21ED1700A3E3B9 /* GFHPlayerViewController.m */,
-				D31F59121C22375400A3E3B9 /* GFHOpponentsViewController.h */,
-				D31F59131C22375400A3E3B9 /* GFHOpponentsViewController.m */,
-				D38E8EBA1C23970C0049AC2F /* GFHMessageViewController.h */,
-				D38E8EBB1C23970C0049AC2F /* GFHMessageViewController.m */,
-				D34510211C25947500B90650 /* GFHMatchSetupViewController.h */,
-				D34510221C25947500B90650 /* GFHMatchSetupViewController.m */,
-				D34510241C2595E900B90650 /* GFHLoginViewController.h */,
-				D34510251C2595E900B90650 /* GFHLoginViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
 		};
-		D31F58EC1C21D6AB00A3E3B9 /* headers */ = {
+		D3D7AB8C1C2CDA5F0067F7C8 /* headers */ = {
 			isa = PBXGroup;
 			children = (
-				D31F58ED1C21D6AB00A3E3B9 /* PTEventListener.h */,
-				D31F58EE1C21D6AB00A3E3B9 /* PTPusher+Testing.h */,
-				D31F58EF1C21D6AB00A3E3B9 /* PTPusher.h */,
-				D31F58F01C21D6AB00A3E3B9 /* PTPusherAPI.h */,
-				D31F58F11C21D6AB00A3E3B9 /* PTPusherChannel.h */,
-				D31F58F21C21D6AB00A3E3B9 /* PTPusherConnection.h */,
-				D31F58F31C21D6AB00A3E3B9 /* PTPusherDelegate.h */,
-				D31F58F41C21D6AB00A3E3B9 /* PTPusherErrors.h */,
-				D31F58F51C21D6AB00A3E3B9 /* PTPusherEvent.h */,
-				D31F58F61C21D6AB00A3E3B9 /* PTPusherEventDispatcher.h */,
-				D31F58F71C21D6AB00A3E3B9 /* PTPusherEventPublisher.h */,
-				D31F58F81C21D6AB00A3E3B9 /* PTPusherMacros.h */,
-				D31F58F91C21D6AB00A3E3B9 /* PTPusherMockConnection.h */,
-				D31F58FA1C21D6AB00A3E3B9 /* PTPusherPresenceChannelDelegate.h */,
-				D31F58FB1C21D6AB00A3E3B9 /* Pusher.h */,
+				D3D7AB8D1C2CDA5F0067F7C8 /* PTEventListener.h */,
+				D3D7AB8E1C2CDA5F0067F7C8 /* PTPusher+Testing.h */,
+				D3D7AB8F1C2CDA5F0067F7C8 /* PTPusher.h */,
+				D3D7AB901C2CDA5F0067F7C8 /* PTPusherAPI.h */,
+				D3D7AB911C2CDA5F0067F7C8 /* PTPusherChannel.h */,
+				D3D7AB921C2CDA5F0067F7C8 /* PTPusherConnection.h */,
+				D3D7AB931C2CDA5F0067F7C8 /* PTPusherDelegate.h */,
+				D3D7AB941C2CDA5F0067F7C8 /* PTPusherErrors.h */,
+				D3D7AB951C2CDA5F0067F7C8 /* PTPusherEvent.h */,
+				D3D7AB961C2CDA5F0067F7C8 /* PTPusherEventDispatcher.h */,
+				D3D7AB971C2CDA5F0067F7C8 /* PTPusherEventPublisher.h */,
+				D3D7AB981C2CDA5F0067F7C8 /* PTPusherMacros.h */,
+				D3D7AB991C2CDA5F0067F7C8 /* PTPusherMockConnection.h */,
+				D3D7AB9A1C2CDA5F0067F7C8 /* PTPusherPresenceChannelDelegate.h */,
+				D3D7AB9B1C2CDA5F0067F7C8 /* Pusher.h */,
 			);
 			path = headers;
-			sourceTree = "<group>";
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -445,9 +394,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D31F589F1C1F5DAF00A3E3B9 /* LaunchScreen.storyboard in Resources */,
-				D31F589C1C1F5DAF00A3E3B9 /* Assets.xcassets in Resources */,
-				D31F589A1C1F5DAF00A3E3B9 /* Main.storyboard in Resources */,
+				D3D7ABA11C2CDE610067F7C8 /* Launch Screen.storyboard in Resources */,
+				D3D7AC231C2CE6F50067F7C8 /* Assets.xcassets in Resources */,
+				D3D7AB9F1C2CDE510067F7C8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -509,23 +458,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D31F59141C22375400A3E3B9 /* GFHOpponentsViewController.m in Sources */,
-				D34510261C2595E900B90650 /* GFHLoginViewController.m in Sources */,
-				D31F590B1C21DA2A00A3E3B9 /* GFHMatchViewController.m in Sources */,
-				D31F59171C223EEC00A3E3B9 /* GFHOpponentCollectionCell.m in Sources */,
-				D31F58941C1F5DAF00A3E3B9 /* AppDelegate.m in Sources */,
-				D31F59111C21FD3D00A3E3B9 /* GFHPlayingCardCollectionCell.m in Sources */,
-				D38E8EC21C24985E0049AC2F /* User.m in Sources */,
-				D31F590E1C21ED1700A3E3B9 /* GFHPlayerViewController.m in Sources */,
-				D38E8EBF1C241C960049AC2F /* GFHMessageLabel.m in Sources */,
-				D38E8EBC1C23970C0049AC2F /* GFHMessageViewController.m in Sources */,
-				D31F58C81C1F5E8C00A3E3B9 /* PlayingCard.m in Sources */,
-				D34510231C25947500B90650 /* GFHMatchSetupViewController.m in Sources */,
-				D31F58D21C1F62BC00A3E3B9 /* GFHDatabase.m in Sources */,
-				D31F58911C1F5DAF00A3E3B9 /* main.m in Sources */,
-				D31F58E21C2048DD00A3E3B9 /* MatchPerspective.m in Sources */,
-				D31F58DA1C1F6C5900A3E3B9 /* Player.m in Sources */,
-				D31F58D61C1F639700A3E3B9 /* GFHRepository.m in Sources */,
+				D3D7AB791C2CD8280067F7C8 /* Player.m in Sources */,
+				D3D7AB6B1C2CD2D00067F7C8 /* User.m in Sources */,
+				D3D7AB651C2CCDDD0067F7C8 /* GFHRepository.m in Sources */,
+				D3D7AB711C2CD46B0067F7C8 /* GFHDatabase.m in Sources */,
+				D3D7AB681C2CCE1B0067F7C8 /* PlayingCard.m in Sources */,
+				D3D7AB761C2CD7260067F7C8 /* MatchPerspective.m in Sources */,
+				D3D7AB6E1C2CD3A30067F7C8 /* AppDelegate.m in Sources */,
+				D3D7AB731C2CD6C50067F7C8 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -539,8 +479,6 @@
 				D31F58DC1C1F6E9800A3E3B9 /* PlayerTests.m in Sources */,
 				D38E8EC41C2498C60049AC2F /* UserTests.m in Sources */,
 				D38E8ECD1C24BFA30049AC2F /* GFHMockServer.m in Sources */,
-				D31F58AA1C1F5DAF00A3E3B9 /* GoFishTests.m in Sources */,
-				D31F58D51C1F639300A3E3B9 /* GFHRepository.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -567,30 +505,12 @@
 		};
 /* End PBXTargetDependency section */
 
-/* Begin PBXVariantGroup section */
-		D31F58981C1F5DAF00A3E3B9 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D31F58991C1F5DAF00A3E3B9 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		D31F589D1C1F5DAF00A3E3B9 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D31F589E1C1F5DAF00A3E3B9 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
 /* Begin XCBuildConfiguration section */
 		D31F58B71C1F5DAF00A3E3B9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -635,6 +555,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -677,11 +598,11 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = GoFish/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/GoFish",
+					"$(PROJECT_DIR)",
 				);
 				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rolemodelsoftware.com.GoFish;
@@ -697,11 +618,11 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = GoFish/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/GoFish",
+					"$(PROJECT_DIR)",
 				);
 				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rolemodelsoftware.com.GoFish;
@@ -720,6 +641,7 @@
 				);
 				INFOPLIST_FILE = GoFishTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rolemodelsoftware.com.GoFishTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GoFish.app/GoFish";
@@ -737,6 +659,7 @@
 				);
 				INFOPLIST_FILE = GoFishTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rolemodelsoftware.com.GoFishTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GoFish.app/GoFish";
