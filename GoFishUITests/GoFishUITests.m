@@ -39,23 +39,36 @@
     [loginButton tap];
 }
 
-- (void)testLoginViewWithSuccess {
-    [self loginWith:@"roy.miller@rolemodelsoftware.com" withPassword:@"testpass1"];
-    XCTAssertTrue([self.app.staticTexts[@"Choose opponents:"] exists]);
-}
-
-- (void)testLoginViewWithFailure {
-    [self loginWith:@"doesnot@exist.com" withPassword:@"irrelevant"];
-    XCTAssertTrue([self.app.alerts[@"Invalid Login"] exists]);
-}
-
-- (void)testSetupViewWithTwoPlayers {
-    [self loginWith:@"roy.miller@rolemodelsoftware.com" withPassword:@"testpass1"];
-    [self.app.pickerWheels.element adjustToPickerWheelValue:@"1"];
-    
+- (void)playWithOpponentCount:(NSNumber *)opponentCount {
+    [self.app.pickerWheels.element adjustToPickerWheelValue:[NSString stringWithFormat:@"%@", opponentCount]];
     XCUIElement *playButton = self.app.buttons[@"Play"];
     [playButton tap];
+}
+
+- (void)testStartMatchWithRobotOpponent {
+    [self loginWith:@"roy.miller@rolemodelsoftware.com" withPassword:@"testpass1"];
+    [self playWithOpponentCount:@1];
+    XCUIElement *playerName = self.app.staticTexts[@"roymiller"];
+    NSPredicate *exists = [NSPredicate predicateWithFormat:@"exists == true"];
+    [self expectationForPredicate:exists evaluatedWithObject:playerName handler:nil];
     
+    [self waitForExpectationsWithTimeout:8 handler:nil];
+    XCTAssertTrue(playerName.exists);
+}
+
+- (void)testLoginWithSuccess {
+    [self loginWith:@"roy.miller@rolemodelsoftware.com" withPassword:@"testpass1"];
+    XCTAssertTrue(self.app.staticTexts[@"Choose opponents:"].exists);
+}
+
+- (void)testLoginWithFailure {
+    [self loginWith:@"doesnot@exist.com" withPassword:@"irrelevant"];
+    XCTAssertTrue(self.app.alerts[@"Invalid Login"].exists);
+}
+
+- (void)testSetupWithTwoPlayersAndWait {
+    [self loginWith:@"roy.miller@rolemodelsoftware.com" withPassword:@"testpass1"];
+    [self playWithOpponentCount:@1];
     //XCTAssertTrue([self.app.alerts[@"alert TITLE, not message, which you can't test directly"] exists]);
     XCTAssert(self.app.alerts.element.staticTexts[@"Waiting for players..."].exists);
 }

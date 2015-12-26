@@ -31,7 +31,10 @@ extern NSString * const GFHMatchPerspectiveOpponentsKey;
 @property (nonatomic, strong) Player *player;
 @property (nonatomic, strong) NSMutableArray *opponents;
 
-
-
 + (instancetype)newWithAttributes:(NSDictionary *)attributes inDatabase:(GFHDatabase *)database;
+
+- (NSMutableArray *)makeOpponents:(NSArray *)attributes;
+
+- (NSMutableArray *)makePaddedMessages:(NSArray *)unpaddedMessages;
+
 @end

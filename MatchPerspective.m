@@ -43,4 +43,15 @@ NSString * const GFHMatchPerspectiveOpponentsKey = @"opponents";
     }
     return opponents;
 }
+
+- (NSMutableArray *)makePaddedMessages:(NSArray *)unpaddedMessages {
+    __block NSMutableArray *paddedMessages = [NSMutableArray new];
+    [unpaddedMessages enumerateObjectsUsingBlock:^(id _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop){
+        NSMutableString *mutableMessage = [obj mutableCopy];
+        [mutableMessage insertString:@" " atIndex:0];
+        [paddedMessages addObject:mutableMessage];
+    }];
+    return paddedMessages;
+}
+
 @end

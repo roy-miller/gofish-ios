@@ -32,6 +32,7 @@ static NSString * const CELL_ID = @"opponentCell";
 
 - (void)setMessage:(NSString *)message {
     self.cardTableMatchMessageLabel.text = message;
+    [self.cardTableMatchMessageLabel sizeToFit];
 }
 
 - (void)setupView {

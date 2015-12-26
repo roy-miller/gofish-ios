@@ -10,6 +10,7 @@
 #import "MatchPerspective.h"
 #import "GFHDatabase.h"
 #import "PlayingCard.h"
+#import "Player.h"
 
 @interface MatchPerspective()
 @end
@@ -24,23 +25,26 @@
 - (void)setUp {
     [super setUp];
     self.database = [GFHDatabase new];
+    self.perspective = [MatchPerspective new];
 }
 
 - (void)tearDown {
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
     [super tearDown];
 }
 
-- (void)testOpponentsLazyInitializes {
-    MatchPerspective *perspective = [MatchPerspective new];
-    XCTAssertEqual(0, [perspective.opponents count]);
-}
-
-- (void)testNewWithAttributesInDatabase {
-    NSString *path = [[NSBundle bundleForClass:self.class] pathForResource:@"match_json_fixture" ofType:@"json"];
+- (NSDictionary *)jsonResponseObjectFromFileName:(NSString *)filename {
+    NSString *path = [[NSBundle bundleForClass:self.class] pathForResource:filename ofType:@"json"];
     NSData *data = [[NSData alloc] initWithContentsOfFile:path];
     NSDictionary *responseObject = [NSJSONSerialization JSONObjectWithData:data options:0 error:NULL];
+    return responseObject;
+}
 
+- (void)testOpponentsLazyInitializes {
+    XCTAssertEqual(0, [self.perspective.opponents count]);
+}
+
+- (void)testThatItMakesMatchPerspectiveInDatabase {
+    NSDictionary *responseObject = [self jsonResponseObjectFromFileName:@"match_json_fixture"];
     MatchPerspective *perspective = [MatchPerspective newWithAttributes:responseObject inDatabase:self.database];
     XCTAssertEqual(responseObject[@"match_id"], perspective.externalId);
     XCTAssertEqual(responseObject[@"status"], perspective.status);
@@ -55,14 +59,41 @@
     XCTAssertEqual([responseObject[@"opponents"][0][@"card_count"] intValue], [((Player *)perspective.opponents[0]).cardCount intValue]);
     XCTAssertEqual([responseObject[@"opponents"][0][@"book_count"] intValue], [((Player *)perspective.opponents[0]).bookCount intValue]);
     XCTAssertTrue(self.database.matchPerspective != nil);
+}
 
-    //NSDictionary *dic = @{@"key":@"value"};
-    //NSData *expectedJsonData = [NSJSONSerialization dataWithJSONObject:jsonInput options:0 error:nil];
-    //id expectedJsonString = [NSString stringWithUTF8String:[expectedJsonData bytes]];
+- (void)testThatItMakesOpponents {
+    NSArray *opponentInfo = @[@{@"book_count": @1,
+                                @"card_count": @11,
+                                @"id": @1,
+                                @"name": @"player1"},
+                              @{@"book_count": @2,
+                                @"card_count": @22,
+                                @"id": @2,
+                                @"name": @"player2"}];
+    
+    NSMutableArray *opponents = [self.perspective makeOpponents:opponentInfo];
+    XCTAssertEqual(2, opponents.count);
+    [opponents enumerateObjectsUsingBlock:^(id item, NSUInteger index, BOOL *stop)
+    {
+        XCTAssertEqual(opponentInfo[index][@"name"], ((Player *)opponents[index]).name);
+        XCTAssertEqual(opponentInfo[index][@"id"], ((Player *)opponents[index]).externalId);
+        XCTAssertEqual(opponentInfo[index][@"card_count"], ((Player *)opponents[index]).cardCount);
+        XCTAssertEqual(opponentInfo[index][@"book_count"], ((Player *)opponents[index]).bookCount);
+    }];
+}
 
-    //MatchPerspective *perspective = [MatchPerspective newWithAttributes:jsonInput inDatabase:self.database];
-    //NSData *matchJsonData = [NSJSONSerialization dataWithJSONObject:perspective options:0 error:nil];
-    // id matchJsonString = [NSString stringWithUTF8String:[matchJsonData bytes]];
+- (void)testItMakesPaddedMessages {
+    NSMutableArray *expectedMessages = [@[@" message1", @" message2"] mutableCopy];
+    NSMutableArray *paddedMessages = [self.perspective makePaddedMessages:@[@"message1", @"message2"]];
+    XCTAssertEqualObjects(expectedMessages, paddedMessages);
 }
 
 @end
+
+//NSDictionary *dic = @{@"key":@"value"};
+//NSData *expectedJsonData = [NSJSONSerialization dataWithJSONObject:jsonInput options:0 error:nil];
+//id expectedJsonString = [NSString stringWithUTF8String:[expectedJsonData bytes]];
+
+//MatchPerspective *perspective = [MatchPerspective newWithAttributes:jsonInput inDatabase:self.database];
+//NSData *matchJsonData = [NSJSONSerialization dataWithJSONObject:perspective options:0 error:nil];
+// id matchJsonString = [NSString stringWithUTF8String:[matchJsonData bytes]];

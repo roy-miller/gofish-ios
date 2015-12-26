@@ -31,8 +31,10 @@ static NSString * const PUSHER_KEY = @"9d7c66d1199c3c0e7ca3";
     [super viewDidLoad];
     [[GFHRepository sharedRepository] loadMatchPerspectiveWithId:self.matchId success:^{
         self.matchPerspective = [GFHDatabase sharedDatabase].matchPerspective;
-        //self.cardTableController.message = [self.matchPerspective.messages componentsJoinedByString:@"\n"];
-        [self.cardTableController setMessage:[self.matchPerspective.messages componentsJoinedByString:@"\n"]];
+        self.cardTableController.message = [self.matchPerspective.messages componentsJoinedByString:@"\n"];
+        //NSMutableArray *paddedMessages = [self.matchPerspective.messages mutableCopy];
+        //[paddedMessages enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) { [obj insertString:@" " atIndex:0]; }];
+        //[self.cardTableController setMessage:[paddedMessages componentsJoinedByString:@"\n"]];
         self.playerController.player = self.matchPerspective.player;
         self.cardTableController.opponents = self.matchPerspective.opponents;
         [self subscribeToMatchEvents];
