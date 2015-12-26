@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "Player.h"
 
-@interface GFHPlayerViewController : UIViewController
+@interface GFHPlayerViewController : UIViewController <UICollectionViewDataSource, UICollectionViewDelegate>
 
 @property (nonatomic, strong) Player *player;
 

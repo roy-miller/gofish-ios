@@ -11,6 +11,7 @@
 @interface GFHCardTableViewController : UIViewController<UICollectionViewDataSource, UICollectionViewDelegate>
 
 @property (nonatomic, strong) NSMutableArray *opponents;
+@property (nonatomic, strong) NSString *message;
 
 - (void)setupView;
 - (void)setMessage:(NSString *)message;

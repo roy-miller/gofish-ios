@@ -72,7 +72,7 @@ NSString * const GFHPlayingCardSuitKey = @"suit";
     //       @"D":@"diamonds",
     //    };
     //return [NSString stringWithFormat:@"http://gofishdemo.christiandilorenzo.com/images/%@_of_%@.png", [self.rank lowercaseString], suitsMapping[self.suit]];
-    return [NSString stringWithFormat:@"http://localhost:3000/assets/%@%@.png", [self.suit lowercaseString], [self.rank lowercaseString]];
+    return [NSString stringWithFormat:@"/assets/%@%@.png", [self.suit lowercaseString], [self.rank lowercaseString]];
     
 }
 

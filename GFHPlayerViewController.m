@@ -22,17 +22,17 @@ static NSString * const CELL_ID = @"cardCell";
 - (void)viewDidLoad {
     [super viewDidLoad];
     UICollectionViewFlowLayout *layout = [UICollectionViewFlowLayout new];
-    layout.itemSize = CGSizeMake(100, 145);
+    layout.itemSize = CGSizeMake (71, 96);
     self.playerCardsCollectionView.collectionViewLayout = layout;
 }
 
 - (void)setPlayer:(Player *)player {
     _player = player;
-    [self setupPlayerCards];
+    [self setUpPlayerInfo];
 }
 
-- (void)setupPlayerCards {
-    self.playerNameLabel.text = self.player.name;
+- (void)setUpPlayerInfo {
+    self.playerNameLabel.text =_player.name;
     [self.playerCardsCollectionView reloadData];
 }
 
@@ -41,16 +41,18 @@ static NSString * const CELL_ID = @"cardCell";
     // Dispose of any resources that can be recreated.
 }
 
+// look at the delegate and datasource protocols for collectionviews to find out what callbacks (like below) that you need to handle the CLICKING people will do on cards
+
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
     return 1;
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return self.player.cards.count;
+    return [self.player.cards count];
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    GFHPlayerCardCollectionCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:CELL_ID forIndexPath:indexPath];
+    GFHPlayerCardCollectionCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier: CELL_ID forIndexPath:indexPath];
     cell.playingCard = self.player.cards[indexPath.row];
     return cell;
 }

@@ -8,9 +8,8 @@
 
 #import "GFHCardTableViewController.h"
 #import "GFHOpponentCollectionViewCell.h"
-#import "Player.h"
 
-static NSString * const CELL_ID = @"cardCell";
+static NSString * const CELL_ID = @"opponentCell";
 
 @interface GFHCardTableViewController ()
 @property (weak, nonatomic) IBOutlet UICollectionView *cardTableOpponentsCollectionView;
@@ -21,11 +20,13 @@ static NSString * const CELL_ID = @"cardCell";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    UICollectionViewFlowLayout *layout = [UICollectionViewFlowLayout new];
+    layout.itemSize = CGSizeMake (120, 100);
+    self.cardTableOpponentsCollectionView.collectionViewLayout = layout;
 }
 
-- (void)setOpponent:(Player *)opponent {
-    //_opponent = opponent;
+- (void)setOpponents:(NSMutableArray *)opponents {
+    _opponents = opponents;
     [self setupView];
 }
 
@@ -34,7 +35,6 @@ static NSString * const CELL_ID = @"cardCell";
 }
 
 - (void)setupView {
-    //self.opponentNameLabel.text = self.opponent.name;
     [self.cardTableOpponentsCollectionView reloadData];
 }
 
@@ -48,13 +48,13 @@ static NSString * const CELL_ID = @"cardCell";
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    //return self.player.cards.count;
+    return self.opponents.count;
     return 1;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     GFHOpponentCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:CELL_ID forIndexPath:indexPath];
-    //cell.card = self.player.cards[indexPath.row];
+    cell.opponent = self.opponents[indexPath.row];
     return cell;
 }
 

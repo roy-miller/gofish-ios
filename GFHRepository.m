@@ -51,9 +51,9 @@ static NSString * const PLAYERS_KEY = @"players";
         }
     }];
 }
-- (void)loadMatchPerspectiveWithSuccess:(EmptyBlock)success failure:(EmptyBlock)failure {
+- (void)loadMatchPerspectiveWithId:(NSNumber *)matchId success:(EmptyBlock)success failure:(EmptyBlock)failure {
     [self.requestSerializer setValue:[NSString stringWithFormat:@"Token token=\"%@\"", self.database.user.token] forHTTPHeaderField:@"Authorization"];
-    [self GET:[NSString stringWithFormat:@"/api/matches/%@", self.matchId] parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, NSDictionary *  _Nullable responseObject) {
+    [self GET:[NSString stringWithFormat:@"/api/matches/%@", matchId] parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, NSDictionary *  _Nullable responseObject) {
         if (responseObject) {
             [MatchPerspective newWithAttributes:responseObject inDatabase:self.database];
         }
@@ -84,9 +84,9 @@ static NSString * const PLAYERS_KEY = @"players";
     }];
 }
 
-- (void)updateMatchWithSuccess:(EmptyBlock)success failure:(EmptyBlock)failure {
+- (void)updateMatchWithId:(NSNumber *)matchId success:(EmptyBlock)success failure:(EmptyBlock)failure {
     [self.requestSerializer setValue:[NSString stringWithFormat:@"Token token=\"%@\"", self.database.user.token] forHTTPHeaderField:@"Authorization"];
-    [self PATCH:[NSString stringWithFormat:@"/api/matches/%@", self.matchId] parameters:nil success:^(NSURLSessionDataTask * _Nonnull task, id _Nullable responseObject) {
+    [self PATCH:[NSString stringWithFormat:@"/api/matches/%@", matchId] parameters:nil success:^(NSURLSessionDataTask * _Nonnull task, id _Nullable responseObject) {
         if (responseObject) {
             self.database.matchPerspective = [MatchPerspective newWithAttributes:responseObject inDatabase:self.database];
         }

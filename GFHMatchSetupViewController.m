@@ -7,6 +7,7 @@
 //
 
 #import "GFHMatchSetupViewController.h"
+#import "GFHMatchViewController.h"
 #import "GFHRepository.h"
 #import "GFHDatabase.h"
 #import "GFHLoginViewController.h"
@@ -17,6 +18,7 @@
 #import "User.h"
 
 static NSString * const PUSHER_KEY = @"9d7c66d1199c3c0e7ca3";
+static NSString * const MATCH_ID_KEY = @"match_id";
 
 @interface GFHMatchSetupViewController ()
 @property (weak, nonatomic) IBOutlet UIPickerView *setupOpponentsPicker;
@@ -80,10 +82,11 @@ static NSString * const PUSHER_KEY = @"9d7c66d1199c3c0e7ca3";
 
 - (void)handleWaitChannelEvent:(PTPusherEvent *)channelEvent {
     // channelEvent.data is a NSDictionary of the JSON object received
-//    [self dismissViewControllerAnimated:YES completion:^{
-//        MatchViewcontroller *matchViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"matchViewController"];
-//        [self.navigationController pushViewController:matchViewController animated:YES];
-//    }];
+   [self dismissViewControllerAnimated:YES completion:^{
+       GFHMatchViewController *matchViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"MatchViewController"];
+       matchViewController.matchId = channelEvent.data[MATCH_ID_KEY];
+       [self.navigationController pushViewController:matchViewController animated:YES];
+    }];
 }
 
 - (void)showWaitAlert {
@@ -96,6 +99,7 @@ static NSString * const PUSHER_KEY = @"9d7c66d1199c3c0e7ca3";
     spinner.color = [UIColor blackColor];
     [spinner startAnimating];
     [self.waitAlert.view addSubview:spinner];
+    [self presentViewController:self.waitAlert animated:YES completion:nil];
 //    NSLayoutConstraint *heightConstraint = [NSLayoutConstraint constraintWithItem:self.waitAlert.view
 //                                                                        attribute:NSLayoutAttributeHeight
 //                                                                        relatedBy:NSLayoutRelation

@@ -10,4 +10,6 @@
 
 @interface GFHMatchViewController : UIViewController
 
+@property (nonatomic, strong) NSNumber *matchId;
+
 @end

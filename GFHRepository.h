@@ -17,17 +17,17 @@ extern NSString * const GFHBaseUrl;
 
 @interface GFHRepository : AFHTTPSessionManager
 
-@property (nonatomic, strong) NSNumber *matchId;
+//@property (nonatomic, strong) NSNumber *matchId;
 
 + (instancetype)sharedRepository;
 
-- (void)loadMatchPerspectiveWithSuccess:(EmptyBlock)success failure:(EmptyBlock)failure;
+- (void)loadMatchPerspectiveWithId:(NSNumber *)matchId success:(EmptyBlock)success failure:(EmptyBlock)failure;
 
 - (void)loginWithUsername:(NSString *)username password:(NSString *)password success:(EmptyBlock)success failure:(EmptyBlock)failure;
 
 - (void)startMatchWithNumberOfOpponents:(NSInteger)numberOfOpponents success:(EmptyBlock)success failure:(EmptyBlock)failure;
 
-- (void)updateMatchWithSuccess:(EmptyBlock)success failure:(EmptyBlock)failure;
+- (void)updateMatchWithId:(NSNumber *)matchId success:(EmptyBlock)success failure:(EmptyBlock)failure;
 
 - (id)serializeFailure:(NSError *)error;
 

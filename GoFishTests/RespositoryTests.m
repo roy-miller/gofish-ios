@@ -84,9 +84,9 @@
 
 - (void)testLoadingMatchPerspective {
     [[GFHMockServer sharedServer] mockShowMatchResponse];
-    self.repository.matchId = @1;
+    //self.repository.matchId = @1;
     XCTestExpectation *expectation = [self expectationWithDescription:@"load MatchPerspective"];
-    [self.repository loadMatchPerspectiveWithSuccess:^{
+    [self.repository loadMatchPerspectiveWithId:@1 success:^{
         XCTAssert(self.repository.database.matchPerspective != nil);
         [expectation fulfill];
     } failure:nil];
@@ -96,9 +96,9 @@
 
 - (void)testUpdatingMatch {
     [[GFHMockServer sharedServer] mockUpdateMatchResponse];
-    self.repository.matchId = @1;
+    //self.repository.matchId = @1;
     XCTestExpectation *expectation = [self expectationWithDescription:@"load MatchPerspective"];
-    [self.repository updateMatchWithSuccess:^{
+    [self.repository updateMatchWithId:@1 success:^{
         [expectation fulfill];
     } failure:^{
         XCTFail(@"api call to update match failed");

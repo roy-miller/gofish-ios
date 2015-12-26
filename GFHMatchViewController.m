@@ -29,15 +29,19 @@ static NSString * const PUSHER_KEY = @"9d7c66d1199c3c0e7ca3";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    [[GFHRepository sharedRepository] loadMatchPerspectiveWithSuccess:^{
-        self.matchPerspective = [GFHDatabase sharedDatabase].matchPerspective;        
+    [[GFHRepository sharedRepository] loadMatchPerspectiveWithId:self.matchId success:^{
+        self.matchPerspective = [GFHDatabase sharedDatabase].matchPerspective;
+        //self.cardTableController.message = [self.matchPerspective.messages componentsJoinedByString:@"\n"];
         [self.cardTableController setMessage:[self.matchPerspective.messages componentsJoinedByString:@"\n"]];
         self.playerController.player = self.matchPerspective.player;
         self.cardTableController.opponents = self.matchPerspective.opponents;
+        [self subscribeToMatchEvents];
+        // disconnect from wait channel?
     } failure:^{
     }];
-    
+}
+
+- (void)subscribeToMatchEvents {
     self.pusher = [PTPusher pusherWithKey:PUSHER_KEY delegate:nil encrypted:YES];
     PTPusherChannel *channel = [self.pusher subscribeToChannelNamed:[NSString stringWithFormat:@"game_play_channel_%@", self.matchPerspective.externalId]];
     [channel bindToEventNamed:@"match_change_event" target:self action:@selector(handlePusherEvent:)];

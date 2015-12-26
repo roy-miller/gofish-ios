@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Player.h"
 
 @interface GFHOpponentCollectionViewCell : UICollectionViewCell
+
+@property (nonatomic, strong) Player *opponent;
 
 @end
