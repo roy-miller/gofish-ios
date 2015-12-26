@@ -71,7 +71,7 @@ static NSString * const MATCH_ID_KEY = @"match_id";
 - (IBAction)playButtonTapped:(UIButton *)sender {
     [self subscribeToPusherChannel:[NSString stringWithFormat:@"wait_channel_%@", [GFHDatabase sharedDatabase].user.externalId]];
     [self showWaitAlert];
-    [[GFHRepository sharedRepository] startMatchWithNumberOfOpponents:[self.opponentCountOptions[[self.setupOpponentsPicker selectedRowInComponent:0]] intValue] success:nil failure:nil];
+    //[[GFHRepository sharedRepository] startMatchWithNumberOfOpponents:[self.opponentCountOptions[[self.setupOpponentsPicker selectedRowInComponent:0]] intValue] success:nil failure:nil];
 }
 
 - (void)subscribeToPusherChannel:(NSString *)channelName {

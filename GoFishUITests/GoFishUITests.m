@@ -41,12 +41,12 @@
 
 - (void)testLoginViewWithSuccess {
     [self loginWith:@"roy.miller@rolemodelsoftware.com" withPassword:@"testpass1"];
-    XCTAssertTrue([self.app.staticTexts[@"Pick a number of opponents"] exists]);
+    XCTAssertTrue([self.app.staticTexts[@"Choose opponents:"] exists]);
 }
 
 - (void)testLoginViewWithFailure {
     [self loginWith:@"doesnot@exist.com" withPassword:@"irrelevant"];
-    XCTAssertEqualObjects(@"Invalid email or password'", [self.app.staticTexts[@"loginErrorId"] label]);
+    XCTAssertTrue([self.app.alerts[@"Invalid Login"] exists]);
 }
 
 - (void)testSetupViewWithTwoPlayers {
@@ -56,7 +56,8 @@
     XCUIElement *playButton = self.app.buttons[@"Play"];
     [playButton tap];
     
-    XCTAssertTrue([self.app.alerts[@"Waiting for players"] exists]);
+    //XCTAssertTrue([self.app.alerts[@"alert TITLE, not message, which you can't test directly"] exists]);
+    XCTAssert(self.app.alerts.element.staticTexts[@"Waiting for players..."].exists);
 }
 
 @end
