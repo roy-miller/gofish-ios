@@ -6,8 +6,11 @@
 //  Copyright © 2015 RoleModel Software. All rights reserved.
 //
 
+@import UIKit;
 #import "GFHPlayerViewController.h"
+#import "GFHMatchViewController.h"
 #import "Player.h"
+#import "PlayingCard.h"
 #import "GFHPlayerCardCollectionCell.h"
 
 static NSString * const CELL_ID = @"cardCell";
@@ -42,6 +45,14 @@ static NSString * const CELL_ID = @"cardCell";
 }
 
 // look at the delegate and datasource protocols for collectionviews to find out what callbacks (like below) that you need to handle the CLICKING people will do on cards
+
+- (void)collectionView:(UICollectionView *)collectionView
+didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    NSInteger index = [indexPath item];
+    NSLog(@"selected card: %@", self.player.cards[index]);
+    ((GFHMatchViewController *)self.parentViewController).selectedRank = ((PlayingCard *)self.player.cards[index]).rank;
+    // then when somebody clicks an opponent card, delegate action to MatchViewController (i.e., parentViewController) to call server updates
+}
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
     return 1;

@@ -11,5 +11,6 @@
 @interface GFHMatchViewController : UIViewController
 
 @property (nonatomic, strong) NSNumber *matchId;
+@property (nonatomic, strong) NSString *selectedRank;
 
 @end

@@ -45,32 +45,37 @@
     [playButton tap];
 }
 
-- (void)testStartMatchWithRobotOpponent {
+- (void)testLoginSucceedsWithGoodCreds {
+    [self loginWith:@"roy.miller@rolemodelsoftware.com" withPassword:@"testpass1"];
+    XCTAssertTrue(self.app.staticTexts[@"Choose opponents:"].exists);
+}
+
+- (void)testLoginFailsWithBadCreds {
+    [self loginWith:@"doesnot@exist.com" withPassword:@"irrelevant"];
+    XCTAssertTrue(self.app.alerts[@"Invalid Login"].exists);
+}
+
+- (void)testItWaitsForRightNumberOfPlayers {
+    [self loginWith:@"roy.miller@rolemodelsoftware.com" withPassword:@"testpass1"];
+    [self playWithOpponentCount:@1];
+    //XCTAssertTrue([self.app.alerts[@"alert TITLE, not message, which you can't test directly"] exists]);
+    XCTAssert(self.app.alerts.element.staticTexts[@"Waiting for players..."].exists);
+}
+
+- (void)testItStartsMatchWithRobotOpponent {
     [self loginWith:@"roy.miller@rolemodelsoftware.com" withPassword:@"testpass1"];
     [self playWithOpponentCount:@1];
     XCUIElement *playerName = self.app.staticTexts[@"roymiller"];
     NSPredicate *exists = [NSPredicate predicateWithFormat:@"exists == true"];
     [self expectationForPredicate:exists evaluatedWithObject:playerName handler:nil];
-    
     [self waitForExpectationsWithTimeout:8 handler:nil];
     XCTAssertTrue(playerName.exists);
 }
 
-- (void)testLoginWithSuccess {
-    [self loginWith:@"roy.miller@rolemodelsoftware.com" withPassword:@"testpass1"];
-    XCTAssertTrue(self.app.staticTexts[@"Choose opponents:"].exists);
-}
-
-- (void)testLoginWithFailure {
-    [self loginWith:@"doesnot@exist.com" withPassword:@"irrelevant"];
-    XCTAssertTrue(self.app.alerts[@"Invalid Login"].exists);
-}
-
-- (void)testSetupWithTwoPlayersAndWait {
+- (void)testItUpdatesMatchStateWhenPlayerAsksForCards {
     [self loginWith:@"roy.miller@rolemodelsoftware.com" withPassword:@"testpass1"];
     [self playWithOpponentCount:@1];
-    //XCTAssertTrue([self.app.alerts[@"alert TITLE, not message, which you can't test directly"] exists]);
-    XCTAssert(self.app.alerts.element.staticTexts[@"Waiting for players..."].exists);
+    // can I reset timeout on MatchMaker in my request?
 }
 
 @end

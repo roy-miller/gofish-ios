@@ -89,11 +89,3 @@
 }
 
 @end
-
-//NSDictionary *dic = @{@"key":@"value"};
-//NSData *expectedJsonData = [NSJSONSerialization dataWithJSONObject:jsonInput options:0 error:nil];
-//id expectedJsonString = [NSString stringWithUTF8String:[expectedJsonData bytes]];
-
-//MatchPerspective *perspective = [MatchPerspective newWithAttributes:jsonInput inDatabase:self.database];
-//NSData *matchJsonData = [NSJSONSerialization dataWithJSONObject:perspective options:0 error:nil];
-// id matchJsonString = [NSString stringWithUTF8String:[matchJsonData bytes]];
