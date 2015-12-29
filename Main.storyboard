@@ -263,9 +263,6 @@
                                                         <bool key="isElement" value="YES"/>
                                                     </accessibility>
                                                     <gestureRecognizers/>
-                                                    <connections>
-                                                        <outletCollection property="gestureRecognizers" destination="tdL-Gp-KG8" appends="YES" id="TVA-L2-GTs"/>
-                                                    </connections>
                                                 </imageView>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -341,9 +338,6 @@
                                                     <rect key="frame" x="0.0" y="30" width="45" height="61"/>
                                                     <accessibility key="accessibilityConfiguration" identifier="cardTableOpponentCardImage" label="OpponentCardImage"/>
                                                     <gestureRecognizers/>
-                                                    <connections>
-                                                        <outletCollection property="gestureRecognizers" destination="7c4-W2-LOb" appends="YES" id="JPM-9J-i8V"/>
-                                                    </connections>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qrf-1y-wSx">
                                                     <rect key="frame" x="50" y="36" width="70" height="21"/>

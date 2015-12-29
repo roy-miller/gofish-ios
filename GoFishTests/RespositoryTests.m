@@ -98,7 +98,7 @@
     [[GFHMockServer sharedServer] mockUpdateMatchResponse];
     //self.repository.matchId = @1;
     XCTestExpectation *expectation = [self expectationWithDescription:@"load MatchPerspective"];
-    [self.repository updateMatchWithId:@1 success:^{
+    [self.repository updateMatchWithId:@1 requestorId:@1 requestedId:@1 rank:@"A" success:^{
         [expectation fulfill];
     } failure:^{
         XCTFail(@"api call to update match failed");
