@@ -14,7 +14,7 @@ static NSString * const CELL_ID = @"opponentCell";
 
 @interface GFHCardTableViewController ()
 @property (weak, nonatomic) IBOutlet UICollectionView *cardTableOpponentsCollectionView;
-@property (weak, nonatomic) IBOutlet UILabel *cardTableMatchMessageLabel;
+@property (weak, nonatomic) IBOutlet UITextView *cardTableMatchMessageTextView;
 @end
 
 @implementation GFHCardTableViewController
@@ -24,6 +24,7 @@ static NSString * const CELL_ID = @"opponentCell";
     UICollectionViewFlowLayout *layout = [UICollectionViewFlowLayout new];
     layout.itemSize = CGSizeMake (120, 100);
     self.cardTableOpponentsCollectionView.collectionViewLayout = layout;
+    self.cardTableMatchMessageTextView.editable = NO;
 }
 
 - (void)setOpponents:(NSMutableArray *)opponents {
@@ -32,14 +33,8 @@ static NSString * const CELL_ID = @"opponentCell";
 }
 
 - (void)setMessage:(NSString *)message {
-    self.cardTableMatchMessageLabel.text = message;
-    self.cardTableMatchMessageLabel.layer.masksToBounds = NO;
-    CALayer *borderLayer = [CALayer new];
-    borderLayer.frame = CGRectInset(self.cardTableMatchMessageLabel.frame, -2, -2);
-    borderLayer.borderWidth = 4.0;
-    borderLayer.borderColor = [UIColor whiteColor].CGColor;
-    [self.cardTableMatchMessageLabel.layer addSublayer:borderLayer];
-    [self.cardTableMatchMessageLabel sizeToFit];
+    self.cardTableMatchMessageTextView.text = message;
+    [self.cardTableMatchMessageTextView sizeToFit];
 }
 
 - (void)setupView {
