@@ -27,7 +27,7 @@ extern NSString * const GFHBaseUrl;
 
 - (void)startMatchWithNumberOfOpponents:(NSInteger)numberOfOpponents success:(EmptyBlock)success failure:(EmptyBlock)failure;
 
-- (void)updateMatchWithId:(NSNumber *)matchId success:(EmptyBlock)success failure:(EmptyBlock)failure;
+- (void)updateMatchWithId:(NSNumber *)matchId requestorId:(NSNumber *)requestorId requestedId:(NSNumber *)requestedId rank:(NSString *)rank success:(EmptyBlock)success failure:(EmptyBlock)failure;
 
 - (id)serializeFailure:(NSError *)error;
 

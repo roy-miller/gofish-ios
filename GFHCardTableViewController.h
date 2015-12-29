@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface GFHCardTableViewController : UIViewController<UICollectionViewDataSource, UICollectionViewDelegate>
+@interface GFHCardTableViewController : UIViewController <UICollectionViewDataSource, UICollectionViewDelegate>
 
 @property (nonatomic, strong) NSMutableArray *opponents;
 @property (nonatomic, strong) NSString *message;

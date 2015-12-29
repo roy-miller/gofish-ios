@@ -8,6 +8,7 @@
 
 #import "GFHCardTableViewController.h"
 #import "GFHOpponentCollectionViewCell.h"
+#import "GFHMatchViewController.h"
 
 static NSString * const CELL_ID = @"opponentCell";
 
@@ -32,6 +33,12 @@ static NSString * const CELL_ID = @"opponentCell";
 
 - (void)setMessage:(NSString *)message {
     self.cardTableMatchMessageLabel.text = message;
+    self.cardTableMatchMessageLabel.layer.masksToBounds = NO;
+    CALayer *borderLayer = [CALayer new];
+    borderLayer.frame = CGRectInset(self.cardTableMatchMessageLabel.frame, -2, -2);
+    borderLayer.borderWidth = 4.0;
+    borderLayer.borderColor = [UIColor whiteColor].CGColor;
+    [self.cardTableMatchMessageLabel.layer addSublayer:borderLayer];
     [self.cardTableMatchMessageLabel sizeToFit];
 }
 
@@ -59,5 +66,11 @@ static NSString * const CELL_ID = @"opponentCell";
     return cell;
 }
 
+- (void)collectionView:(UICollectionView *)collectionView
+didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    NSInteger index = [indexPath item];
+    ((GFHMatchViewController *)self.parentViewController).selectedOpponent = ((Player *)self.opponents[index]);
+    [((GFHMatchViewController *)self.parentViewController) askForCards];
+}
 
 @end

@@ -84,9 +84,9 @@ static NSString * const PLAYERS_KEY = @"players";
     }];
 }
 
-- (void)updateMatchWithId:(NSNumber *)matchId success:(EmptyBlock)success failure:(EmptyBlock)failure {
+- (void)updateMatchWithId:(NSNumber *)matchId requestorId:(NSNumber *)requestorId requestedId:(NSNumber *)requestedId rank:(NSString *)rank success:(EmptyBlock)success failure:(EmptyBlock)failure {
     [self.requestSerializer setValue:[NSString stringWithFormat:@"Token token=\"%@\"", self.database.user.token] forHTTPHeaderField:@"Authorization"];
-    [self PATCH:[NSString stringWithFormat:@"/api/matches/%@", matchId] parameters:nil success:^(NSURLSessionDataTask * _Nonnull task, id _Nullable responseObject) {
+    [self PATCH:[NSString stringWithFormat:@"/api/matches/%@", matchId] parameters:@{@"requestor_id":requestorId, @"requested_id":requestedId, @"rank":rank} success:^(NSURLSessionDataTask * _Nonnull task, id _Nullable responseObject) {
         if (responseObject) {
             self.database.matchPerspective = [MatchPerspective newWithAttributes:responseObject inDatabase:self.database];
         }

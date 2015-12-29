@@ -39,19 +39,16 @@ static NSString * const CELL_ID = @"cardCell";
     [self.playerCardsCollectionView reloadData];
 }
 
+- (void)reload {
+    // none of these did anything to refresh the view ... only thing that worked was telling parent to viewDidLoad again
+    //[self.playerCardsCollectionView reloadData];
+    //[self.playerCardsCollectionView setNeedsDisplay];
+    //[self viewWillAppear:YES];
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-
-// look at the delegate and datasource protocols for collectionviews to find out what callbacks (like below) that you need to handle the CLICKING people will do on cards
-
-- (void)collectionView:(UICollectionView *)collectionView
-didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
-    NSInteger index = [indexPath item];
-    NSLog(@"selected card: %@", self.player.cards[index]);
-    ((GFHMatchViewController *)self.parentViewController).selectedRank = ((PlayingCard *)self.player.cards[index]).rank;
-    // then when somebody clicks an opponent card, delegate action to MatchViewController (i.e., parentViewController) to call server updates
 }
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
@@ -68,6 +65,12 @@ didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     return cell;
 }
 
-//look at other callbacks in UICollectionViewDataSource and UICollectionViewDelegate: didSelectItemAtIndexPath, etc.
+- (void)collectionView:(UICollectionView *)collectionView
+didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    NSInteger index = [indexPath item];
+    NSLog(@"selected card: %@", self.player.cards[index]);
+    ((GFHMatchViewController *)self.parentViewController).selectedRank = ((PlayingCard *)self.player.cards[index]).rank;
+    // then when somebody clicks an opponent card, delegate action to MatchViewController (i.e., parentViewController) to call server updates
+}
 
 @end

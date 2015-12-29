@@ -32,13 +32,9 @@ static NSString * const PUSHER_KEY = @"9d7c66d1199c3c0e7ca3";
     [[GFHRepository sharedRepository] loadMatchPerspectiveWithId:self.matchId success:^{
         self.matchPerspective = [GFHDatabase sharedDatabase].matchPerspective;
         self.cardTableController.message = [self.matchPerspective.messages componentsJoinedByString:@"\n"];
-        //NSMutableArray *paddedMessages = [self.matchPerspective.messages mutableCopy];
-        //[paddedMessages enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) { [obj insertString:@" " atIndex:0]; }];
-        //[self.cardTableController setMessage:[paddedMessages componentsJoinedByString:@"\n"]];
         self.playerController.player = self.matchPerspective.player;
         self.cardTableController.opponents = self.matchPerspective.opponents;
         [self subscribeToMatchEvents];
-        // disconnect from wait channel?
     } failure:^{
     }];
 }
@@ -51,9 +47,20 @@ static NSString * const PUSHER_KEY = @"9d7c66d1199c3c0e7ca3";
 }
 
 - (void)handlePusherEvent:(PTPusherEvent *)event {
-    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"From Pusher" message:event.data[@"message"] preferredStyle:UIAlertControllerStyleAlert];
-    [alert addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil]];
-    [self presentViewController:alert animated:YES completion:nil];
+    //UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"From Pusher" message:event.data[@"message"] preferredStyle:UIAlertControllerStyleAlert];
+    //[alert addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil]];
+    //[self presentViewController:alert animated:YES completion:nil];
+    [[GFHRepository sharedRepository] loadMatchPerspectiveWithId:self.matchId success:^{
+        //[self.playerController reload];
+        [self viewDidLoad];
+    } failure:^{
+    }];
+}
+
+- (void)askForCards {
+    [[GFHRepository sharedRepository] updateMatchWithId:self.matchId requestorId:self.playerController.player.externalId requestedId:self.selectedOpponent.externalId rank:self.selectedRank success:^{
+    } failure:^{
+    }];
 }
 
 // this is only called for embedded views, lets us get a child handle to give info to that child
