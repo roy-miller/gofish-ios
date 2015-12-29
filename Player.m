@@ -20,7 +20,7 @@
     }
     player.externalId = attributes[GFHMatchPerspectivePlayerIdKey];
     player.bookCount = attributes[GFHMatchPerspectiveBookCountKey];
-    player.cardCount = [NSNumber numberWithInt:player.cards.count];
+    player.cardCount = attributes[GFHMatchPerspectiveCardCountKey];
     return player;
 }
 

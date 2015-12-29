@@ -48,7 +48,6 @@ static NSString * const CELL_ID = @"cardCell";
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
@@ -70,7 +69,6 @@ didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     NSInteger index = [indexPath item];
     NSLog(@"selected card: %@", self.player.cards[index]);
     ((GFHMatchViewController *)self.parentViewController).selectedRank = ((PlayingCard *)self.player.cards[index]).rank;
-    // then when somebody clicks an opponent card, delegate action to MatchViewController (i.e., parentViewController) to call server updates
 }
 
 @end

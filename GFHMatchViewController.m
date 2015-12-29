@@ -47,14 +47,17 @@ static NSString * const PUSHER_KEY = @"9d7c66d1199c3c0e7ca3";
 }
 
 - (void)handlePusherEvent:(PTPusherEvent *)event {
-    //UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"From Pusher" message:event.data[@"message"] preferredStyle:UIAlertControllerStyleAlert];
-    //[alert addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil]];
-    //[self presentViewController:alert animated:YES completion:nil];
+    //[self showAlertWithTitle:@"From Pusher" message:event.data[@"message"]];
     [[GFHRepository sharedRepository] loadMatchPerspectiveWithId:self.matchId success:^{
-        //[self.playerController reload];
-        [self viewDidLoad];
+        [self viewDidLoad]; // is this really the best thing to do? what's better?
     } failure:^{
     }];
+}
+
+- (void)showAlertWithTitle:(NSString *)title message:(NSString *)message {
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:title message:message preferredStyle:UIAlertControllerStyleAlert];
+    [alert addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil]];
+    [self presentViewController:alert animated:YES completion:nil];
 }
 
 - (void)askForCards {
@@ -63,7 +66,6 @@ static NSString * const PUSHER_KEY = @"9d7c66d1199c3c0e7ca3";
     }];
 }
 
-// this is only called for embedded views, lets us get a child handle to give info to that child
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([[segue identifier] isEqualToString:@"playerView"]) {
         self.playerController = [segue destinationViewController];
@@ -74,7 +76,6 @@ static NSString * const PUSHER_KEY = @"9d7c66d1199c3c0e7ca3";
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 @end
